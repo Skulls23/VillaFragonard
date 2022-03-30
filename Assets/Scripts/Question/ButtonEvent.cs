@@ -39,12 +39,13 @@ public class ButtonEvent : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         if(isTrue)
         {
             transform.GetComponent<Image>().color = Color.green;
-            StartCoroutine(ReturnColorToNormal(0.5f));
+            StartCoroutine(ReturnColorToNormal(0.8f));
+            //DO SOMETHING
         }
         else
         {
             transform.GetComponent<Image>().color = Color.red;
-            StartCoroutine(ReturnColorToNormal(0.5f));
+            StartCoroutine(ReturnColorToNormal(0.8f));
         }
     }
 
