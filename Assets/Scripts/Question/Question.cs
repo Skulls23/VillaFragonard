@@ -19,11 +19,11 @@ public class Question : MonoBehaviour
 
     public void FalseAnswer()
     {
-
+        Debug.Log("ici");
     }
 
     public void TrueAnswer()
     {
-
+        Debug.Log("la");
     }
 }
