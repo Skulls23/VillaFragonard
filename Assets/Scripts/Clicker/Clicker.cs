@@ -43,7 +43,7 @@ public class Clicker : MonoBehaviour
             text.text = lOrdersString[missionNumber];
         else
         {
-            text.text = "niveau fini";
+            text.text = "Niveau fini";
             StartCoroutine(WaitToChangeScene());
         }
             
