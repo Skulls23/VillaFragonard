@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class ButtonEvent : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler, IPointerUpHandler
+public class ButtonEvent : MonoBehaviour
 {
     [SerializeField] private bool isTrue;
     [SerializeField] private float timeToWaitBeforeSceneSwitch = 2f;
@@ -18,33 +18,12 @@ public class ButtonEvent : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         baseColor = transform.GetComponent<Image>().color;
     }
 
-    void IPointerEnterHandler.OnPointerEnter(PointerEventData eventData)
-    {
-       
-    }
-
-    void IPointerExitHandler.OnPointerExit(PointerEventData eventData)
-    {
-        
-    }
-
-    void IPointerDownHandler.OnPointerDown(PointerEventData eventData)
-    {
-        
-    }
-    
-    void IPointerUpHandler.OnPointerUp(PointerEventData eventData)
-    {
-        
-    }
-
     public void Answer()
     {
         if(isTrue)
         {
             transform.GetComponent<Image>().color = Color.green;
             StartCoroutine(WaitToChangeScene());
-            //DO SOMETHING
         }
         else
         {
