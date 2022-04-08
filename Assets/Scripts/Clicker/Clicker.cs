@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Clicker : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class Clicker : MonoBehaviour
 
     [SerializeField] private List<string>     lOrdersString;
     [SerializeField] private List<GameObject> lOrdersCollider;
+
+    [SerializeField] private float timeToWaitBeforeSceneSwitch = 2;
 
     private int missionNumber = 0;
 
@@ -39,6 +42,16 @@ public class Clicker : MonoBehaviour
         if (lOrdersCollider.Count > missionNumber)
             text.text = lOrdersString[missionNumber];
         else
+        {
             text.text = "niveau fini";
+            StartCoroutine(WaitToChangeScene());
+        }
+            
+    }
+
+    IEnumerator WaitToChangeScene()
+    {
+        yield return new WaitForSeconds(timeToWaitBeforeSceneSwitch);
+        SceneManager.LoadScene(sceneName: "Map");
     }
 }

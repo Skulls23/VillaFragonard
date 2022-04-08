@@ -22,10 +22,18 @@ public class MapClicker : MonoBehaviour
         {
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
             if (hit.collider != null)
-                if (hit.collider.GetType() == typeof(BoxCollider2D) && hit.collider.transform.gameObject.name == lOrdersCollider[missionNumber].name)
-                    for(int i = 0; i < lOrdersNameScene.Count; i++)
-                        if(hit.collider == lOrdersCollider[i])
+                if (hit.collider.GetType() == typeof(BoxCollider2D))
+                {
+                    for (int i = 0; i < lOrdersNameScene.Count; i++)
+                        if (hit.collider == lOrdersCollider[i].GetComponent<Collider2D>())
+                        {
                             SceneManager.LoadScene(sceneName: lOrdersNameScene[i]);
+                        }
+                        else
+                            Debug.Log(false);
+                    Debug.Log(true);
+                }
+                            
         }
     }
 }

@@ -214,6 +214,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 291939083}
+  - component: {fileID: 291939084}
   m_Layer: 0
   m_Name: Tableau (14)
   m_TagString: Untagged
@@ -235,6 +236,32 @@ Transform:
   m_Father: {fileID: 1882160038}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &291939084
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291939082}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 8.391284, y: 2.8743167}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.23853493, y: 0.39985776}
+  m_EdgeRadius: 0
 --- !u!1 &293896246
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,6 +271,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 293896247}
+  - component: {fileID: 293896248}
   m_Layer: 0
   m_Name: Tableau (5)
   m_TagString: Untagged
@@ -265,6 +293,32 @@ Transform:
   m_Father: {fileID: 1882160038}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &293896248
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293896246}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.4274664, y: -2.4247665}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.2405133, y: 0.6020138}
+  m_EdgeRadius: 0
 --- !u!1 &394265656
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,6 +328,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 394265657}
+  - component: {fileID: 394265658}
   m_Layer: 0
   m_Name: Tableau (13)
   m_TagString: Untagged
@@ -295,6 +350,32 @@ Transform:
   m_Father: {fileID: 1882160038}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &394265658
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394265656}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 8.397569, y: 2.4355438}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.26091576, y: 0.27756262}
+  m_EdgeRadius: 0
 --- !u!1 &401489415
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,6 +385,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 401489416}
+  - component: {fileID: 401489417}
   m_Layer: 0
   m_Name: Tableau (10)
   m_TagString: Untagged
@@ -325,6 +407,32 @@ Transform:
   m_Father: {fileID: 1882160038}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &401489417
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401489415}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 5.0376987, y: -2.1038663}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.7334595, y: 0.45955706}
+  m_EdgeRadius: 0
 --- !u!1 &437599760
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,6 +442,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 437599761}
+  - component: {fileID: 437599762}
   m_Layer: 0
   m_Name: Tableau (3)
   m_TagString: Untagged
@@ -355,6 +464,32 @@ Transform:
   m_Father: {fileID: 1882160038}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &437599762
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437599760}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -3.356145, y: 3.286547}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.505085, y: 0.27309275}
+  m_EdgeRadius: 0
 --- !u!1 &437862240
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,6 +499,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 437862241}
+  - component: {fileID: 437862242}
   m_Layer: 0
   m_Name: Tableau (1)
   m_TagString: Untagged
@@ -385,6 +521,32 @@ Transform:
   m_Father: {fileID: 1882160038}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &437862242
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437862240}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -6.3914957, y: -1.9436126}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.423746, y: 0.40196562}
+  m_EdgeRadius: 0
 --- !u!1 &553816519
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,6 +556,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 553816520}
+  - component: {fileID: 553816521}
   m_Layer: 0
   m_Name: Tableau (12)
   m_TagString: Untagged
@@ -415,6 +578,32 @@ Transform:
   m_Father: {fileID: 1882160038}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &553816521
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553816519}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 7.5565476, y: 0.9747271}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.28584385, y: 1.3281261}
+  m_EdgeRadius: 0
 --- !u!1 &644390666
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,6 +614,7 @@ GameObject:
   m_Component:
   - component: {fileID: 644390667}
   - component: {fileID: 644390668}
+  - component: {fileID: 644390669}
   m_Layer: 0
   m_Name: Gameplay
   m_TagString: Untagged
@@ -458,8 +648,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5708c4de0c11d75478a64a8c7a87792a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lOrdersCollider: []
-  lOrdersNameScene: []
+  lOrdersCollider:
+  - {fileID: 2010964369}
+  - {fileID: 719651362}
+  - {fileID: 1821581640}
+  - {fileID: 1831923691}
+  - {fileID: 715008200}
+  - {fileID: 437599760}
+  - {fileID: 1649450624}
+  - {fileID: 293896246}
+  - {fileID: 1277789681}
+  - {fileID: 1780351754}
+  - {fileID: 1332736237}
+  - {fileID: 857952910}
+  - {fileID: 401489415}
+  - {fileID: 1731070951}
+  - {fileID: 553816519}
+  - {fileID: 394265656}
+  - {fileID: 291939082}
+  lOrdersNameScene:
+  - x
+  - x
+  - x
+  - Clicker
+  - x
+  - x
+  - x
+  - x
+  - x
+  - x
+  - x
+  - x
+  - x
+  - x
+  - x
+  - x
+  - x
+--- !u!114 &644390669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644390666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fe1e970567378545b66d62c9a259daa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &715008200
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,6 +705,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 715008201}
+  - component: {fileID: 715008202}
   m_Layer: 0
   m_Name: Tableau (2)
   m_TagString: Untagged
@@ -490,6 +727,32 @@ Transform:
   m_Father: {fileID: 1882160038}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &715008202
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715008200}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -4.3846407, y: 0.14692783}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.39682198, y: 2.2218223}
+  m_EdgeRadius: 0
 --- !u!1 &719651362
 GameObject:
   m_ObjectHideFlags: 0
@@ -639,6 +902,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 857952911}
+  - component: {fileID: 857952912}
   m_Layer: 0
   m_Name: Tableau (9)
   m_TagString: Untagged
@@ -660,6 +924,32 @@ Transform:
   m_Father: {fileID: 1882160038}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &857952912
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857952910}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 2.644309, y: -1.3028531}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.45955753, y: 1.0193014}
+  m_EdgeRadius: 0
 --- !u!1 &1037155785
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,6 +1052,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1277789682}
+  - component: {fileID: 1277789683}
   m_Layer: 0
   m_Name: Tableau (6)
   m_TagString: Untagged
@@ -783,6 +1074,32 @@ Transform:
   m_Father: {fileID: 1882160038}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1277789683
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277789681}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 2.061766, y: -1.2781081}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.34695196, y: 1.0186586}
+  m_EdgeRadius: 0
 --- !u!1 &1332736237
 GameObject:
   m_ObjectHideFlags: 0
@@ -792,6 +1109,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1332736238}
+  - component: {fileID: 1332736239}
   m_Layer: 0
   m_Name: Tableau (8)
   m_TagString: Untagged
@@ -813,6 +1131,32 @@ Transform:
   m_Father: {fileID: 1882160038}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1332736239
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332736237}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 2.6539602, y: 0.80101335}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.40165234, y: 1.2123168}
+  m_EdgeRadius: 0
 --- !u!1 &1649450624
 GameObject:
   m_ObjectHideFlags: 0
@@ -822,6 +1166,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1649450625}
+  - component: {fileID: 1649450626}
   m_Layer: 0
   m_Name: Tableau (4)
   m_TagString: Untagged
@@ -843,6 +1188,32 @@ Transform:
   m_Father: {fileID: 1882160038}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1649450626
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649450624}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -3.7969286, y: 0.17786026}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.42775393, y: 2.1908898}
+  m_EdgeRadius: 0
 --- !u!1 &1731070951
 GameObject:
   m_ObjectHideFlags: 0
@@ -852,6 +1223,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1731070952}
+  - component: {fileID: 1731070953}
   m_Layer: 0
   m_Name: Tableau (11)
   m_TagString: Untagged
@@ -873,6 +1245,32 @@ Transform:
   m_Father: {fileID: 1882160038}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1731070953
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731070951}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 7.5082936, y: -0.9457748}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.34374714, y: 1.115809}
+  m_EdgeRadius: 0
 --- !u!1 &1780351754
 GameObject:
   m_ObjectHideFlags: 0
@@ -882,6 +1280,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1780351755}
+  - component: {fileID: 1780351756}
   m_Layer: 0
   m_Name: Tableau (7)
   m_TagString: Untagged
@@ -903,6 +1302,32 @@ Transform:
   m_Father: {fileID: 1882160038}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1780351756
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780351754}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 2.0804243, y: 0.83030385}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.38426924, y: 1.1679267}
+  m_EdgeRadius: 0
 --- !u!1 &1821581640
 GameObject:
   m_ObjectHideFlags: 0
@@ -1015,7 +1440,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.29042435, y: 0.7645415}
+  m_Size: {x: 0.29042435, y: 0.7645416}
   m_EdgeRadius: 0
 --- !u!1 &1882160037
 GameObject:
