@@ -11,7 +11,7 @@ public class Clicker : MonoBehaviour
     [SerializeField] private List<string>     lOrdersString;
     [SerializeField] private List<GameObject> lOrdersCollider;
 
-    [SerializeField] private float timeToWaitBeforeSceneSwitch = 2;
+    [SerializeField] private float timeToWaitBeforeSceneSwitch = 2f;
 
     private int missionNumber = 0;
 

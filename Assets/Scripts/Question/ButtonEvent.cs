@@ -2,12 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ButtonEvent : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler, IPointerUpHandler
 {
     [SerializeField] private bool isTrue;
+    [SerializeField] private float timeToWaitBeforeSceneSwitch = 2f;
+
     private Color baseColor;
+
 
     private void Start()
     {
@@ -39,7 +43,7 @@ public class ButtonEvent : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         if(isTrue)
         {
             transform.GetComponent<Image>().color = Color.green;
-            StartCoroutine(ReturnColorToNormal(0.8f));
+            StartCoroutine(WaitToChangeScene());
             //DO SOMETHING
         }
         else
@@ -47,6 +51,11 @@ public class ButtonEvent : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
             transform.GetComponent<Image>().color = Color.red;
             StartCoroutine(ReturnColorToNormal(0.8f));
         }
+    }
+    IEnumerator WaitToChangeScene()
+    {
+        yield return new WaitForSeconds(timeToWaitBeforeSceneSwitch);
+        SceneManager.LoadScene(sceneName: "Map");
     }
 
     IEnumerator ReturnColorToNormal(float f)
