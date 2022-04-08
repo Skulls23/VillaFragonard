@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tests/Clicker.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Tests/Questions.unity
+    guid: 57b965fa9cb0f2b4bad1f9452f30fca2
   m_configObjects: {}
