@@ -2,20 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Clicker : MonoBehaviour
+public class MapClicker : MonoBehaviour
 {
-    [SerializeField] private TMP_Text text;
-
-    [SerializeField] private List<string>     lOrdersString;
     [SerializeField] private List<GameObject> lOrdersCollider;
+    [SerializeField] private List<string>     lOrdersNameScene;
 
     private int missionNumber = 0;
-
-    private void Start()
-    {
-        text.text = lOrdersString[missionNumber];
-    }
 
     private void Update()
     {
@@ -29,16 +23,9 @@ public class Clicker : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
             if (hit.collider != null)
                 if (hit.collider.GetType() == typeof(BoxCollider2D) && hit.collider.transform.gameObject.name == lOrdersCollider[missionNumber].name)
-                    missionStepComplete();
+                    for(int i = 0; i < lOrdersNameScene.Count; i++)
+                        if(hit.collider == lOrdersCollider[i])
+                            SceneManager.LoadScene(sceneName: lOrdersNameScene[i]);
         }
-    }
-
-    private void missionStepComplete()
-    {
-        missionNumber++;
-        if (lOrdersCollider.Count > missionNumber)
-            text.text = lOrdersString[missionNumber];
-        else
-            text.text = "niveau fini";
     }
 }
