@@ -4,3 +4,6 @@ ainsi qu'un texte explicatif de l'oeuvre. Aussi, je pourrais avoir besoin d'elem
 des details difficillement visible, des phrases qui decrirais un element d'une scene, ca peut etre clair ou flou
 bref des ptits trucs qui serviront d'enigme.
 J'aurais besoin de savoir quel oeuvre irais mieux avec quel type d'enigme.
+Des boites de dialogues stylisés pour quand fragonard parle
+des boites colorés pour contenir les enigmes comme Question par exemple (des boutons graphiquement
+personalisés serait cool aussi).
