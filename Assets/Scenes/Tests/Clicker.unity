@@ -472,7 +472,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Clique sur la t\xEAte de la dame"
+  m_text: XXXX
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -985,6 +985,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 787451032}
+  lOrdersString:
+  - Trouve le tricorne
+  - Trouve la chaussure qui vole
+  - "Trouve l'\xE8tre apeur\xE9"
+  lOrdersCollider:
+  - {fileID: 651028908}
+  - {fileID: 1159864244}
+  - {fileID: 924285994}
 --- !u!4 &1943827587
 Transform:
   m_ObjectHideFlags: 0
