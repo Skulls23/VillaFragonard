@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Tests/TitleScreen.unity
+    guid: 7fa5538e133a7e345a4e923f33bb60ee
+  - enabled: 1
     path: Assets/Scenes/Tests/Map.unity
     guid: 7b9557c28c99be94b94eb59e77c3f46d
   - enabled: 1
@@ -17,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tests/Puzzle.unity
     guid: bb0ecc40fb3389d41825376a14d3a2c1
+  - enabled: 1
+    path: Assets/Scenes/Tests/Differences.unity
+    guid: 88ec68e294a6e8c4da2b9f114ab4ce9d
   m_configObjects: {}

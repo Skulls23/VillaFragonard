@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Clicker : MonoBehaviour
+public class Redirection : MonoBehaviour
 {
     [SerializeField] private TMP_Text text;
 
