@@ -34,6 +34,7 @@ public class ButtonEvent : MonoBehaviour
     IEnumerator WaitToChangeScene()
     {
         yield return new WaitForSeconds(timeToWaitBeforeSceneSwitch);
+        PlayerPrefs.SetInt("V", 1);
         SceneManager.LoadScene(sceneName: "Map");
     }
 
