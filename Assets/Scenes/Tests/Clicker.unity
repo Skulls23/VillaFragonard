@@ -249,7 +249,7 @@ RectTransform:
   m_Children:
   - {fileID: 787451031}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -604,7 +604,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &924285994
 GameObject:
@@ -967,7 +967,7 @@ MonoBehaviour:
   - {fileID: 1159864244}
   - {fileID: 924285994}
   timeToWaitBeforeSceneSwitch: 2
-  clueName: B
+  clueName: R
 --- !u!4 &1943827587
 Transform:
   m_ObjectHideFlags: 0
@@ -980,5 +980,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
