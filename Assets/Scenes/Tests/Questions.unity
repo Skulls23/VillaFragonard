@@ -398,6 +398,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTrue: 1
+  timeToWaitBeforeSceneSwitch: 2
+  clueName: V
 --- !u!1 &291154196
 GameObject:
   m_ObjectHideFlags: 0
@@ -1013,6 +1015,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTrue: 0
+  timeToWaitBeforeSceneSwitch: 2
+  clueName: 
 --- !u!1 &757006855
 GameObject:
   m_ObjectHideFlags: 0
@@ -1289,7 +1293,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.6041}
+  m_AnchoredPosition: {x: 0, y: -0.604126}
   m_SizeDelta: {x: 9.6653, y: 13.2899}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1067110372
@@ -1477,6 +1481,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTrue: 0
+  timeToWaitBeforeSceneSwitch: 2
+  clueName: 
 --- !u!1 &1492300203
 GameObject:
   m_ObjectHideFlags: 0
@@ -2009,6 +2015,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTrue: 0
+  timeToWaitBeforeSceneSwitch: 2
+  clueName: 
 --- !u!1 &2133242165
 GameObject:
   m_ObjectHideFlags: 0

@@ -1040,6 +1040,67 @@ Skybox:
   m_GameObject: {fileID: 501345003}
   m_Enabled: 1
   m_CustomSkybox: {fileID: 10756, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &509620813
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 509620815}
+  - component: {fileID: 509620814}
+  m_Layer: 0
+  m_Name: Gameplay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &509620814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509620813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7da36ffd3bf77c84398b3cf408902675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pieces:
+  - {fileID: 772709426}
+  - {fileID: 1282307867}
+  - {fileID: 185664986}
+  - {fileID: 1495554586}
+  - {fileID: 671386788}
+  - {fileID: 464209731}
+  - {fileID: 1052207374}
+  - {fileID: 75637094}
+  - {fileID: 1607351926}
+  - {fileID: 219571041}
+  - {fileID: 880268135}
+  - {fileID: 1105300444}
+  - {fileID: 509949896}
+  - {fileID: 2010299256}
+  - {fileID: 2090641171}
+  timeToWaitBeforeSceneSwitch: 3
+  clueName: B
+--- !u!4 &509620815
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509620813}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.9144392, y: 0.81320953, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &509949896
 GameObject:
   m_ObjectHideFlags: 0

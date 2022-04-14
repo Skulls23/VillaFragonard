@@ -967,6 +967,7 @@ MonoBehaviour:
   - {fileID: 1159864244}
   - {fileID: 924285994}
   timeToWaitBeforeSceneSwitch: 2
+  clueName: A
 --- !u!4 &1943827587
 Transform:
   m_ObjectHideFlags: 0

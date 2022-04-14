@@ -9,6 +9,7 @@ public class ButtonEvent : MonoBehaviour
 {
     [SerializeField] private bool isTrue;
     [SerializeField] private float timeToWaitBeforeSceneSwitch = 2f;
+    [SerializeField] private string clueName;
 
     private Color baseColor;
 
@@ -34,7 +35,7 @@ public class ButtonEvent : MonoBehaviour
     IEnumerator WaitToChangeScene()
     {
         yield return new WaitForSeconds(timeToWaitBeforeSceneSwitch);
-        PlayerPrefs.SetInt("V", 1);
+        PlayerPrefs.SetInt(clueName, 1);
         SceneManager.LoadScene(sceneName: "Map");
     }
 

@@ -9,7 +9,6 @@ public class ClickerWithoutCollider : MonoBehaviour
 
     public void Redirect()
     {
-        Debug.Log("here");
         SceneManager.LoadScene(sceneName: redirection);
     }
 }

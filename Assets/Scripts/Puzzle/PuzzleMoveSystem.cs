@@ -6,7 +6,7 @@ public class PuzzleMoveSystem : MonoBehaviour
 {
     private GameObject correctForm;
     private bool moving;
-    private bool finish;
+    private bool isFinished;
 
     private float startPosX;
     private float startPosY;
@@ -56,9 +56,13 @@ public class PuzzleMoveSystem : MonoBehaviour
            Mathf.Abs(this.transform.position.y - correctForm.transform.position.y) <= 0.5f)
         {
             this.transform.position = new Vector3(correctForm.transform.position.x, correctForm.transform.position.y, this.transform.position.z);
-            finish = true;
+            isFinished = true;
         }
         else
-            finish = false;
+            isFinished = false;
+    }
+    public bool GetIsFinished()
+    {
+        return isFinished;
     }
 }

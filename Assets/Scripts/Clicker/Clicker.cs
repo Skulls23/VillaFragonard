@@ -12,6 +12,7 @@ public class Clicker : MonoBehaviour
     [SerializeField] private List<GameObject> lOrdersCollider;
 
     [SerializeField] private float timeToWaitBeforeSceneSwitch = 2f;
+    [SerializeField] private string clueName;
 
     private int missionNumber = 0;
 
@@ -44,7 +45,7 @@ public class Clicker : MonoBehaviour
         else
         {
             text.text = "Niveau fini";
-            PlayerPrefs.SetInt("B", 1);
+            PlayerPrefs.SetInt(clueName, 1);
             StartCoroutine(WaitToChangeScene());
         }
             
