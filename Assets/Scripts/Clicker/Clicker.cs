@@ -44,6 +44,7 @@ public class Clicker : MonoBehaviour
         else
         {
             text.text = "Niveau fini";
+            PlayerPrefs.SetInt("B", 1);
             StartCoroutine(WaitToChangeScene());
         }
             

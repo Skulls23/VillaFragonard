@@ -26,7 +26,6 @@ public class MapClicker : MonoBehaviour
                     for (int i = 0; i < lOrdersNameScene.Count; i++)
                         if (hit.collider == lOrdersCollider[i].GetComponent<Collider2D>())
                             SceneManager.LoadScene(sceneName: lOrdersNameScene[i]);
-                            
         }
     }
 }
