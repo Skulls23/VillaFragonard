@@ -1,28 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DifferencesVerifier : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> lColliders = new List<GameObject>();
-    private int differencesToFind;
-
-    private void Start()
-    {
-        differencesToFind = lColliders.Count;
-    }
+    [SerializeField] private List<GameObject> lImagesParent = new List<GameObject>();
+    [SerializeField] private float timeToWaitBeforeSceneSwitch;
+    [SerializeField] private string clueName;
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonUp(0))
-        {
-            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-            if (hit.collider != null && hit.collider.GetType() == typeof(BoxCollider2D))
-            {
-                hit.transform.parent.gameObject.GetComponent<Image>().enabled = false;
-            }
-        }
+        if (Input.GetMouseButtonUp(0))
+            for (int i = 0; i < lImagesParent.Count && AreAllDiffFound(); i++)
+                    StartCoroutine(WaitToChangeScene());
+    }
+
+    private bool AreAllDiffFound()
+    {
+        
+        bool isCompletelyFinished = true;
+
+        for (int i = 0; i < lImagesParent.Count && isCompletelyFinished; i++)
+            if (lImagesParent[i].transform.GetChild(0).gameObject.activeSelf)
+                isCompletelyFinished = false;
+        
+        return isCompletelyFinished;
+    }
+
+    IEnumerator WaitToChangeScene()
+    {
+        yield return new WaitForSeconds(timeToWaitBeforeSceneSwitch);
+        PlayerPrefs.SetInt(clueName, 1);
+        SceneManager.LoadScene(sceneName: "Map");
     }
 }

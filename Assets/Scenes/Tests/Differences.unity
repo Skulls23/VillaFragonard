@@ -1546,7 +1546,7 @@ GameObject:
   - component: {fileID: 1765644545}
   - component: {fileID: 1765644544}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Paint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1786,8 +1786,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b70a70f1a5f0a8418e05be49c924f63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lColliders:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  lImagesParent:
+  - {fileID: 50068998}
+  - {fileID: 49612400}
+  - {fileID: 1314551150}
+  - {fileID: 463072325}
+  timeToWaitBeforeSceneSwitch: 3
+  clueName: O

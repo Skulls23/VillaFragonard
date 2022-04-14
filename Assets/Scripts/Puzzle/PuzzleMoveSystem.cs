@@ -6,7 +6,7 @@ public class PuzzleMoveSystem : MonoBehaviour
 {
     private GameObject correctForm;
     private bool moving;
-    private bool isFinished;
+    private bool isFinished = false;
 
     private float startPosX;
     private float startPosY;

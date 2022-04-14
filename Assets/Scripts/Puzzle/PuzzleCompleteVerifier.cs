@@ -12,8 +12,7 @@ public class PuzzleCompleteVerifier : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonUp(0))
-            if (AreAllPiecesCorrect())
+        if (Input.GetMouseButtonUp(0) && AreAllPiecesCorrect())
                 StartCoroutine(WaitToChangeScene());
 
     }
