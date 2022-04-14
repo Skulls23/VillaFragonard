@@ -960,14 +960,14 @@ MonoBehaviour:
   text: {fileID: 787451032}
   lOrdersString:
   - Trouve le tricorne
-  - Trouve la chaussure qui vole
-  - "Trouve l'\xE8tre apeur\xE9"
+  - Trouve la chaussure volante
+  - "Trouve l'\xEAtre apeur\xE9"
   lOrdersCollider:
   - {fileID: 651028908}
   - {fileID: 1159864244}
   - {fileID: 924285994}
   timeToWaitBeforeSceneSwitch: 2
-  clueName: A
+  clueName: B
 --- !u!4 &1943827587
 Transform:
   m_ObjectHideFlags: 0

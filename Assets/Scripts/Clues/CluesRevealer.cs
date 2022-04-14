@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class CluesRevealer : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> clues = new List<GameObject>();
+    [SerializeField] private List<GameObject> lClues = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start()
     {
-        for(int i = 0; i < clues.Count; i++)
-            if(PlayerPrefs.HasKey(clues[i].name) && PlayerPrefs.GetInt(clues[i].name) == 1)
-                clues[i].SetActive(true);
+        for(int i = 0; i < lClues.Count; i++)
+            if(PlayerPrefs.HasKey(lClues[i].name) && PlayerPrefs.GetInt(lClues[i].name) == 1)
+                lClues[i].SetActive(true);
             else
-                clues[i].SetActive(false);
+                lClues[i].SetActive(false);
     }
 }

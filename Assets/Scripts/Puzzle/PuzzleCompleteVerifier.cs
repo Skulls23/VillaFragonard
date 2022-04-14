@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PuzzleCompleteVerifier : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> pieces;
+    [SerializeField] private List<GameObject> lPieces;
     [SerializeField] private float timeToWaitBeforeSceneSwitch;
     [SerializeField] private string clueName;
 
@@ -22,8 +22,8 @@ public class PuzzleCompleteVerifier : MonoBehaviour
     {
         bool isCompletelyFinished = true;
 
-        for(int i = 0; i < pieces.Count && isCompletelyFinished; i++)
-            if(!pieces[i].GetComponent<PuzzleMoveSystem>().GetIsFinished())
+        for(int i = 0; i < lPieces.Count && isCompletelyFinished; i++)
+            if(!lPieces[i].GetComponent<PuzzleMoveSystem>().GetIsFinished())
                 isCompletelyFinished = false;
 
         return isCompletelyFinished;
