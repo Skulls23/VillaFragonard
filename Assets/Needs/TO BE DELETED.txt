@@ -9,14 +9,15 @@ Algo = recette
 On fait genre on incorpore des elements dans une pate a gateau.
 Si on est pas deja en train de battre alors on peut incorporer
 On incorpore un blanc d'oeuf, puis on le monte en neige. Une fois fini, c'est la fin du tour de l'oeuf
-on passe au tour du sucre, on le met dans les blancs, et on melange. Une fois fini
-on passe au tour de la vanille, pareil, on incorpore et on melange.
+On passe au tour du sucre, on le met dans les blancs, et on melange. Une fois fini
+On passe au tour de la vanille, pareil, on incorpore et on melange.
 Une fois que tout les tout les aliments sont dans le gateau, donc leur tour sont tous fini.
 On regarde si il nous reste des aliments autre que les blancs d'oeufs.
 Si oui alors on remet un blanc d'oeuf puis les autres elements
 Si non alors on a fini notre recette on peut passer a la recette suivante pour faire la pate par exemple
 
 Faire le parallele avec tik tok et son algo, trouver l'algo tik tok c'est avoir la recette de la reussite sur tik tok. Tout comme pendant longtemps la recette de la reussite de youtube 
-etait les likes et les commentaires. The kairi etait au top de youtube non pas parce qu'il etait aimé mais parce qu'il etait moqué et detesté. Mais il avais compris l'algo donc il restait au top
+etait les likes et les commentaires. The kairi etait au top de youtube non pas parce qu'il etait aimé mais parce qu'il etait moqué et detesté. Mais il avais compris l'algo youtube et l'importance des pouces
+et des commentaires peut importe si ils sont positif ou negatif, donc il restait au top
 
 Montrer le systeme de deplacement de TTU. Quel jour en deplacement par case vous connaissez, si vous en connaissez?
