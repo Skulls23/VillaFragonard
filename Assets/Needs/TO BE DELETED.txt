@@ -1,11 +1,16 @@
 Texte a trou
 jeu avec un palette de couleurs pour les peintures (et eventuellement trouver le bon type de pinceau qu'il a utilisé parmis d'autre achetable a l'heure actuelle)
 
+code wifi
+
+stagiairemip1
+STGmip1$
+
 
 Pres avec les petits
 
 Exemple StopTurn
-Algo = recette
+Algo c'est des maths et c'est = recette
 On fait genre on incorpore des elements dans une pate a gateau.
 Si on est pas deja en train de battre alors on peut incorporer
 On incorpore un blanc d'oeuf, puis on le monte en neige. Une fois fini, c'est la fin du tour de l'oeuf
@@ -21,3 +26,6 @@ etait les likes et les commentaires. The kairi etait au top de youtube non pas p
 et des commentaires peut importe si ils sont positif ou negatif, donc il restait au top
 
 Montrer le systeme de deplacement de TTU. Quel jour en deplacement par case vous connaissez, si vous en connaissez?
+
+Faut parler anglais, on travaille a plusieurs car par exemple je sais pas faire de rocher ou de personnages. On travail aussi avec des gens du monde entier donc il y a une necessité de parler anglais,
+aussi parce que les pays anglophones paient bien mieux

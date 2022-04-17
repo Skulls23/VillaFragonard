@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Tests/TitleScreen.unity
     guid: 7fa5538e133a7e345a4e923f33bb60ee
   - enabled: 1
+    path: Assets/Scenes/Tests/Settings.unity
+    guid: d062adc8ec8c7314a96f212178803b2d
+  - enabled: 1
     path: Assets/Scenes/Tests/Map.unity
     guid: 7b9557c28c99be94b94eb59e77c3f46d
   - enabled: 1
