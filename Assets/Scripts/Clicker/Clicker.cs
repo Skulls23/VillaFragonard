@@ -8,16 +8,20 @@ public class Clicker : MonoBehaviour
 {
     [SerializeField] private TMP_Text text;
 
-    [SerializeField] private List<string>     lOrderStrings;
+    [SerializeField] private List<string> lOrderStrings;
+    [SerializeField] private List<string> lTextPopUp;
     //[SerializeField] private List<GameObject> lOrderButtons;
 
     [SerializeField] private float timeToWaitBeforeSceneSwitch = 2f;
     [SerializeField] private string clueName;
 
+    private GameObject popUp;
     private int missionNumber = 0;
 
     private void Start()
     {
+        popUp = GameObject.Find("PopUp");
+        popUp.SetActive(false);
         text.text = lOrderStrings[missionNumber];
     }
 
@@ -45,6 +49,7 @@ public class Clicker : MonoBehaviour
 
     private void MissionStepComplete()
     {
+        PopUp();
         missionNumber++;
         if (lOrderStrings.Count > missionNumber)
             text.text = lOrderStrings[missionNumber];
@@ -61,5 +66,14 @@ public class Clicker : MonoBehaviour
     {
         yield return new WaitForSeconds(timeToWaitBeforeSceneSwitch);
         SceneManager.LoadScene(sceneName: "Map");
+    }
+
+    private void PopUp()
+    {
+        if(string.Compare(lTextPopUp[missionNumber], "") != 0)
+        {
+            popUp.SetActive(true);
+            popUp.transform.GetChild(0).GetComponent<TMP_Text>().text = lTextPopUp[missionNumber];
+        }
     }
 }
