@@ -6,6 +6,6 @@ public class PopUp : MonoBehaviour
 {
     public void ClosePopUp()
     {
-        this.transform.parent.gameObject.SetActive(false);
+        this.transform.parent.parent.gameObject.SetActive(false);
     }
 }

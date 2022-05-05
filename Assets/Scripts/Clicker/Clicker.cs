@@ -73,7 +73,7 @@ public class Clicker : MonoBehaviour
         if(string.Compare(lTextPopUp[missionNumber], "") != 0)
         {
             popUp.SetActive(true);
-            popUp.transform.GetChild(0).GetComponent<TMP_Text>().text = lTextPopUp[missionNumber];
+            popUp.transform.GetChild(0).GetChild(0).GetComponent<TMP_Text>().text = lTextPopUp[missionNumber];
         }
     }
 }
