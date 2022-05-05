@@ -8,8 +8,8 @@ public class Clicker : MonoBehaviour
 {
     [SerializeField] private TMP_Text text;
 
-    [SerializeField] private List<string>     lOrdersString;
-    [SerializeField] private List<GameObject> lOrdersCollider;
+    [SerializeField] private List<string>     lOrderStrings;
+    //[SerializeField] private List<GameObject> lOrderButtons;
 
     [SerializeField] private float timeToWaitBeforeSceneSwitch = 2f;
     [SerializeField] private string clueName;
@@ -18,30 +18,36 @@ public class Clicker : MonoBehaviour
 
     private void Start()
     {
-        text.text = lOrdersString[missionNumber];
+        text.text = lOrderStrings[missionNumber];
     }
 
     private void Update()
     {
-        MouseListener();
+        //MouseListener();
     }
 
-    private void MouseListener()
+    /*private void MouseListener()
     {
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
             if (hit.collider != null)
-                if (hit.collider.GetType() == typeof(BoxCollider2D) && hit.collider.transform.gameObject.name == lOrdersCollider[missionNumber].name)
-                    missionStepComplete();
+                if (hit.collider.GetType() == typeof(BoxCollider2D) && hit.collider.transform.gameObject.name == lOrderButtons[missionNumber].name)
+                    MissionStepComplete();
         }
+    }*/
+
+    public void ButtonClicked(int numButton)
+    {
+        if (numButton == missionNumber)
+            MissionStepComplete();
     }
 
-    private void missionStepComplete()
+    private void MissionStepComplete()
     {
         missionNumber++;
-        if (lOrdersCollider.Count > missionNumber)
-            text.text = lOrdersString[missionNumber];
+        if (lOrderStrings.Count > missionNumber)
+            text.text = lOrderStrings[missionNumber];
         else
         {
             text.text = "Niveau fini";
