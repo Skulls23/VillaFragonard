@@ -14,7 +14,6 @@ public class PuzzleCompleteVerifier : MonoBehaviour
     {
         if (Input.GetMouseButtonUp(0) && AreAllPiecesCorrect())
                 StartCoroutine(WaitToChangeScene());
-
     }
 
     private bool AreAllPiecesCorrect()
