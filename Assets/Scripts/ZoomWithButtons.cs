@@ -9,7 +9,6 @@ public class ZoomWithButtons : MonoBehaviour
 
     public void ZoomIn()
     {
-        Debug.Log("here");
         canvas.scaleFactor += zoomStep;
     }
 

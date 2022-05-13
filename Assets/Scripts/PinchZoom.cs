@@ -21,8 +21,8 @@ public class PinchZoom : MonoBehaviour
             Vector2 touchOnePrevPos = touchOne.position - touchOne.deltaPosition;
 
             // Find the magnitude of the vector (the distance) between the touches in each frame.
-            float prevTouchDeltaMag = (touchZeroPrevPos - touchOnePrevPos).magnitude;
-            float touchDeltaMag = (touchZero.position - touchOne.position).magnitude;
+            float prevTouchDeltaMag = (touchOnePrevPos).magnitude;
+            float touchDeltaMag = (touchOne.position).magnitude;
 
             // Find the difference in the distances between each frame.
             float deltaMagnitudeDiff = prevTouchDeltaMag - touchDeltaMag;
@@ -34,4 +34,9 @@ public class PinchZoom : MonoBehaviour
             canvas.scaleFactor = Mathf.Max(canvas.scaleFactor, 0.1f);
         }
     }
+
+    //idée
+    //double click = zoomin sur object? Redo = zoomout
+    //click non followed = pop up closable
+    //changer algo pinch = oskour
 }
