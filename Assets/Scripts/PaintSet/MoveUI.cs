@@ -10,9 +10,9 @@ public class MoveUI : MonoBehaviour
 
     public void InitMove()
     {
+        Debug.Log("1");
         Vector3 mousePos;
         mousePos = Input.mousePosition;
-        mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
         startPosX = mousePos.x - this.transform.position.x;
         startPosY = mousePos.y - this.transform.position.y;
@@ -20,9 +20,9 @@ public class MoveUI : MonoBehaviour
 
     public void Move()
     {
+        Debug.Log("2");
         Vector3 mousePos;
         mousePos = Input.mousePosition;
-        mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
         this.gameObject.transform.position = new Vector3(mousePos.x - startPosX, mousePos.y - startPosY, this.gameObject.transform.position.z);
     }
