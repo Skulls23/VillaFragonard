@@ -26,6 +26,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tests/Differences.unity
     guid: 88ec68e294a6e8c4da2b9f114ab4ce9d
+  - enabled: 1
+    path: Assets/Scenes/Final/PaintSetFirstFrame.unity
+    guid: 4f4588d4b6603224380376fef192e64b
+  - enabled: 1
+    path: Assets/Scenes/Final/Lavandieres.unity
+    guid: 4ca467141bb936f49853bb1a02c034c1
+  - enabled: 1
+    path: Assets/Scenes/Final/Marie-Therese.unity
+    guid: eee35c8da89def646983e696d0de2a16
+  - enabled: 1
+    path: Assets/Scenes/Final/PaintSetMinigame.unity
+    guid: a2a09f59023dbdb43bc4ccdfcc10839a
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 45b5b488351df0947b251c8ab4ebb852, type: 2}
     com.unity.localization.settings: {fileID: 11400000, guid: 59c98afb993ce7f41823cf98c0446168, type: 2}
