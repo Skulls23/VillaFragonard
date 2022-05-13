@@ -8,6 +8,7 @@ public class Clicker : MonoBehaviour
 {
     [SerializeField] private TMP_Text text;
 
+    [Header("Lists")]
     [SerializeField] private List<string> lOrderStrings;
     [SerializeField] private List<string> lTextPopUp;
     //[SerializeField] private List<GameObject> lOrderButtons;

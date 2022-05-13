@@ -1,21 +1,31 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.EventSystems;
+using TMPro;
 
 public class DoubleTapZoom : MonoBehaviour
 {
-    int tap;
-    float interval = 0.5f;
-    bool readyForDoubleTap;
-    bool doubleDone = false;
+    [SerializeField] private float MaxDelayToDoubleTap = 0.5f;
+    [SerializeField] private string textPopUp;
+
+    private int tap;
+    private bool readyForDoubleTap;
+    private bool doubleDone = false;
+
+    private Sprite sprite;
+
+    private void Start()
+    {
+        sprite = GetComponent<Image>().sprite;
+    }
+
     public void Clicked()
     {
-        Debug.Log("0");
         tap++;
 
         if (tap == 1)
         {
-            Debug.Log("1");
             //do stuff
             readyForDoubleTap = true;
             StartCoroutine(DoubleTapInterval());
@@ -23,7 +33,7 @@ public class DoubleTapZoom : MonoBehaviour
         else if (tap > 1 && readyForDoubleTap)
         {
             //do stuff
-            Debug.Log("4");
+            RevealPopup();
 
             tap = 0;
             doubleDone = true;
@@ -32,9 +42,7 @@ public class DoubleTapZoom : MonoBehaviour
 
     IEnumerator DoubleTapInterval()
     {
-        Debug.Log("2");
-        yield return new WaitForSeconds(interval);
-        Debug.Log("3");
+        yield return new WaitForSeconds(MaxDelayToDoubleTap);
 
         //if the user didn't clicked a second time in time, we reset the tap number
         if (!doubleDone)
@@ -43,5 +51,10 @@ public class DoubleTapZoom : MonoBehaviour
             tap = 0;
         }
         doubleDone = false;
+    }
+
+    private void RevealPopup()
+    {
+        GameObject.Find("Gameplay").GetComponent<PopupSetup>().RevealPopup(textPopUp, sprite);
     }
 }
