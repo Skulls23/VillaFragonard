@@ -3,11 +3,13 @@ using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.EventSystems;
 using TMPro;
+using System.IO;
 
 public class DoubleTapZoom : MonoBehaviour
 {
     [SerializeField] private float MaxDelayToDoubleTap = 0.5f;
-    [SerializeField] private string textPopUp;
+
+    private string[] aTxt;
 
     private int tap;
     private bool readyForDoubleTap;
@@ -17,7 +19,14 @@ public class DoubleTapZoom : MonoBehaviour
 
     private void Start()
     {
+        string fullText;
         sprite = GetComponent<Image>().sprite;
+        if(sprite.name != "3f051a")
+        {
+            StreamReader reader = new StreamReader("Assets/Resources/PaintSet/Texts/" + sprite.name + ".txt");
+            aTxt = reader.ReadToEnd().Split('-');
+            reader.Close();
+        }
     }
 
     public void Clicked()
@@ -55,6 +64,6 @@ public class DoubleTapZoom : MonoBehaviour
 
     private void RevealPopup()
     {
-        GameObject.Find("Gameplay").GetComponent<PopupSetup>().RevealPopup(textPopUp, sprite);
+        GameObject.Find("Gameplay").GetComponent<PopupSetup>().RevealPopup(aTxt[0], aTxt[1], sprite);
     }
 }

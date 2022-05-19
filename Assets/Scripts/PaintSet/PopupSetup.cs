@@ -15,10 +15,11 @@ public class PopupSetup : MonoBehaviour
         popup.SetActive(false);
     }
 
-    public void RevealPopup(string textPopUp, Sprite sprite)
+    public void RevealPopup(string title, string description, Sprite sprite)
     {
-        popup.transform.GetChild(0).GetChild(0).GetComponent<TMP_Text>().text = textPopUp;
-        popup.transform.GetChild(0).GetChild(1).GetComponent<Image>().sprite = sprite;
+        popup.transform.GetChild(0).GetChild(0).GetChild(0).GetComponent<Image>().sprite = sprite;
+        popup.transform.GetChild(0).GetChild(0).GetChild(1).GetChild(0).GetComponent<TMP_Text>().text = title;
+        popup.transform.GetChild(0).GetChild(0).GetChild(1).GetChild(1).GetComponent<TMP_Text>().text = description;
         popup.SetActive(true);
     }
 }
