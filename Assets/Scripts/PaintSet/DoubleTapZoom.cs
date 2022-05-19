@@ -19,9 +19,8 @@ public class DoubleTapZoom : MonoBehaviour
 
     private void Start()
     {
-        string fullText;
         sprite = GetComponent<Image>().sprite;
-        if(sprite.name != "3f051a")
+        if(sprite.name != "3f051a") //TODO DELETE WHEN ALL IMAGES WILL BE THERE
         {
             StreamReader reader = new StreamReader("Assets/Resources/PaintSet/Texts/" + sprite.name + ".txt");
             aTxt = reader.ReadToEnd().Split('-');
