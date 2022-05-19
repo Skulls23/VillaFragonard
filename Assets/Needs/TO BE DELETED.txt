@@ -8,3 +8,9 @@ STGmip1$
 
 Sur les pots de peintures, 3f0513a et 3f0513b sont les deux memes, juste un angle different
 ca me fait que 16 pots sur 18 que j'ai en photo, les numeros finissant par 514 et 517
+Dans la case 1-1 on a 5 couleurs qui forment un W (je vais les numéroter)
+1 3 5
+ 2 4
+ Il me manque une photo du 2, elle doit etre de face comme les autres
+
+ +nom + histoire

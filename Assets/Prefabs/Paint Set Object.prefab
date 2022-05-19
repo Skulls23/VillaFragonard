@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxDelayToDoubleTap: 0.5
-  textPopUp: Du jaune
+  textPopUp: une couleur
 --- !u!114 &-3689782354349206679
 MonoBehaviour:
   m_ObjectHideFlags: 0
