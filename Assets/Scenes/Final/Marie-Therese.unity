@@ -458,7 +458,7 @@ MonoBehaviour:
     l\u2019influence de Jean-Honor\xE9 Fragonard, son p\xE8re, dans les jeux de clair-obscur,
     notamment avec la p\xE9nombre dans laquelle est plac\xE9e la foule pr\xE9sentant
     des tons allant du noir brun au rouge. "
-  clueName: V
+  clueName: F
 --- !u!1 &291154196
 GameObject:
   m_ObjectHideFlags: 0
@@ -1243,8 +1243,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.00036621094}
-  m_SizeDelta: {x: 1120, y: 544.87}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1002739769
 GameObject:
@@ -1753,8 +1753,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -0.000061035156, y: 0}
-  m_SizeDelta: {x: 540.25, y: 930}
+  m_AnchoredPosition: {x: -0.000061035156, y: -1.487}
+  m_SizeDelta: {x: 540.25, y: 883.3}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1386474771
 MonoBehaviour:
@@ -2520,8 +2520,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1600.7, y: 930}
+  m_AnchoredPosition: {x: 0, y: -0.22044}
+  m_SizeDelta: {x: 1600.7, y: 886.27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2146682702
 MonoBehaviour:

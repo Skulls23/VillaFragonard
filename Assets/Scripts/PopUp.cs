@@ -7,7 +7,7 @@ public class PopUp : MonoBehaviour
 {
     public void ClosePopUp()
     {
-        GameObject.FindGameObjectWithTag("Popup").SetActive(false);
+        GameObject.FindGameObjectsWithTag("Popup")[0].SetActive(false);
     }
     public void ChangeSceneToMap()
     {

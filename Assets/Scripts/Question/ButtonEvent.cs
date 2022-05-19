@@ -21,7 +21,7 @@ public class ButtonEvent : MonoBehaviour
         //do it only once, because pop up will disappear for others buttons
         if(isTrue)
         {
-            popUp = GameObject.Find("Canvas/PopUp");
+            popUp = GameObject.FindGameObjectWithTag("Popup");
             popUp.SetActive(false);
         }
         baseColor = transform.GetComponent<Image>().color;
