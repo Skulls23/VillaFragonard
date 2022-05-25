@@ -954,6 +954,7 @@ GameObject:
   - component: {fileID: 263168836}
   - component: {fileID: 263168835}
   - component: {fileID: 263168834}
+  - component: {fileID: 263168837}
   m_Layer: 5
   m_Name: IncorrectGrid
   m_TagString: Untagged
@@ -1062,6 +1063,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 263168832}
   m_CullTransparentMesh: 1
+--- !u!114 &263168837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263168832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ec500b08aad51479114522d6e99237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rows: 4
+  cols: 5
+  inputFieldPrefab: {fileID: 0}
 --- !u!1001 &302386852
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4600,6 +4616,7 @@ GameObject:
   - component: {fileID: 1944698116}
   - component: {fileID: 1944698115}
   - component: {fileID: 1944698114}
+  - component: {fileID: 1944698117}
   m_Layer: 5
   m_Name: CorrectGrid
   m_TagString: Untagged
@@ -4708,6 +4725,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1944698112}
   m_CullTransparentMesh: 1
+--- !u!114 &1944698117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944698112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ec500b08aad51479114522d6e99237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rows: 4
+  cols: 5
+  inputFieldPrefab: {fileID: 0}
 --- !u!1001 &2011859947
 PrefabInstance:
   m_ObjectHideFlags: 0
