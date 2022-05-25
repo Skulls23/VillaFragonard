@@ -1228,7 +1228,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1215371723}
         m_TargetAssemblyTypeName: PopUp, Assembly-CSharp
-        m_MethodName: ChangeSceneToMap
+        m_MethodName: ClosePopUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2111,7 +2111,7 @@ MonoBehaviour:
   - Trouve l'arbre au premier plan
   - Trouve la charette
   lTextPopUp:
-  - 
+  - 1
   - 
   - 
   - "Cet arbre peut \xEAtre mis en parall\xE8le avec l\u2019\xE9tude de feuillage
