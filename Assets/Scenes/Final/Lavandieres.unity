@@ -2118,7 +2118,6 @@ MonoBehaviour:
     r\xE9alis\xE9e par J-H Fragonard. Jean-Honor\xE9 Fragonard aime capter l\u2019instant.
     Par son dessin vif, il saisit avec justesse l\u2019atmosph\xE8re d\u2019une sc\xE8ne. "
   - 2
-  timeToWaitBeforeSceneSwitch: 2
   clueName: R
 --- !u!4 &1943827587
 Transform:
