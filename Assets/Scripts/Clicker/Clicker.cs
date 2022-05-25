@@ -23,22 +23,6 @@ public class Clicker : MonoBehaviour
         text.text = lOrderStrings[missionNumber];
     }
 
-    private void Update()
-    {
-        //MouseListener();
-    }
-
-    /*private void MouseListener()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-            if (hit.collider != null)
-                if (hit.collider.GetType() == typeof(BoxCollider2D) && hit.collider.transform.gameObject.name == lOrderButtons[missionNumber].name)
-                    MissionStepComplete();
-        }
-    }*/
-
     public void ButtonClicked(int numButton)
     {
         if (numButton == missionNumber)

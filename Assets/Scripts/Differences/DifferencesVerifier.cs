@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -7,20 +8,31 @@ using UnityEngine.UI;
 public class DifferencesVerifier : MonoBehaviour
 {
     [SerializeField] private List<GameObject> lImagesParent = new List<GameObject>();
-    [SerializeField] private float timeToWaitBeforeSceneSwitch;
     [SerializeField] private string clueName;
+    [SerializeField] private string popUpText;
+
+    private GameObject popUp;
+
+    private void Start()
+    {
+        popUp = GameObject.FindWithTag("Popup");
+        popUp.SetActive(false);
+    }
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonUp(0))
             for (int i = 0; i < lImagesParent.Count && AreAllDiffFound(); i++)
-                    StartCoroutine(WaitToChangeScene());
+            {
+                PlayerPrefs.SetInt(clueName, 1);
+                popUp.transform.GetChild(0).GetChild(0).GetComponent<TMP_Text>().text = popUpText;
+                popUp.SetActive(true);
+            }
     }
 
     private bool AreAllDiffFound()
     {
-        
         bool isCompletelyFinished = true;
 
         for (int i = 0; i < lImagesParent.Count && isCompletelyFinished; i++)
@@ -28,12 +40,5 @@ public class DifferencesVerifier : MonoBehaviour
                 isCompletelyFinished = false;
         
         return isCompletelyFinished;
-    }
-
-    IEnumerator WaitToChangeScene()
-    {
-        yield return new WaitForSeconds(timeToWaitBeforeSceneSwitch);
-        PlayerPrefs.SetInt(clueName, 1);
-        SceneManager.LoadScene(sceneName: "Map");
     }
 }

@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Final/Lavandieres.unity
     guid: 4ca467141bb936f49853bb1a02c034c1
   - enabled: 1
-    path: Assets/Scenes/Final/Marie-Therese.unity
+    path: Assets/Scenes/Final/Atelier.unity
     guid: eee35c8da89def646983e696d0de2a16
   - enabled: 1
     path: Assets/Scenes/Final/PaintSetMinigame.unity
