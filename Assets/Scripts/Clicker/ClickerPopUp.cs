@@ -6,14 +6,14 @@ using UnityEngine.SceneManagement;
 public class ClickerPopUp : MonoBehaviour
 {
     private int number = -1;
-    [SerializeField] private int changeSceneNumber;
+    private int changeSceneNumber;
 
     private void Start()
     {
-        //TODO faire un lien et chercher directement via la taille de la liste Gameplay
+        changeSceneNumber = GameObject.Find("Gameplay").GetComponent<Clicker>().GetNumberOfElementToClick();
     }
 
-    public void EffectDependsOnNumber(int number, int changeSceneNumber)
+    public void EffectDependsOnNumber()
     {
         if (number == changeSceneNumber)
             SceneManager.LoadScene(sceneName: "Map");

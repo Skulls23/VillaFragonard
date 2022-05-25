@@ -48,6 +48,11 @@ public class Clicker : MonoBehaviour
             MissionStepComplete();
     }
 
+    public int GetNumberOfElementToClick()
+    {
+        return lOrderStrings.Count;
+    }
+
     private void MissionStepComplete()
     {
         PopUp();
