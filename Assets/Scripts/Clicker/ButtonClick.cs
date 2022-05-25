@@ -6,15 +6,17 @@ public class ButtonClick : MonoBehaviour
 {
     [SerializeField] int numButton;
 
-    GameObject clickerScriptContainer;
+    private Clicker      clicker;
+    private ClickerPopUp clickerPopUp;
     private void Start()
     {
-        clickerScriptContainer = GameObject.Find("Gameplay");
+        clicker      = GameObject.Find("Gameplay").GetComponent<Clicker>();
+        clickerPopUp = GameObject.FindWithTag("Popup").transform.GetChild(0).GetChild(2).GetComponent<ClickerPopUp>();
     }
 
     public void Clicked()
     {
-        if (clickerScriptContainer != null)
-            clickerScriptContainer.GetComponent<Clicker>().ButtonClicked(numButton);
+        clickerPopUp.SetClickerNumber(numButton);
+        clicker.GetComponent<Clicker>().ButtonClicked(numButton);
     }
 }

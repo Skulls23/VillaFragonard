@@ -1179,7 +1179,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1215371721}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22a8112706b2ac14fa280407ebd0a013, type: 3}
+  m_Script: {fileID: 11500000, guid: f8466ab4918102540b475a221b5f402e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1215371724
@@ -1227,8 +1227,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1215371723}
-        m_TargetAssemblyTypeName: PopUp, Assembly-CSharp
-        m_MethodName: ClosePopUp
+        m_TargetAssemblyTypeName: ClickerPopUp, Assembly-CSharp
+        m_MethodName: EffectDependsOnNumber
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2117,7 +2117,7 @@ MonoBehaviour:
   - "Cet arbre peut \xEAtre mis en parall\xE8le avec l\u2019\xE9tude de feuillage
     r\xE9alis\xE9e par J-H Fragonard. Jean-Honor\xE9 Fragonard aime capter l\u2019instant.
     Par son dessin vif, il saisit avec justesse l\u2019atmosph\xE8re d\u2019une sc\xE8ne. "
-  - 
+  - 2
   timeToWaitBeforeSceneSwitch: 2
   clueName: R
 --- !u!4 &1943827587

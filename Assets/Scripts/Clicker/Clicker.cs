@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Clicker : MonoBehaviour
 {
@@ -11,9 +10,7 @@ public class Clicker : MonoBehaviour
     [Header("Lists")]
     [SerializeField] private List<string> lOrderStrings;
     [SerializeField] private List<string> lTextPopUp;
-    //[SerializeField] private List<GameObject> lOrderButtons;
 
-    [SerializeField] private float timeToWaitBeforeSceneSwitch = 2f;
     [SerializeField] private string clueName;
 
     private GameObject popUp;
@@ -63,15 +60,8 @@ public class Clicker : MonoBehaviour
         {
             text.text = "Niveau fini";
             PlayerPrefs.SetInt(clueName, 1);
-            StartCoroutine(WaitToChangeScene());
         }
             
-    }
-
-    IEnumerator WaitToChangeScene()
-    {
-        yield return new WaitForSeconds(timeToWaitBeforeSceneSwitch);
-        SceneManager.LoadScene(sceneName: "Map");
     }
 
     private void PopUp()
