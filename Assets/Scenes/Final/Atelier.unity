@@ -313,17 +313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTrue: 1
-  textPopUp: "La femme la plus int\xE9ressante de l'univers selon Jules Michelet
-    : l\u2019imp\xE9ratrice Marie-Th\xE9r\xE8se d\u2019Autriche. Celle-ci a r\xE9gn\xE9
-    durant quarante ans sur l\u2019empire d\u2019Autriche-Hongrie (1740 \xE0 1780).
-    Elle pr\xE9sente ici son fils, le futur Joseph II, aux Hongrois. Le saviez-vous
-    ? Ce tableau rappelle l\u2019\u0153uvre de David qui \xE9tait le maitre d\u2019Alexandre-Evariste
-    Fragonard. Regardez les attitudes, les traits r\xE9alistes des visages des personnages.
-    Observez leurs attributs et leurs costumes repr\xE9sent\xE9s avec un grand soin
-    des d\xE9tails et un dessin rigoureux et pr\xE9cis. On retrouve \xE9galement
-    l\u2019influence de Jean-Honor\xE9 Fragonard, son p\xE8re, dans les jeux de clair-obscur,
-    notamment avec la p\xE9nombre dans laquelle est plac\xE9e la foule pr\xE9sentant
-    des tons allant du noir brun au rouge. "
+  textPopUp: Des choses
   clueName: F
 --- !u!1 &291154196
 GameObject:
@@ -382,7 +372,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Que font les hongrois ?
+  m_text: Que fait Marguerite Gerard ?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -592,7 +582,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ils tentent d'assassiner l'imp\xE9ratrice"
+  m_text: Elle discute avec sa soeur
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -726,7 +716,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ils acclament le futur empereur
+  m_text: "Elle s'entra\xEEne \xE0 peindre"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1075,7 +1065,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ils lachent les armes, signe d'abandon
+  m_text: Elle prend note de ce que dit sa professeur
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1833,7 +1823,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ils se r\xE9voltent"
+  m_text: Elle recharge sa tablette graphique
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
