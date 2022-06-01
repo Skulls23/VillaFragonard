@@ -3,13 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// This is a better GridLayout system.
+/// It allows everything inside to scale perfectly
+/// </summary>
 public class BetterGridLayout : MonoBehaviour
 {
     public int rows;
     public int cols;
-    public GameObject inputFieldPrefab;
+    private GameObject[] lPieces;
     void Start()
     {
+        lPieces = GameObject.FindGameObjectsWithTag("Piece");
+
         RectTransform parentRect = gameObject.GetComponent<RectTransform>();
         GridLayoutGroup gridLayout = gameObject.GetComponent<GridLayoutGroup>();
         gridLayout.cellSize = new Vector2(parentRect.rect.width / cols, parentRect.rect.height / rows);
@@ -17,8 +23,7 @@ public class BetterGridLayout : MonoBehaviour
         {
             for (int j = 0; j < cols; j++)
             {
-                GameObject inputField = Instantiate(inputFieldPrefab);
-                inputField.transform.SetParent(gameObject.transform, false);
+                lPieces[i+j].transform.SetParent(gameObject.transform, false);
             }
         }
     }
