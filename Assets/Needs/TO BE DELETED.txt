@@ -19,10 +19,10 @@ Dans la case 1-1 on a 5 couleurs qui forment un W (je vais les numéroter)
  FRANC-MACON
  7 MINI JEUX on debloque un set de lettre, genre les 2 A, N, C.
 
- F
- R
- A [2]
- N [2]
+ F      Atelier
+ R      Lavandieres
+ A [2]  Paint Set
+ N [2]  Dejeuner Du Chat
  C [2]
  M
- O
+ O      Marie-Thérèse
