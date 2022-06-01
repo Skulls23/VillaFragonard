@@ -20,12 +20,12 @@ public class BetterGridLayout : MonoBehaviour
         RectTransform parentRect = gameObject.GetComponent<RectTransform>();
         GridLayoutGroup gridLayout = gameObject.GetComponent<GridLayoutGroup>();
         gridLayout.cellSize = new Vector2(parentRect.rect.width / cols, parentRect.rect.height / rows);
-        for (int i = 0; i < rows; i++)  
+        /*for (int i = 0; i < rows; i++)  
         {
             for (int j = 0; j < cols; j++)
             {
                 lPieces[i+j].transform.SetParent(gameObject.transform, false);
             }
-        }
+        }*/
     }
 }
