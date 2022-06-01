@@ -23,7 +23,7 @@ public class PlacementVerifier : MonoBehaviour
         bool isCompletelyFinished = true;
 
         for (int i = 0; i < lPieces.Length && isCompletelyFinished; i++)
-            if (!lPieces[i].GetComponent<MoveTile>().GetIsCorrectlyPlaced())
+            if (!lPieces[i].GetComponent<MovePiece>().GetIsCorrectlyPlaced())
                 isCompletelyFinished = false;
 
         if (isCompletelyFinished)

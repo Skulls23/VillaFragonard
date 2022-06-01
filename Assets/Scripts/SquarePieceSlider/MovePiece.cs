@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MoveTile : MonoBehaviour
+public class MovePiece : MonoBehaviour
 {
     private static int MAX_TILE_NUMBER = 20;
 
     private int    positionInHierarchy;
     private bool   isCorrectlyPlaced = false;
-    private string imageName;
 
     private float  startPosX;
     private float  startPosY;
@@ -18,7 +17,7 @@ public class MoveTile : MonoBehaviour
     void Start()
     {
         positionInHierarchy = transform.GetSiblingIndex();
-        imageName = GetComponent<Image>().name;
+        Moved(); //In case the Piece is already on the good spot
     }
 
     public void InitMove()
@@ -108,7 +107,7 @@ public class MoveTile : MonoBehaviour
         }
 
         Moved();
-        movedTile.GetComponent<MoveTile>().Moved();
+        movedTile.GetComponent<MovePiece>().Moved();
     }
 
     public void Moved()
