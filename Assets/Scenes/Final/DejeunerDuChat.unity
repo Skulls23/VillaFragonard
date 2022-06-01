@@ -241,8 +241,12 @@ PrefabInstance:
       value: Piece
       objectReference: {fileID: 0}
     - target: {fileID: 3898341120391499624, guid: 4c400fd7416f34a4189cf18553b560f7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: af44c2285c0e2104e97ef300ecedcc06, type: 3}
+    - target: {fileID: 3898341120391499624, guid: 4c400fd7416f34a4189cf18553b560f7, type: 3}
       propertyPath: m_Color.a
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3898341120391499625, guid: 4c400fd7416f34a4189cf18553b560f7, type: 3}
       propertyPath: m_Pivot.x
