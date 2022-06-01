@@ -18,3 +18,11 @@ Dans la case 1-1 on a 5 couleurs qui forment un W (je vais les numéroter)
  INDICE
  FRANC-MACON
  7 MINI JEUX on debloque un set de lettre, genre les 2 A, N, C.
+
+ F
+ R
+ A [2]
+ N [2]
+ C [2]
+ M
+ O

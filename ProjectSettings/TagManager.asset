@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Popup
   - PuzzlePiece
+  - Piece
   layers:
   - Default
   - TransparentFX

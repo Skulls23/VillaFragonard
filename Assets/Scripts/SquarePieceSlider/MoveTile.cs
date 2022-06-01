@@ -7,14 +7,17 @@ public class MoveTile : MonoBehaviour
 {
     private static int MAX_TILE_NUMBER = 20;
 
-    private bool   correctPlace = false;
+    private int    positionInHierarchy;
+    private bool   isCorrectlyPlaced = false;
     private string imageName;
+
     private float  startPosX;
     private float  startPosY;
 
     // Start is called before the first frame update
     void Start()
     {
+        positionInHierarchy = transform.GetSiblingIndex();
         imageName = GetComponent<Image>().name;
     }
 
@@ -54,46 +57,70 @@ public class MoveTile : MonoBehaviour
         else
             print("static");
 
-        //TODO Possible bug when something = 0
+        //TODO Possible bug when a axis is = 0
     }
 
-    public void Placed()
+    public bool GetIsCorrectlyPlaced()
     {
-        if (GameObject.Find("C" + gameObject.name).transform == transform)
-        {
-            correctPlace = true;
-            print("good");
-        }
+        return isCorrectlyPlaced;
     }
 
     private void MoveInHierarchy(string direction)
     {
-        int positionInHierarchy = transform.GetSiblingIndex();
-        print((positionInHierarchy % 5));
+        positionInHierarchy = transform.GetSiblingIndex();
+        Transform movedTile = null; //We will move a Piece. We need to verify it position
 
         if (direction == "up")
+        {
             if (positionInHierarchy > 4) //Can't move up the first 5 first childs 
             {
-                transform.parent.GetChild(positionInHierarchy - 5).SetSiblingIndex(positionInHierarchy);
+                movedTile = transform.parent.GetChild(positionInHierarchy - 5);
+                movedTile.SetSiblingIndex(positionInHierarchy);
                 transform.SetSiblingIndex(positionInHierarchy - 5);
             }
+        }
         else if (direction == "right")
+        {
             if (positionInHierarchy % 5 != 4) //The pieces on right can't move right
             {
-                transform.parent.GetChild(positionInHierarchy + 1).SetSiblingIndex(positionInHierarchy);
+                movedTile = transform.parent.GetChild(positionInHierarchy + 1);
+                movedTile.SetSiblingIndex(positionInHierarchy);
                 transform.SetSiblingIndex(positionInHierarchy + 1);
             }
+        }
         else if (direction == "down")
+        {
             if (positionInHierarchy + 5 <= MAX_TILE_NUMBER - 1) //Verify if the future position is in the limit
             {
-                transform.parent.GetChild(positionInHierarchy + 5).SetSiblingIndex(positionInHierarchy);
+                movedTile = transform.parent.GetChild(positionInHierarchy + 5);
+                movedTile.SetSiblingIndex(positionInHierarchy);
                 transform.SetSiblingIndex(positionInHierarchy + 5);
             }
+        }
         else if (direction == "left")
+        {
             if (positionInHierarchy % 5 != 0) //The pieces on left can't move left
             {
-                transform.parent.GetChild(positionInHierarchy - 1).SetSiblingIndex(positionInHierarchy);
+                movedTile = transform.parent.GetChild(positionInHierarchy - 1);
+                movedTile.SetSiblingIndex(positionInHierarchy);
                 transform.SetSiblingIndex(positionInHierarchy - 1);
             }
+        }
+
+        Moved();
+        movedTile.GetComponent<MoveTile>().Moved();
+    }
+
+    public void Moved()
+    {
+        positionInHierarchy = transform.GetSiblingIndex();
+
+        if (GameObject.Find("C" + gameObject.name).transform.GetSiblingIndex() == positionInHierarchy)
+        {
+            isCorrectlyPlaced = true;
+            GameObject.Find("Gameplay").GetComponent<PlacementVerifier>().AreAllSliderPiecesCorrect();
+        }
+        else
+            isCorrectlyPlaced = false;
     }
 }
