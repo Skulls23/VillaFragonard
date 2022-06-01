@@ -4,8 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 
 /// <summary>
-/// This is a better GridLayout system.
-/// It allows everything inside to scale perfectly
+/// This is a better GridLayout system.<br/>
+/// It allows everything inside to scale perfectly. <br/>
+/// Based on the comment of ankad on Unity Forum : <see href="link">https://answers.unity.com/questions/989697/grid-layout-group-scalable-content.html</see>
 /// </summary>
 public class BetterGridLayout : MonoBehaviour
 {
@@ -19,7 +20,7 @@ public class BetterGridLayout : MonoBehaviour
         RectTransform parentRect = gameObject.GetComponent<RectTransform>();
         GridLayoutGroup gridLayout = gameObject.GetComponent<GridLayoutGroup>();
         gridLayout.cellSize = new Vector2(parentRect.rect.width / cols, parentRect.rect.height / rows);
-        for (int i = 0; i < rows; i++)
+        for (int i = 0; i < rows; i++)  
         {
             for (int j = 0; j < cols; j++)
             {
