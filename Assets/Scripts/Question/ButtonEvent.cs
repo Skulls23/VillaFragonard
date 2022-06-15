@@ -47,6 +47,7 @@ public class ButtonEvent : MonoBehaviour
         yield return new WaitForSeconds(f);
         transform.GetComponent<Image>().color = baseColor;
     }
+
     private void PopUp()
     {
             popUp.SetActive(true);

@@ -70,9 +70,10 @@ public class MoveUI : MonoBehaviour
     /// </summary>
     public void StopMoveVisit()
     {
+        ChangeText ct = GameObject.Find("Text").GetComponent<ChangeText>();
+
         Vector3 mousePos;
         mousePos = Input.mousePosition;
-
         
         GameObject[] aSide = GameObject.FindGameObjectsWithTag("Finish");
         float[] aAbsoluteValues = new float[aSide.Length];
@@ -85,18 +86,26 @@ public class MoveUI : MonoBehaviour
             if (aAbsoluteValues[i] == Mathf.Min(aAbsoluteValues))
                 sideNumber = i;
 
+        print(ct.GetActualDirection());
+
         switch (aSide[sideNumber].name)
         {
             case "Left":
-                print("Gauche");
+                if (ct.GetActualDirection().Equals("Left"))
+                    ct.CorrectAnswer();
                 break;
             case "Center":
-                print("Centre");
+                if (ct.GetActualDirection().Equals("Center"))
+                    ct.CorrectAnswer();
                 break;
             case "Right":
-                print("Droite");
+                if (ct.GetActualDirection().Equals("Right"))
+                    ct.CorrectAnswer();
                 break;
         }
+
+        if (ct.GetActualDirection().Equals("END"))
+            print("POPUP here");
     }
 
     public bool GetIsFinished()
