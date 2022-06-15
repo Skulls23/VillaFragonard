@@ -9,8 +9,8 @@ using UnityEngine.UI;
 public class MoveUI : MonoBehaviour
 {
     [SerializeField] private float distanceMaxToBeFinished = 80f;
+    public bool isFinished;
     private GameObject destination;
-    public  bool       isFinished;
 
     private void Start()
     {
@@ -93,19 +93,27 @@ public class MoveUI : MonoBehaviour
             case "Left":
                 if (ct.GetActualDirection().Equals("Left"))
                     ct.CorrectAnswer();
+                ResetPosition();
                 break;
             case "Center":
                 if (ct.GetActualDirection().Equals("Center"))
                     ct.CorrectAnswer();
+                ResetPosition();
                 break;
             case "Right":
                 if (ct.GetActualDirection().Equals("Right"))
                     ct.CorrectAnswer();
+                ResetPosition();
                 break;
         }
 
         if (ct.GetActualDirection().Equals("END"))
             print("POPUP here");
+    }
+
+    private void ResetPosition()
+    {
+        gameObject.transform.localPosition = new Vector3(0, 0, gameObject.transform.position.z);
     }
 
     public bool GetIsFinished()

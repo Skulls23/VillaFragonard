@@ -33,3 +33,15 @@ Dans la case 1-1 on a 5 couleurs qui forment un W (je vais les numéroter)
  VRAI FAUX
  DIFFERENCES
  TROUVER
+
+
+ ppaint set
+
+ faire plusieurs pages de 6-8 fioles, une fois les 6-8 fait, on passe a la page suivante (plutot 8 mais a voir)
+ le derniere page serais le pinceau, le crayon et l'estompe
+
+ pop up apres l'aimantage, lock le move, possi de zoomer quand meme
+
+
+ Visite, mettre photo et nom, sous format medaillon (oval)
+ fils au millieu, JH a droite
