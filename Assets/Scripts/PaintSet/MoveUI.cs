@@ -16,13 +16,21 @@ public class MoveUI : MonoBehaviour
         destination = GameObject.Find(GetComponent<Image>().sprite.name);
     }
 
-    public void InitMove()
+    public void InitMovePaintSet()
     {
         Vector3 mousePos;
         mousePos = Input.mousePosition;
 
-        startPosX = mousePos.x - this.transform.position.x;
-        startPosY = mousePos.y - this.transform.position.y;
+        startPosX = mousePos.x - transform.position.x;
+        startPosY = mousePos.y - transform.position.y;
+    }
+
+    public void InitMoveVisit()
+    {
+        Vector3 mousePos;
+        mousePos = Input.mousePosition;
+
+        gameObject.transform.position = new Vector3( mousePos.x, mousePos.y, gameObject.transform.position.z);
     }
 
     public void Move()
@@ -30,15 +38,15 @@ public class MoveUI : MonoBehaviour
         Vector3 mousePos;
         mousePos = Input.mousePosition;
 
-        this.gameObject.transform.position = new Vector3(mousePos.x - startPosX, mousePos.y - startPosY, this.gameObject.transform.position.z);
+        gameObject.transform.position = new Vector3(mousePos.x, mousePos.y, gameObject.transform.position.z);
     }
 
     public void StopMovePaintSet()
     {
-        if (Mathf.Abs(this.transform.position.x - destination.transform.position.x) <= distanceMaxToBeFinished &&
-            Mathf.Abs(this.transform.position.y - destination.transform.position.y) <= distanceMaxToBeFinished)
+        if (Mathf.Abs(transform.position.x - destination.transform.position.x) <= distanceMaxToBeFinished &&
+            Mathf.Abs(transform.position.y - destination.transform.position.y) <= distanceMaxToBeFinished)
         {
-            this.transform.position = new Vector3(destination.transform.position.x, destination.transform.position.y, this.transform.position.z);
+            transform.position = new Vector3(destination.transform.position.x, destination.transform.position.y, transform.position.z);
             isFinished = true;
             GameObject.Find("Gameplay").GetComponent<WinCondition>().Verify();
         }
@@ -46,6 +54,13 @@ public class MoveUI : MonoBehaviour
             isFinished = false;
     }
 
+    /// <summary>
+    /// The purpose of that method is to know on which side the text in Visit's Scene as been move, with that we know what is the answer of the user
+    /// |A.x| - |B.x| = C.x
+    /// |A.y| - |B.y| = C.y
+    /// |C.x| + |C.y| = D
+    /// The lowest value of D indicate the side the mouse is the closest
+    /// </summary>
     public void StopMoveVisit()
     {
         Vector3 mousePos;
@@ -55,23 +70,14 @@ public class MoveUI : MonoBehaviour
         GameObject[] aSide = GameObject.FindGameObjectsWithTag("Finish");
         float[] aAbsoluteValues = new float[aSide.Length];
         for (int i = 0; i < aSide.Length; i++)
-        {
-            print(i);
-            print(Mathf.Abs(mousePos.x) + " - " + Mathf.Abs(aSide[i].transform.position.x) + " = " + (Mathf.Abs(mousePos.x) - Mathf.Abs(aSide[i].transform.position.x)));
-            print(Mathf.Abs(mousePos.y) + " - " + Mathf.Abs(aSide[i].transform.position.y) + " = " + (Mathf.Abs(mousePos.y) - Mathf.Abs(aSide[i].transform.position.y)));
-            print(Mathf.Abs(mousePos.x) - Mathf.Abs(aSide[i].transform.position.x) +
-                  Mathf.Abs(mousePos.y) - Mathf.Abs(aSide[i].transform.position.y));
             aAbsoluteValues[i] = Mathf.Abs(Mathf.Abs(mousePos.x) - Mathf.Abs(aSide[i].transform.position.x)) +
                                  Mathf.Abs(Mathf.Abs(mousePos.y) - Mathf.Abs(aSide[i].transform.position.y));
-        }
 
         int sideNumber = 9;
         for(int i = 0; i < aAbsoluteValues.Length; i++)
-        {
             if (aAbsoluteValues[i] == Mathf.Min(aAbsoluteValues))
                 sideNumber = i;
-        }
-        print(sideNumber);
+
         switch (aSide[sideNumber].name)
         {
             case "Left":
