@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+/// <summary>
+/// Verify the placement of a <c>Piece</c>.
+/// </summary>
 public class PlacementVerifier : MonoBehaviour
 {
     [SerializeField] private string clueName;

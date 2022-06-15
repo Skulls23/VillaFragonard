@@ -5,6 +5,9 @@ using UnityEngine.EventSystems;
 using TMPro;
 using System.IO;
 
+/// <summary>
+/// This script allow to activate the pop up to get info
+/// </summary>
 public class DoubleTapZoom : MonoBehaviour
 {
     [SerializeField] private float MaxDelayToDoubleTap = 0.5f;

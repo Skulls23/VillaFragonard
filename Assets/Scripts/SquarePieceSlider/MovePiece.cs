@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// This script allow to slide a <c>Piece</c>
+/// </summary>
 public class MovePiece : MonoBehaviour
 {
     private static int MAX_TILE_NUMBER = 20;
@@ -29,6 +32,9 @@ public class MovePiece : MonoBehaviour
         startPosY = mousePos.y;
     }
 
+    /// <summary>
+    /// This happens at the end of a move, it defines which direction the players has moved the <c>Piece</c>. <br/>
+    /// </summary>
     public void EndMove()
     {
         Vector3 mousePos;
@@ -59,11 +65,19 @@ public class MovePiece : MonoBehaviour
         //TODO Possible bug when a axis is = 0
     }
 
+    /// <summary>
+    /// Define if the <c>Piece</c> is correctly placed.
+    /// </summary>
+    /// <returns><c>isCorrectlyPlaced</c></returns>
     public bool GetIsCorrectlyPlaced()
     {
         return isCorrectlyPlaced;
     }
 
+    /// <summary>
+    /// Move the <c>Piece</c> on the board depending on the direction
+    /// </summary>
+    /// <param name="direction">The direction the <c>Piece</c> has to move</param>
     private void MoveInHierarchy(string direction)
     {
         positionInHierarchy = transform.GetSiblingIndex();
@@ -110,6 +124,10 @@ public class MovePiece : MonoBehaviour
         movedTile.GetComponent<MovePiece>().Moved();
     }
 
+    /// <summary>
+    /// Happens after the move. <br/>
+    /// If the position in hierachy of the moveable <c>Piece</c> is the same as the static <c>Piece</c>, it means the position is correct.
+    /// </summary>
     public void Moved()
     {
         positionInHierarchy = transform.GetSiblingIndex();
