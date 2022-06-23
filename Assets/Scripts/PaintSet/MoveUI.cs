@@ -25,7 +25,7 @@ public class MoveUI : MonoBehaviour
         Vector3 mousePos;
         mousePos = Input.mousePosition;
 
-        gameObject.transform.position = new Vector3( mousePos.x, mousePos.y, gameObject.transform.position.z);
+        gameObject.transform.position = new Vector3(mousePos.x, mousePos.y, gameObject.transform.position.z);
     }
 
     /// <summary>

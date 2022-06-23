@@ -50,7 +50,7 @@ public class DoubleTapZoom : MonoBehaviour
             doubleDone = true;
         }
     }
-
+    
     IEnumerator DoubleTapInterval()
     {
         yield return new WaitForSeconds(MaxDelayToDoubleTap);
