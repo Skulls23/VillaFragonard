@@ -10,7 +10,7 @@ using System.IO;
 /// </summary>
 public class DoubleTapZoom : MonoBehaviour
 {
-    [SerializeField] private float MaxDelayToDoubleTap = 0.5f;
+    /*[SerializeField] private float MaxDelayToDoubleTap = 0.5f;
 
     private string[] aTxt;
 
@@ -67,5 +67,5 @@ public class DoubleTapZoom : MonoBehaviour
     private void RevealPopup()
     {
         GameObject.Find("Gameplay").GetComponent<PopupSetup>().RevealPopup(aTxt[0], aTxt[1], sprite);
-    }
+    }*/
 }

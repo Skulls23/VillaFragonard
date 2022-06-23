@@ -25,7 +25,7 @@ public class MoveUI : MonoBehaviour
         Vector3 mousePos;
         mousePos = Input.mousePosition;
 
-        gameObject.transform.position = new Vector3(mousePos.x, mousePos.y, gameObject.transform.position.z);
+        //gameObject.transform.position = new Vector3(mousePos.x, mousePos.y, gameObject.transform.position.z);
     }
 
     /// <summary>
@@ -36,7 +36,8 @@ public class MoveUI : MonoBehaviour
         Vector3 mousePos;
         mousePos = Input.mousePosition;
 
-        gameObject.transform.position = new Vector3(mousePos.x, mousePos.y, gameObject.transform.position.z);
+        if(!isFinished)
+            gameObject.transform.position = new Vector3(mousePos.x, mousePos.y, gameObject.transform.position.z);
     }
 
     /// <summary>
@@ -50,6 +51,7 @@ public class MoveUI : MonoBehaviour
         {
             transform.position = new Vector3(destination.transform.position.x, destination.transform.position.y, transform.position.z);
             isFinished = true;
+            GameObject.Find("StuffPositionPanel").GetComponent<CreateObjectWithImage>().ObjectPlaced();
             GameObject.Find("Gameplay").GetComponent<WinCondition>().Verify();
         }
         else
