@@ -8,7 +8,8 @@ using UnityEngine.UI;
 /// </summary>
 public class MoveUI : MonoBehaviour
 {
-    [SerializeField] private float distanceMaxToBeFinished = 80f;
+    [SerializeField] private float distanceMaxXToBeFinished = 200f;
+    [SerializeField] private float distanceMaxYToBeFinished = 80f;
     private bool isInPopUp = true;
     public GameObject destination;
 
@@ -51,8 +52,10 @@ public class MoveUI : MonoBehaviour
     /// </summary>
     public void StopMovePaintSet()
     {
-        if (Mathf.Abs(transform.position.x - destination.transform.position.x) <= distanceMaxToBeFinished &&
-            Mathf.Abs(transform.position.y - destination.transform.position.y) <= distanceMaxToBeFinished)
+        print("X " + Mathf.Abs(transform.position.x - destination.transform.position.x));
+        print("Y " + Mathf.Abs(transform.position.y - destination.transform.position.y));
+        if (Mathf.Abs(transform.position.x - destination.transform.position.x) <= distanceMaxXToBeFinished &&
+            Mathf.Abs(transform.position.y - destination.transform.position.y) <= distanceMaxYToBeFinished)
         {
             //transform.position = new Vector3(destination.transform.position.x, destination.transform.position.y, transform.position.z);
             transform.position = new Vector3(xStartingPos, yStartingPos, 0);

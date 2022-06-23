@@ -103,8 +103,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4328eca4b890d754c8876b53b7e863ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceMaxToBeFinished: 50
-  isFinished: 0
+  distanceMaxToBeFinishedOnX: 80
+  distanceMaxToBeFinishedOnY: 50
+  destination: {fileID: 0}
 --- !u!114 &563182269031382476
 MonoBehaviour:
   m_ObjectHideFlags: 0

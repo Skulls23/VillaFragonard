@@ -14,8 +14,6 @@ public class CreateObjectWithImage : MonoBehaviour
     void Start()
     {
         aSprites = Resources.LoadAll<Sprite>("PaintSet/Objects");
-        
-        System.Array.Sort(lf);//Avoid duplicates from the LoadAll
 
         Shambles(500);
         
@@ -34,7 +32,6 @@ public class CreateObjectWithImage : MonoBehaviour
 
     private void Shambles(int scrambleNumber)
     {
-        
         int    randomNumber;
         int    previousNumber = 0;
         int    objectNumber = aSprites.Length;
