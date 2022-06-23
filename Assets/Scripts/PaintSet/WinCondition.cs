@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class WinCondition : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class WinCondition : MonoBehaviour
 
         void Start()
         {
-            aPieces = GameObject.FindGameObjectsWithTag("PuzzlePiece");
+            aPieces = GameObject.FindGameObjectsWithTag("Piece");
 
             popUpEnd = GameObject.FindGameObjectsWithTag("Popup")[0];
             popUpEnd.SetActive(false);
@@ -24,7 +25,7 @@ public class WinCondition : MonoBehaviour
         isFinished = true;
         for (int i = 0; i < aPieces.Length; i++)
         {
-            if(! aPieces[i].GetComponent<MoveUI>().GetIsFinished())
+            if(aPieces[i].GetComponent<Image>().color.a != 1)
                 isFinished = false;
         }
 

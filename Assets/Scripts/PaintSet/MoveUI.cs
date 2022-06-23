@@ -9,12 +9,16 @@ using UnityEngine.UI;
 public class MoveUI : MonoBehaviour
 {
     [SerializeField] private float distanceMaxToBeFinished = 80f;
-    public bool isFinished;
-    private GameObject destination;
+    private bool isInPopUp = true;
+    public GameObject destination;
+
+    private float xStartingPos;
+    private float yStartingPos;
 
     private void Start()
     {
-        destination = GameObject.Find(GetComponent<Image>().sprite.name);
+        xStartingPos = transform.position.x;
+        yStartingPos = transform.position.y;
     }
 
     /// <summary>
@@ -24,6 +28,7 @@ public class MoveUI : MonoBehaviour
     {
         Vector3 mousePos;
         mousePos = Input.mousePosition;
+        destination = GameObject.Find(GetComponent<Image>().sprite.name);
 
         //gameObject.transform.position = new Vector3(mousePos.x, mousePos.y, gameObject.transform.position.z);
     }
@@ -36,7 +41,7 @@ public class MoveUI : MonoBehaviour
         Vector3 mousePos;
         mousePos = Input.mousePosition;
 
-        if(!isFinished)
+        if(GetComponent<Image>() != null && GameObject.Find(GetComponent<Image>().sprite.name).GetComponent<Image>().color.a != 1)
             gameObject.transform.position = new Vector3(mousePos.x, mousePos.y, gameObject.transform.position.z);
     }
 
@@ -49,13 +54,16 @@ public class MoveUI : MonoBehaviour
         if (Mathf.Abs(transform.position.x - destination.transform.position.x) <= distanceMaxToBeFinished &&
             Mathf.Abs(transform.position.y - destination.transform.position.y) <= distanceMaxToBeFinished)
         {
-            transform.position = new Vector3(destination.transform.position.x, destination.transform.position.y, transform.position.z);
-            isFinished = true;
+            //transform.position = new Vector3(destination.transform.position.x, destination.transform.position.y, transform.position.z);
+            transform.position = new Vector3(xStartingPos, yStartingPos, 0);
+
+            transform.gameObject.GetComponent<Image>().sprite = null;
+            transform.gameObject.GetComponent<Image>().color = new Color(255, 255, 255, 0);
+            destination.GetComponent<Image>().color = new Color(255, 255, 255, 1);
+
             GameObject.Find("StuffPositionPanel").GetComponent<CreateObjectWithImage>().ObjectPlaced();
             GameObject.Find("Gameplay").GetComponent<WinCondition>().Verify();
         }
-        else
-            isFinished = false;
     }
 
     /// <summary>
@@ -116,10 +124,5 @@ public class MoveUI : MonoBehaviour
     private void ResetPosition()
     {
         gameObject.transform.localPosition = new Vector3(0, 0, gameObject.transform.position.z);
-    }
-
-    public bool GetIsFinished()
-    {
-        return isFinished;
     }
 }

@@ -20,14 +20,14 @@ public class CreateObjectWithImage : MonoBehaviour
         for (int i = 0; i < transform.childCount; i++)
             aObjectsInHierarchy[i] = transform.GetChild(i).gameObject;
 
+        for(int i = 0;i < aSprites.Length;i++)
+            print(aSprites[i].name);
         PlaceImages();
-
-        print(aSprites.Length);
     }
 
     public void ObjectPlaced()
     {
-        if(numberPlaced % 8 == 0 || numberPlaced == 9999) //TODO numero maximum d'objet, comme ca on refresh et on lock le jeu
+        if(++numberPlaced % 8 == 0) //TODO numero maximum d'objet, comme ca on refresh et on lock le jeu
         {
             PlaceImages();
         }
@@ -57,6 +57,21 @@ public class CreateObjectWithImage : MonoBehaviour
     private void PlaceImages()
     {
         for (int i = 0; i < aObjectsInHierarchy.Length; i++)
-            aObjectsInHierarchy[i].GetComponent<Image>().sprite = aSprites[spriteSelector++];
+        {
+            if (spriteSelector < aSprites.Length)
+            {
+                print(aSprites[spriteSelector] + " " +spriteSelector);
+                aObjectsInHierarchy[i].GetComponent<Image>().sprite = aSprites[spriteSelector++];
+                aObjectsInHierarchy[i].GetComponent<Image>().color = new Color(255, 255, 255, 1);
+            }
+            else
+                Disappear(aObjectsInHierarchy[i]);
+        }
+    }
+
+    private void Disappear(GameObject o)
+    {
+        o.GetComponent<Image>().sprite = null;
+        o.GetComponent<Image>().color = new Color(255, 255, 255, 0);
     }
 }
