@@ -14,31 +14,32 @@ public class CreateObjectWithImage : MonoBehaviour
     void Start()
     {
         aSprites = Resources.LoadAll<Sprite>("PaintSet/Objects");
+        
+        System.Array.Sort(lf);//Avoid duplicates from the LoadAll
+
         Shambles(500);
         
         aObjectsInHierarchy = new GameObject[transform.childCount];
         for (int i = 0; i < transform.childCount; i++)
             aObjectsInHierarchy[i] = transform.GetChild(i).gameObject;
 
-        for(int i = 0;i < aSprites.Length;i++)
-            print(aSprites[i].name);
         PlaceImages();
     }
 
     public void ObjectPlaced()
     {
-        if(++numberPlaced % 8 == 0) //TODO numero maximum d'objet, comme ca on refresh et on lock le jeu
-        {
+        if(++numberPlaced % 8 == 0)
             PlaceImages();
-        }
     }
 
     private void Shambles(int scrambleNumber)
     {
-        int    objectNumber = aSprites.Length;
+        
         int    randomNumber;
-        Sprite tempSpriteA = null;
-        Sprite tempSpriteB = null;
+        int    previousNumber = 0;
+        int    objectNumber = aSprites.Length;
+        Sprite tempSpriteA  = null;
+        Sprite tempSpriteB  = null;
 
         for (int i = 0; i<scrambleNumber; i++)
         {
@@ -47,10 +48,15 @@ public class CreateObjectWithImage : MonoBehaviour
             {
                 tempSpriteB = aSprites[randomNumber];
                 aSprites[randomNumber] = tempSpriteA;
-                tempSpriteA = tempSpriteB;
+                aSprites[previousNumber] = tempSpriteB;
+
+                tempSpriteA = tempSpriteB = null;
             }
             else
+            {
                 tempSpriteA = aSprites[randomNumber];
+                previousNumber = randomNumber;
+            }
         }
     }
 
@@ -60,7 +66,6 @@ public class CreateObjectWithImage : MonoBehaviour
         {
             if (spriteSelector < aSprites.Length)
             {
-                print(aSprites[spriteSelector] + " " +spriteSelector);
                 aObjectsInHierarchy[i].GetComponent<Image>().sprite = aSprites[spriteSelector++];
                 aObjectsInHierarchy[i].GetComponent<Image>().color = new Color(255, 255, 255, 1);
             }
