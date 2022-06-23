@@ -3736,6 +3736,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 311175660}
     m_Modifications:
+    - target: {fileID: -3689782354349206679, guid: b389031287aa6df41abb374334ee197f, type: 3}
+      propertyPath: distanceMaxXToBeFinished
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 563182269031382478, guid: b389031287aa6df41abb374334ee197f, type: 3}
       propertyPath: m_Name
       value: Object (6)
@@ -3838,6 +3842,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 311175660}
     m_Modifications:
+    - target: {fileID: -3689782354349206679, guid: b389031287aa6df41abb374334ee197f, type: 3}
+      propertyPath: distanceMaxXToBeFinished
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 563182269031382478, guid: b389031287aa6df41abb374334ee197f, type: 3}
       propertyPath: m_Name
       value: Object (7)
@@ -3940,6 +3948,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 311175660}
     m_Modifications:
+    - target: {fileID: -3689782354349206679, guid: b389031287aa6df41abb374334ee197f, type: 3}
+      propertyPath: distanceMaxXToBeFinished
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 563182269031382478, guid: b389031287aa6df41abb374334ee197f, type: 3}
       propertyPath: m_Name
       value: Object (3)
@@ -4037,6 +4049,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 311175660}
     m_Modifications:
+    - target: {fileID: -3689782354349206679, guid: b389031287aa6df41abb374334ee197f, type: 3}
+      propertyPath: distanceMaxXToBeFinished
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 563182269031382478, guid: b389031287aa6df41abb374334ee197f, type: 3}
       propertyPath: m_Name
       value: Object (2)
@@ -4134,6 +4150,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 311175660}
     m_Modifications:
+    - target: {fileID: -3689782354349206679, guid: b389031287aa6df41abb374334ee197f, type: 3}
+      propertyPath: distanceMaxXToBeFinished
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 563182269031382478, guid: b389031287aa6df41abb374334ee197f, type: 3}
       propertyPath: m_Name
       value: Object (4)
@@ -4231,6 +4251,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 311175660}
     m_Modifications:
+    - target: {fileID: -3689782354349206679, guid: b389031287aa6df41abb374334ee197f, type: 3}
+      propertyPath: distanceMaxXToBeFinished
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 563182269031382478, guid: b389031287aa6df41abb374334ee197f, type: 3}
       propertyPath: m_Name
       value: Object (1)
@@ -4328,6 +4352,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 311175660}
     m_Modifications:
+    - target: {fileID: -3689782354349206679, guid: b389031287aa6df41abb374334ee197f, type: 3}
+      propertyPath: distanceMaxXToBeFinished
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 563182269031382323, guid: b389031287aa6df41abb374334ee197f, type: 3}
       propertyPath: m_Color.a
       value: 1
@@ -4429,6 +4457,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 311175660}
     m_Modifications:
+    - target: {fileID: -3689782354349206679, guid: b389031287aa6df41abb374334ee197f, type: 3}
+      propertyPath: distanceMaxXToBeFinished
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 563182269031382478, guid: b389031287aa6df41abb374334ee197f, type: 3}
       propertyPath: m_Name
       value: Object
