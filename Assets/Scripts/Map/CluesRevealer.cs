@@ -32,7 +32,8 @@ public class CluesRevealer : MonoBehaviour
         //If we unlocked a new clues since the last Map loading
         if (PlayerPrefs.GetInt("Number of clues unlocked") < numberOfCluesRevealed)
         {
-
+            GetComponent<ShowTextClue>().ShowClue(numberOfCluesRevealed - 1); //-1 because the first clue is the number 0 in the array
+            PlayerPrefs.SetInt("Number of clues unlocked", numberOfCluesRevealed);
         }
     }
 }

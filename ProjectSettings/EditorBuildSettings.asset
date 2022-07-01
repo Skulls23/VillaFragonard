@@ -9,11 +9,35 @@ EditorBuildSettings:
     path: Assets/Scenes/Final/TitleScreen.unity
     guid: 7fa5538e133a7e345a4e923f33bb60ee
   - enabled: 1
-    path: Assets/Scenes/Final/Settings.unity
-    guid: d062adc8ec8c7314a96f212178803b2d
+    path: Assets/Scenes/Final/Atelier.unity
+    guid: eee35c8da89def646983e696d0de2a16
+  - enabled: 1
+    path: Assets/Scenes/Final/DejeunerDuChat.unity
+    guid: 95e41667d46c91945aa7c9bfea20f08b
+  - enabled: 1
+    path: Assets/Scenes/Final/Lavandieres.unity
+    guid: 4ca467141bb936f49853bb1a02c034c1
   - enabled: 1
     path: Assets/Scenes/Final/Map.unity
     guid: 7b9557c28c99be94b94eb59e77c3f46d
+  - enabled: 1
+    path: "Assets/Scenes/Final/Marie-Th\xE9r\xE8se.unity"
+    guid: e23b23ead39e10442a31dc189d11f01d
+  - enabled: 1
+    path: Assets/Scenes/Final/PaintSetFirstFrame.unity
+    guid: 4f4588d4b6603224380376fef192e64b
+  - enabled: 1
+    path: Assets/Scenes/Final/PaintSetMinigame.unity
+    guid: 42749ee24d562e54b97ab60d9e84469b
+  - enabled: 1
+    path: Assets/Scenes/Final/PaintSetSecondFrame.unity
+    guid: f7b2ef4e940323744a79bda116957d12
+  - enabled: 1
+    path: Assets/Scenes/Final/Settings.unity
+    guid: d062adc8ec8c7314a96f212178803b2d
+  - enabled: 1
+    path: Assets/Scenes/Final/Visit.unity
+    guid: d522139f9995892489cbad0b663fc78d
   - enabled: 1
     path: Assets/Scenes/Tests/Clicker.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
@@ -26,24 +50,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tests/Differences.unity
     guid: 88ec68e294a6e8c4da2b9f114ab4ce9d
-  - enabled: 1
-    path: Assets/Scenes/Final/PaintSetFirstFrame.unity
-    guid: 4f4588d4b6603224380376fef192e64b
-  - enabled: 1
-    path: Assets/Scenes/Final/PaintSetSecondFrame.unity
-    guid: f7b2ef4e940323744a79bda116957d12
-  - enabled: 1
-    path: Assets/Scenes/Final/PaintSetMinigame.unity
-    guid: 42749ee24d562e54b97ab60d9e84469b
-  - enabled: 1
-    path: Assets/Scenes/Final/PaintSetMinigame.unity
-    guid: a2a09f59023dbdb43bc4ccdfcc10839a
-  - enabled: 1
-    path: Assets/Scenes/Final/Lavandieres.unity
-    guid: 4ca467141bb936f49853bb1a02c034c1
-  - enabled: 1
-    path: Assets/Scenes/Final/Atelier.unity
-    guid: eee35c8da89def646983e696d0de2a16
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 45b5b488351df0947b251c8ab4ebb852, type: 2}
     com.unity.localization.settings: {fileID: 11400000, guid: 59c98afb993ce7f41823cf98c0446168, type: 2}
