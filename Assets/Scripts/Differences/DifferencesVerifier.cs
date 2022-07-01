@@ -10,12 +10,15 @@ public class DifferencesVerifier : MonoBehaviour
     [SerializeField] private string clueName;
     [SerializeField] private string popUpText;
 
-    private GameObject popUp;
+    private static string[] lTexts = new string[4]{ "Trouve les 4 indices", "Trouve les 3 indices", "Trouve les 2 indices", "Trouve le dernier indice"};
+    private int             errorFound = 0;
+    private GameObject      popUp;
 
     private void Start()
     {
         popUp = GameObject.FindWithTag("Popup");
         popUp.SetActive(false);
+        ChangeText();
     }
 
     // Update is called once per frame
@@ -29,7 +32,18 @@ public class DifferencesVerifier : MonoBehaviour
                 popUp.SetActive(true);
             }
     }
+    public void IncrementErrorFound()
+    {
+        errorFound++;
+        ChangeText();
+    }
 
+    private void ChangeText()
+    {
+        if(errorFound < lImagesParent.Count)
+        GameObject.Find("Rules").GetComponent<Text>().text = lTexts[errorFound];
+    }
+    
     private bool AreAllDiffFound()
     {
         bool isCompletelyFinished = true;
