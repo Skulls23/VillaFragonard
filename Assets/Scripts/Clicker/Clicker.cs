@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Clicker : MonoBehaviour
 {
-    [SerializeField] private TMP_Text text;
+    [SerializeField] private Text text;
 
     [Header("Lists")]
     [SerializeField] private List<string> lOrderStrings;
@@ -53,7 +53,7 @@ public class Clicker : MonoBehaviour
         if(string.Compare(lTextPopUp[missionNumber], "") != 0)
         {
             popUp.SetActive(true);
-            popUp.transform.GetChild(0).GetChild(0).GetComponent<TMP_Text>().text = lTextPopUp[missionNumber];
+            popUp.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = lTextPopUp[missionNumber];
         }
     }
 }

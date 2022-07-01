@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -26,7 +25,7 @@ public class DifferencesVerifier : MonoBehaviour
             for (int i = 0; i < lImagesParent.Count && AreAllDiffFound(); i++)
             {
                 PlayerPrefs.SetInt(clueName, 1);
-                popUp.transform.GetChild(0).GetChild(0).GetComponent<TMP_Text>().text = popUpText;
+                popUp.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = popUpText;
                 popUp.SetActive(true);
             }
     }

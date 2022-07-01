@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,8 +18,8 @@ public class PopupSetup : MonoBehaviour
     {
         Debug.Log(sprite.name);
         popup.transform.GetChild(0).GetChild(0).GetComponent<Image>().sprite = sprite;
-        popup.transform.GetChild(0).GetChild(1).GetChild(0).GetComponent<TMP_Text>().text = title;
-        popup.transform.GetChild(0).GetChild(1).GetChild(1).GetComponent<TMP_Text>().text = description;
+        popup.transform.GetChild(0).GetChild(1).GetChild(0).GetComponent<Text>().text = title;
+        popup.transform.GetChild(0).GetChild(1).GetChild(1).GetComponent<Text>().text = description;
         popup.SetActive(true);
     }
 }

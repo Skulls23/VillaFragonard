@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -51,6 +50,6 @@ public class ButtonEvent : MonoBehaviour
     private void PopUp()
     {
             popUp.SetActive(true);
-            popUp.transform.GetChild(0).GetChild(0).GetComponent<TMP_Text>().text = textPopUp;
+            popUp.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = textPopUp;
     }
 }

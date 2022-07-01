@@ -45,3 +45,31 @@ Dans la case 1-1 on a 5 couleurs qui forment un W (je vais les numéroter)
 
  Visite, mettre photo et nom, sous format medaillon (oval)
  fils au millieu, JH a droite
+
+ REVIEW
+
+
+Les anecdotes vont etres donnés dans un ordre precis peu importe le mini jeu (donc on le ferais dans le menu en comptant le nombre de mini jeu gagné, (de paquet de lettre gagné, possible))
+
+Avoir une histoire, genre un fil d Ariane en mode enquêteur (scène qui ne pop qu'une fois ?)
+
+Mini jeu via bouton qui apparaît après la fin du jeu, via accès au site lien base donnée
+
+Jeu avec les plaques pour gravures, on a une plaque et on doit trouver sur quelle gravure elle a été utilisé.
+
+Placer les lettres dans l'ordre d'obtention (array) + donner une phrase à chaque fin avec la lettre. Voir ce texte en cliquant sur la lettre
+Donner les lettre en fonction du placement Dans le musée, premier lettre dernier tableau
+
+Obtenir C ET C cédille et quand t as tout tu as le tiret à la fin
+8 jeux totaux
+
+À la fin, on doit remetre les lettres dans l ordres en les slidant entre elle en mode slider, la map est lock et on unlock les lettre pour les mettre sur les tiret. 
+Et on les informe avec un pop-up. Et redire qu on peu retrouver les indices en double cliquant 
+
+Placement
+Visite = buste
+Gravures = livre
+
+
+Modif
+Refaire mqrie tgeres, faire scale l image pour scale en meme temps les boxs

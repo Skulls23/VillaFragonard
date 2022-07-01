@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ChangeText : MonoBehaviour
 {
@@ -24,7 +25,7 @@ public class ChangeText : MonoBehaviour
     {
         if (numText < aText.Length)
         {
-            GameObject.Find("Text").GetComponent<TMP_Text>().text = aText[numText];
+            GameObject.Find("Text").GetComponent<Text>().text = aText[numText];
         }
     }
 

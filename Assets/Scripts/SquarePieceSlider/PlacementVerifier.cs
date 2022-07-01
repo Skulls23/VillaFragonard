@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 /// <summary>
 /// Verify the placement of a <c>Piece</c>.
@@ -32,7 +32,7 @@ public class PlacementVerifier : MonoBehaviour
         if (isCompletelyFinished)
         {
             PlayerPrefs.SetInt(clueName, 1);
-            popUp.transform.GetChild(0).GetChild(0).GetComponent<TMP_Text>().text = popUpText;
+            popUp.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = popUpText;
             popUp.SetActive(true);
         }
     }
