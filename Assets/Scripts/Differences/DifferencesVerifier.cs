@@ -41,7 +41,7 @@ public class DifferencesVerifier : MonoBehaviour
     private void ChangeText()
     {
         if(errorFound < lImagesParent.Count)
-        GameObject.Find("Rules").GetComponent<Text>().text = lTexts[errorFound];
+            GameObject.Find("Rules").GetComponent<Text>().text = lTexts[errorFound];
     }
     
     private bool AreAllDiffFound()
