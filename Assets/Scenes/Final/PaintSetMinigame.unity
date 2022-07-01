@@ -343,6 +343,8 @@ GameObject:
   - component: {fileID: 90693990}
   - component: {fileID: 90693992}
   - component: {fileID: 90693991}
+  - component: {fileID: 90693994}
+  - component: {fileID: 90693993}
   m_Layer: 5
   m_Name: 3f0513
   m_TagString: Piece
@@ -362,7 +364,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 609840623}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4, y: 0.8}
   m_AnchorMax: {x: 0.46, y: 1}
@@ -407,6 +409,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 90693989}
   m_CullTransparentMesh: 1
+--- !u!114 &90693993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90693989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 90693994}
+          m_TargetAssemblyTypeName: DoubleTapZoom, Assembly-CSharp
+          m_MethodName: Clicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &90693994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90693989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxDelayToDoubleTap: 0.5
 --- !u!1 &144489320
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,6 +538,8 @@ GameObject:
   - component: {fileID: 175443775}
   - component: {fileID: 175443777}
   - component: {fileID: 175443776}
+  - component: {fileID: 175443779}
+  - component: {fileID: 175443778}
   m_Layer: 5
   m_Name: 3f0524
   m_TagString: Piece
@@ -558,6 +604,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 175443774}
   m_CullTransparentMesh: 1
+--- !u!114 &175443778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175443774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 175443779}
+          m_TargetAssemblyTypeName: DoubleTapZoom, Assembly-CSharp
+          m_MethodName: Clicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &175443779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175443774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxDelayToDoubleTap: 0.5
 --- !u!1 &295740451
 GameObject:
   m_ObjectHideFlags: 0
@@ -742,6 +830,8 @@ GameObject:
   - component: {fileID: 377179792}
   - component: {fileID: 377179794}
   - component: {fileID: 377179793}
+  - component: {fileID: 377179796}
+  - component: {fileID: 377179795}
   m_Layer: 5
   m_Name: 3f0510
   m_TagString: Piece
@@ -806,6 +896,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 377179791}
   m_CullTransparentMesh: 1
+--- !u!114 &377179795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377179791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 377179796}
+          m_TargetAssemblyTypeName: DoubleTapZoom, Assembly-CSharp
+          m_MethodName: Clicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &377179796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377179791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxDelayToDoubleTap: 0.5
 --- !u!1 &545249555
 GameObject:
   m_ObjectHideFlags: 0
@@ -817,6 +949,8 @@ GameObject:
   - component: {fileID: 545249556}
   - component: {fileID: 545249558}
   - component: {fileID: 545249557}
+  - component: {fileID: 545249560}
+  - component: {fileID: 545249559}
   m_Layer: 5
   m_Name: 3f0512
   m_TagString: Piece
@@ -881,6 +1015,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 545249555}
   m_CullTransparentMesh: 1
+--- !u!114 &545249559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545249555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 545249560}
+          m_TargetAssemblyTypeName: DoubleTapZoom, Assembly-CSharp
+          m_MethodName: Clicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &545249560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545249555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxDelayToDoubleTap: 0.5
 --- !u!1 &609840622
 GameObject:
   m_ObjectHideFlags: 0
@@ -910,14 +1086,14 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 2030576594}
+  - {fileID: 1092461186}
   - {fileID: 444199134070440573}
   - {fileID: 1985424427}
   - {fileID: 765412163}
-  - {fileID: 1092461186}
   - {fileID: 1717574543}
   - {fileID: 90693990}
   - {fileID: 1927424653}
-  - {fileID: 2030576594}
   - {fileID: 545249556}
   - {fileID: 765199584}
   - {fileID: 703683819}
@@ -988,6 +1164,8 @@ GameObject:
   - component: {fileID: 681353490}
   - component: {fileID: 681353492}
   - component: {fileID: 681353491}
+  - component: {fileID: 681353494}
+  - component: {fileID: 681353493}
   m_Layer: 5
   m_Name: 3f057
   m_TagString: Piece
@@ -1052,6 +1230,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 681353489}
   m_CullTransparentMesh: 1
+--- !u!114 &681353493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681353489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 681353494}
+          m_TargetAssemblyTypeName: DoubleTapZoom, Assembly-CSharp
+          m_MethodName: Clicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &681353494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681353489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxDelayToDoubleTap: 0.5
 --- !u!1 &685477379
 GameObject:
   m_ObjectHideFlags: 0
@@ -1063,6 +1283,8 @@ GameObject:
   - component: {fileID: 685477380}
   - component: {fileID: 685477382}
   - component: {fileID: 685477381}
+  - component: {fileID: 685477384}
+  - component: {fileID: 685477383}
   m_Layer: 5
   m_Name: 3f0521
   m_TagString: Piece
@@ -1127,6 +1349,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 685477379}
   m_CullTransparentMesh: 1
+--- !u!114 &685477383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685477379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 685477384}
+          m_TargetAssemblyTypeName: DoubleTapZoom, Assembly-CSharp
+          m_MethodName: Clicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &685477384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685477379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxDelayToDoubleTap: 0.5
 --- !u!1 &698676738
 GameObject:
   m_ObjectHideFlags: 0
@@ -1138,6 +1402,8 @@ GameObject:
   - component: {fileID: 698676739}
   - component: {fileID: 698676741}
   - component: {fileID: 698676740}
+  - component: {fileID: 698676743}
+  - component: {fileID: 698676742}
   m_Layer: 5
   m_Name: 3f0522
   m_TagString: Piece
@@ -1202,6 +1468,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 698676738}
   m_CullTransparentMesh: 1
+--- !u!114 &698676742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698676738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 698676743}
+          m_TargetAssemblyTypeName: DoubleTapZoom, Assembly-CSharp
+          m_MethodName: Clicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &698676743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698676738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxDelayToDoubleTap: 0.5
 --- !u!1 &703683818
 GameObject:
   m_ObjectHideFlags: 0
@@ -1213,6 +1521,8 @@ GameObject:
   - component: {fileID: 703683819}
   - component: {fileID: 703683821}
   - component: {fileID: 703683820}
+  - component: {fileID: 703683823}
+  - component: {fileID: 703683822}
   m_Layer: 5
   m_Name: 3f0523
   m_TagString: Piece
@@ -1277,6 +1587,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 703683818}
   m_CullTransparentMesh: 1
+--- !u!114 &703683822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703683818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 703683823}
+          m_TargetAssemblyTypeName: DoubleTapZoom, Assembly-CSharp
+          m_MethodName: Clicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &703683823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703683818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxDelayToDoubleTap: 0.5
 --- !u!1 &765199583
 GameObject:
   m_ObjectHideFlags: 0
@@ -1288,6 +1640,8 @@ GameObject:
   - component: {fileID: 765199584}
   - component: {fileID: 765199586}
   - component: {fileID: 765199585}
+  - component: {fileID: 765199588}
+  - component: {fileID: 765199587}
   m_Layer: 5
   m_Name: 3f0511
   m_TagString: Piece
@@ -1352,6 +1706,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 765199583}
   m_CullTransparentMesh: 1
+--- !u!114 &765199587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765199583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 765199588}
+          m_TargetAssemblyTypeName: DoubleTapZoom, Assembly-CSharp
+          m_MethodName: Clicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &765199588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765199583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxDelayToDoubleTap: 0.5
 --- !u!1 &765412162
 GameObject:
   m_ObjectHideFlags: 0
@@ -1363,6 +1759,8 @@ GameObject:
   - component: {fileID: 765412163}
   - component: {fileID: 765412168}
   - component: {fileID: 765412167}
+  - component: {fileID: 765412165}
+  - component: {fileID: 765412164}
   m_Layer: 5
   m_Name: 3f0516
   m_TagString: Piece
@@ -1382,13 +1780,55 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 609840623}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.29, y: 0.8}
   m_AnchorMax: {x: 0.35, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &765412164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765412162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 765412165}
+          m_TargetAssemblyTypeName: DoubleTapZoom, Assembly-CSharp
+          m_MethodName: Clicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &765412165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765412162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxDelayToDoubleTap: 0.5
 --- !u!114 &765412167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1733,6 +2173,8 @@ GameObject:
   - component: {fileID: 937485919}
   - component: {fileID: 937485921}
   - component: {fileID: 937485920}
+  - component: {fileID: 937485923}
+  - component: {fileID: 937485922}
   m_Layer: 5
   m_Name: 3f0525
   m_TagString: Piece
@@ -1797,6 +2239,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 937485918}
   m_CullTransparentMesh: 1
+--- !u!114 &937485922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937485918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 937485923}
+          m_TargetAssemblyTypeName: DoubleTapZoom, Assembly-CSharp
+          m_MethodName: Clicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &937485923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937485918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxDelayToDoubleTap: 0.5
 --- !u!1 &954081505
 GameObject:
   m_ObjectHideFlags: 0
@@ -1887,6 +2371,8 @@ GameObject:
   - component: {fileID: 1065576047}
   - component: {fileID: 1065576049}
   - component: {fileID: 1065576048}
+  - component: {fileID: 1065576051}
+  - component: {fileID: 1065576050}
   m_Layer: 5
   m_Name: 3f058
   m_TagString: Piece
@@ -1951,6 +2437,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1065576046}
   m_CullTransparentMesh: 1
+--- !u!114 &1065576050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065576046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1065576051}
+          m_TargetAssemblyTypeName: DoubleTapZoom, Assembly-CSharp
+          m_MethodName: Clicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1065576051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065576046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxDelayToDoubleTap: 0.5
 --- !u!1 &1092461185
 GameObject:
   m_ObjectHideFlags: 0
@@ -1981,7 +2509,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 609840623}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.18, y: 0.7}
   m_AnchorMax: {x: 0.24, y: 0.9}
@@ -2197,6 +2725,8 @@ GameObject:
   - component: {fileID: 1717574543}
   - component: {fileID: 1717574548}
   - component: {fileID: 1717574547}
+  - component: {fileID: 1717574545}
+  - component: {fileID: 1717574544}
   m_Layer: 5
   m_Name: 3f0518
   m_TagString: Piece
@@ -2216,13 +2746,55 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 609840623}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.25, y: 0.7}
   m_AnchorMax: {x: 0.31, y: 0.9}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1717574544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717574542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1717574545}
+          m_TargetAssemblyTypeName: DoubleTapZoom, Assembly-CSharp
+          m_MethodName: Clicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1717574545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717574542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxDelayToDoubleTap: 0.5
 --- !u!114 &1717574547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2429,6 +3001,8 @@ GameObject:
   - component: {fileID: 1872698959}
   - component: {fileID: 1872698961}
   - component: {fileID: 1872698960}
+  - component: {fileID: 1872698963}
+  - component: {fileID: 1872698962}
   m_Layer: 5
   m_Name: 3f0527
   m_TagString: Piece
@@ -2493,6 +3067,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1872698958}
   m_CullTransparentMesh: 1
+--- !u!114 &1872698962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872698958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1872698963}
+          m_TargetAssemblyTypeName: DoubleTapZoom, Assembly-CSharp
+          m_MethodName: Clicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1872698963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872698958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxDelayToDoubleTap: 0.5
 --- !u!1 &1927424652
 GameObject:
   m_ObjectHideFlags: 0
@@ -2504,6 +3120,8 @@ GameObject:
   - component: {fileID: 1927424653}
   - component: {fileID: 1927424655}
   - component: {fileID: 1927424654}
+  - component: {fileID: 1927424657}
+  - component: {fileID: 1927424656}
   m_Layer: 5
   m_Name: 3f059
   m_TagString: Piece
@@ -2523,7 +3141,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 609840623}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.54, y: 0.8}
   m_AnchorMax: {x: 0.6, y: 1}
@@ -2568,6 +3186,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1927424652}
   m_CullTransparentMesh: 1
+--- !u!114 &1927424656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927424652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1927424657}
+          m_TargetAssemblyTypeName: DoubleTapZoom, Assembly-CSharp
+          m_MethodName: Clicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1927424657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927424652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxDelayToDoubleTap: 0.5
 --- !u!1 &1927520173
 GameObject:
   m_ObjectHideFlags: 0
@@ -2579,6 +3239,8 @@ GameObject:
   - component: {fileID: 1927520174}
   - component: {fileID: 1927520176}
   - component: {fileID: 1927520175}
+  - component: {fileID: 1927520178}
+  - component: {fileID: 1927520177}
   m_Layer: 5
   m_Name: 3f0526
   m_TagString: Piece
@@ -2643,6 +3305,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1927520173}
   m_CullTransparentMesh: 1
+--- !u!114 &1927520177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927520173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1927520178}
+          m_TargetAssemblyTypeName: DoubleTapZoom, Assembly-CSharp
+          m_MethodName: Clicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1927520178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927520173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxDelayToDoubleTap: 0.5
 --- !u!1 &1967476518
 GameObject:
   m_ObjectHideFlags: 0
@@ -2747,6 +3451,8 @@ GameObject:
   - component: {fileID: 1985424427}
   - component: {fileID: 1985424432}
   - component: {fileID: 1985424431}
+  - component: {fileID: 1985424429}
+  - component: {fileID: 1985424428}
   m_Layer: 5
   m_Name: 3f0515
   m_TagString: Piece
@@ -2766,13 +3472,55 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 609840623}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.22, y: 0.8}
   m_AnchorMax: {x: 0.28, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1985424428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985424426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1985424429}
+          m_TargetAssemblyTypeName: DoubleTapZoom, Assembly-CSharp
+          m_MethodName: Clicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1985424429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985424426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxDelayToDoubleTap: 0.5
 --- !u!114 &1985424431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2841,7 +3589,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 609840623}
-  m_RootOrder: 7
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.47, y: 0.7}
   m_AnchorMax: {x: 0.53, y: 0.9}
@@ -2972,6 +3720,8 @@ GameObject:
   - component: {fileID: 2103726617}
   - component: {fileID: 2103726619}
   - component: {fileID: 2103726618}
+  - component: {fileID: 2103726621}
+  - component: {fileID: 2103726620}
   m_Layer: 5
   m_Name: 3f0520
   m_TagString: Piece
@@ -3036,6 +3786,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2103726616}
   m_CullTransparentMesh: 1
+--- !u!114 &2103726620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103726616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2103726621}
+          m_TargetAssemblyTypeName: DoubleTapZoom, Assembly-CSharp
+          m_MethodName: Clicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &2103726621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103726616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxDelayToDoubleTap: 0.5
 --- !u!1 &444199134070440572
 GameObject:
   m_ObjectHideFlags: 0
@@ -3047,6 +3839,8 @@ GameObject:
   - component: {fileID: 444199134070440573}
   - component: {fileID: 444199134070440578}
   - component: {fileID: 444199134070440577}
+  - component: {fileID: 444199134070440575}
+  - component: {fileID: 444199134070440574}
   m_Layer: 5
   m_Name: 3f0519
   m_TagString: Piece
@@ -3066,13 +3860,55 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 609840623}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.16, y: 0.8}
   m_AnchorMax: {x: 0.21, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &444199134070440574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444199134070440572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 444199134070440575}
+          m_TargetAssemblyTypeName: DoubleTapZoom, Assembly-CSharp
+          m_MethodName: Clicked
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &444199134070440575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444199134070440572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxDelayToDoubleTap: 0.5
 --- !u!114 &444199134070440577
 MonoBehaviour:
   m_ObjectHideFlags: 0

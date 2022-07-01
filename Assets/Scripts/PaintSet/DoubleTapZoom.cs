@@ -20,21 +20,24 @@ public class DoubleTapZoom : MonoBehaviour
 
     public void Clicked()
     {
-        tap++;
-
-        if (tap == 1)
+        if(GetComponent<Image>().color.a != 0)
         {
-            //do stuff
-            readyForDoubleTap = true;
-            StartCoroutine(DoubleTapInterval());
-        }
-        else if (tap > 1 && readyForDoubleTap)
-        {
-            //do stuff
-            RevealPopup();
+            tap++;
 
-            tap = 0;
-            doubleDone = true;
+            if (tap == 1)
+            {
+                //do stuff
+                readyForDoubleTap = true;
+                StartCoroutine(DoubleTapInterval());
+            }
+            else if (tap > 1 && readyForDoubleTap)
+            {
+                //do stuff
+                RevealPopup();
+
+                tap = 0;
+                doubleDone = true;
+            }
         }
     }
     

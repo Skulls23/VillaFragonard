@@ -43,7 +43,7 @@ Dans la case 1-1 on a 5 couleurs qui forment un W (je vais les numéroter)
 
  DONE pop up apres l'aimantage
  DONE lock le move
- NEED possi de zoomer quand meme
+ DONE possi de zoomer quand meme
 
  NEED possibilité d'avoir un petit plus sur certains pop up, quand on clique dessus ca affiche la suite (infos liées), on peut aussi juste cliquer sur le bouton basique pour cacher le popup
 
