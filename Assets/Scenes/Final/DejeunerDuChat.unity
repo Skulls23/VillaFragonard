@@ -904,7 +904,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clueName: N
-  popUpText: 
+  popUpText: Des choses
 --- !u!4 &324164197
 Transform:
   m_ObjectHideFlags: 0

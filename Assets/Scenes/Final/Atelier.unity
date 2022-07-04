@@ -271,7 +271,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isTrue: 1
   textPopUp: Des choses
-  clueName: B
+  clueName: F
 --- !u!1 &319062766
 GameObject:
   m_ObjectHideFlags: 0
