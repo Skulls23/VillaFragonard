@@ -8,6 +8,8 @@ using UnityEngine;
 /// </summary>
 public class CluesRevealer : MonoBehaviour
 {
+    private static int NUMBER_OF_CLUES_TO_FIND = 7;
+
     [SerializeField] private List<GameObject> lClues = new List<GameObject>();
     private int numberOfCluesRevealed = 0;
 
@@ -35,5 +37,12 @@ public class CluesRevealer : MonoBehaviour
             GetComponent<ShowTextClue>().ShowClue(numberOfCluesRevealed - 1); //-1 because the first clue is the number 0 in the array
             PlayerPrefs.SetInt("Number of clues unlocked", numberOfCluesRevealed);
         }
+
+        if(numberOfCluesRevealed >= 7)
+            PlayerPrefs.SetInt("-", 1);
+
+        for (int i = 0; i < lClues.Count; i++)
+            if (lClues[i].name.Equals("-"))
+                lClues[i].SetActive(true);
     }
 }
