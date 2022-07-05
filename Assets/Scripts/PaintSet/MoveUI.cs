@@ -11,7 +11,7 @@ public class MoveUI : MonoBehaviour
     [SerializeField] private float distanceMaxXToBeFinished = 200f;
     [SerializeField] private float distanceMaxYToBeFinished = 80f;
     private bool isInPopUp = true;
-    public GameObject destination;
+    public GameObject destination; //Not needed in Visit
 
     private float xStartingPos;
     private float yStartingPos;
@@ -42,7 +42,7 @@ public class MoveUI : MonoBehaviour
         Vector3 mousePos;
         mousePos = Input.mousePosition;
 
-        if(GetComponent<Image>() != null && GameObject.Find(GetComponent<Image>().sprite.name).GetComponent<Image>().color.a != 1)
+        if (GetComponent<Image>() != null && GameObject.Find(GetComponent<Image>().sprite.name).GetComponent<Image>().color.a != 1)
             gameObject.transform.position = new Vector3(mousePos.x, mousePos.y, gameObject.transform.position.z);
     }
 
@@ -67,6 +67,17 @@ public class MoveUI : MonoBehaviour
             GameObject.Find("StuffPositionPanel").GetComponent<CreateObjectWithImage>().ObjectPlaced();
             GameObject.Find("Gameplay").GetComponent<WinCondition>().Verify();
         }
+    }
+
+    /// <summary>
+    /// Move the UI component in the Visit Scene.
+    /// </summary>
+    public void MoveVisit()
+    {
+        Vector3 mousePos;
+        mousePos = Input.mousePosition;
+
+        gameObject.transform.position = new Vector3(mousePos.x, mousePos.y, gameObject.transform.position.z);
     }
 
     /// <summary>
@@ -119,9 +130,6 @@ public class MoveUI : MonoBehaviour
                 ResetPosition();
                 break;
         }
-
-        if (ct.GetActualDirection().Equals("END"))
-            print("POPUP here");
     }
 
     private void ResetPosition()

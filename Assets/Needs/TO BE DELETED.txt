@@ -24,7 +24,7 @@ Dans la case 1-1 on a 5 couleurs qui forment un W (je vais les numéroter)
  A [2]  Paint Set
  N [2]  Dejeuner Du Chat
  C [2]  PUZZLE 
- M      ???
+ M      Visit
  O      Marie-Thérèse
 
 
