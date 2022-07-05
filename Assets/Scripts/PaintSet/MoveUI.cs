@@ -52,8 +52,10 @@ public class MoveUI : MonoBehaviour
     /// </summary>
     public void StopMovePaintSet()
     {
-        print("X " + Mathf.Abs(transform.position.x - destination.transform.position.x));
-        print("Y " + Mathf.Abs(transform.position.y - destination.transform.position.y));
+        //DEBUG
+        //print("X " + Mathf.Abs(transform.position.x - destination.transform.position.x));
+        //print("Y " + Mathf.Abs(transform.position.y - destination.transform.position.y));
+
         if (Mathf.Abs(transform.position.x - destination.transform.position.x) <= distanceMaxXToBeFinished &&
             Mathf.Abs(transform.position.y - destination.transform.position.y) <= distanceMaxYToBeFinished)
         {

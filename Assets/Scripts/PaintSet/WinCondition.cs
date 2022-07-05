@@ -10,15 +10,18 @@ public class WinCondition : MonoBehaviour
 
     private GameObject[] aPieces;
     private GameObject   popUpEnd;
+    private GameObject   mapButton;
     private bool         isFinished;
 
-        void Start()
-        {
-            aPieces = GameObject.FindGameObjectsWithTag("Piece");
+    void Start()
+    {
+        aPieces = GameObject.FindGameObjectsWithTag("Piece");
 
-            popUpEnd = GameObject.FindGameObjectsWithTag("Popup")[0];
-            popUpEnd.SetActive(false);
-        }
+        popUpEnd = GameObject.FindGameObjectsWithTag("Popup")[0];
+        popUpEnd.SetActive(false);
+        mapButton = GameObject.Find("MapButton");
+        mapButton.SetActive(false);
+    }
 
     public void Verify()
     {
@@ -33,6 +36,7 @@ public class WinCondition : MonoBehaviour
         {
             PlayerPrefs.SetInt(clueName, 1);
             popUpEnd.SetActive(true);
+            mapButton.SetActive(true);
         }
     }
 }

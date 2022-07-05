@@ -10,6 +10,7 @@ public class CluesRevealer : MonoBehaviour
 {
     private static int NUMBER_OF_CLUES_TO_FIND = 7;
 
+    private static string[] aLetter = { "F", "R", "A", "N", "C", "M", "O" };
     [SerializeField] private List<GameObject> lClues = new List<GameObject>();
     private int numberOfCluesRevealed = 0;
 
@@ -24,12 +25,13 @@ public class CluesRevealer : MonoBehaviour
 
         for (int i = 0; i < lClues.Count; i++)
             if (PlayerPrefs.HasKey(lClues[i].name) && PlayerPrefs.GetInt(lClues[i].name) == 1)
-            {
                 lClues[i].SetActive(true);
-                numberOfCluesRevealed++;
-            }
             else
                 lClues[i].SetActive(false);
+
+        for (int i = 0; i < aLetter.Length; i++)
+            if (PlayerPrefs.GetInt(aLetter[i]) == 1)
+                numberOfCluesRevealed++;
 
         //If we unlocked a new clues since the last Map loading
         if (PlayerPrefs.GetInt("Number of clues unlocked") < numberOfCluesRevealed)
@@ -38,7 +40,7 @@ public class CluesRevealer : MonoBehaviour
             PlayerPrefs.SetInt("Number of clues unlocked", numberOfCluesRevealed);
         }
 
-        if(numberOfCluesRevealed >= 7)
+        if(numberOfCluesRevealed >= NUMBER_OF_CLUES_TO_FIND)
             PlayerPrefs.SetInt("-", 1);
 
         for (int i = 0; i < lClues.Count; i++)
