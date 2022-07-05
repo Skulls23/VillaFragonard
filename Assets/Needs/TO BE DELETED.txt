@@ -81,3 +81,11 @@ Gravures = livre
 MODIF NEED
 
 Refaire marie therese, faire scale l image pour scale en meme temps les boxs
+
+
+Jeu Choix puzzle
+
+Le joueur se met devant le tableau, il a 6 choix de piece random dont une est bonne.
+Le tableau se complete coup apres coup en commencant par le haut gauche vers bas droite
+Si la reponse est bonne, la piece découverte prend un albedo de 1, si il se trompe, on lui redonne des pieces random avec la meme bonne reponse mais placé différemment
+Ca peut etre cool de colorer l'endroit que le joueur doit trouver
