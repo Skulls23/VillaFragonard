@@ -44,7 +44,7 @@ public class CluesRevealer : MonoBehaviour
             PlayerPrefs.SetInt("-", 1);
 
         for (int i = 0; i < lClues.Count; i++)
-            if (lClues[i].name.Equals("-"))
+            if (lClues[i].name.Equals("-") && PlayerPrefs.GetInt("-") == 1)
                 lClues[i].SetActive(true);
     }
 }
