@@ -18,6 +18,7 @@ public class ChangingChoices : MonoBehaviour
         aSprites      = Resources.LoadAll<Sprite>("Brutus/AEvariste-juniusbrutus");
 
         aPieces[pieceActuallyresearched].transform.GetChild(0).GetComponent<Image>().color = new Color(255, 255, 255, .35f);
+        aPieces[pieceActuallyresearched].transform.GetChild(1).GetComponent<Text>().color = new Color(0, 0, 0, 1);
         Scramble();
     }
 
@@ -31,7 +32,8 @@ public class ChangingChoices : MonoBehaviour
         if(answer == true)
         {
             aPieces[pieceActuallyresearched].GetComponent<Image>().color = new Color(255, 255, 255, 1);
-            aPieces[pieceActuallyresearched++].transform.GetChild(0).GetComponent<Image>().color = new Color(255, 255, 255, 0f);
+            aPieces[pieceActuallyresearched].transform.GetChild(0).GetComponent<Image>().color = new Color(255, 255, 255, 0f);
+            aPieces[pieceActuallyresearched++].transform.GetChild(1).GetComponent<Text>().color = new Color(0, 0, 0, 0f);
         }
 
         if (pieceActuallyresearched >= aPieces.Length)
@@ -39,6 +41,7 @@ public class ChangingChoices : MonoBehaviour
         else
         {
             aPieces[pieceActuallyresearched].transform.GetChild(0).GetComponent<Image>().color = new Color(255, 255, 255, .35f);
+            aPieces[pieceActuallyresearched].transform.GetChild(1).GetComponent<Text>().color = new Color(0, 0, 0, 1);
             Scramble();
         }
             
