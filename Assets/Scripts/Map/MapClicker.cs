@@ -16,13 +16,14 @@ public class MapClicker : MonoBehaviour
 
     private void MouseListener()
     {
-        if (Input.GetMouseButtonDown(0))
+        /*if (Input.GetMouseButtonDown(0))
         {
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-            if (hit.collider != null && hit.collider.GetType() == typeof(BoxCollider2D))
-                    for (int i = 0; i < lOrdersNameScene.Count; i++)
-                        if (hit.collider == lOrdersCollider[i].GetComponent<Collider2D>())
-                            SceneManager.LoadScene(sceneName: lOrdersNameScene[i]);
-        }
+            print(hit.transform.name[0]);
+            if (hit.collider != null && hit.collider.GetType() == typeof(BoxCollider2D) && PlayerPrefs.HasKey(hit.transform.name[0] + "") && PlayerPrefs.GetInt(hit.transform.name[0] + "") == 0)
+                for (int i = 0; i < lOrdersNameScene.Count; i++)
+                    if (hit.collider == lOrdersCollider[i].GetComponent<Collider2D>())
+                        SceneManager.LoadScene(sceneName: lOrdersNameScene[i]);
+        }*/
     }
 }

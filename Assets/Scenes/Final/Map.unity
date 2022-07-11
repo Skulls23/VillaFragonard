@@ -362,7 +362,7 @@ GameObject:
   - component: {fileID: 260640775}
   - component: {fileID: 260640774}
   m_Layer: 5
-  m_Name: Tableau (4)
+  m_Name: M collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -405,7 +405,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 260640775}
-          m_TargetAssemblyTypeName: ClickerWithoutCollider, Assembly-CSharp
+          m_TargetAssemblyTypeName: RedirectToScene, Assembly-CSharp
           m_MethodName: Redirect
           m_Mode: 1
           m_Arguments:
@@ -1372,7 +1372,7 @@ GameObject:
   - component: {fileID: 835020159}
   - component: {fileID: 835020158}
   m_Layer: 5
-  m_Name: Tableau (2)
+  m_Name: O collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1415,7 +1415,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 835020159}
-          m_TargetAssemblyTypeName: ClickerWithoutCollider, Assembly-CSharp
+          m_TargetAssemblyTypeName: RedirectToScene, Assembly-CSharp
           m_MethodName: Redirect
           m_Mode: 1
           m_Arguments:
@@ -1659,7 +1659,7 @@ GameObject:
   - component: {fileID: 1108225946}
   - component: {fileID: 1108225945}
   m_Layer: 5
-  m_Name: Tableau (1)
+  m_Name: N collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1702,7 +1702,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1108225946}
-          m_TargetAssemblyTypeName: ClickerWithoutCollider, Assembly-CSharp
+          m_TargetAssemblyTypeName: RedirectToScene, Assembly-CSharp
           m_MethodName: Redirect
           m_Mode: 1
           m_Arguments:
@@ -1963,7 +1963,7 @@ GameObject:
   - component: {fileID: 1263647960}
   - component: {fileID: 1263647959}
   m_Layer: 5
-  m_Name: Set Peinture
+  m_Name: A collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2006,7 +2006,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1263647960}
-          m_TargetAssemblyTypeName: ClickerWithoutCollider, Assembly-CSharp
+          m_TargetAssemblyTypeName: RedirectToScene, Assembly-CSharp
           m_MethodName: Redirect
           m_Mode: 1
           m_Arguments:
@@ -2307,7 +2307,7 @@ GameObject:
   - component: {fileID: 1642737567}
   - component: {fileID: 1642737570}
   m_Layer: 5
-  m_Name: Tableau
+  m_Name: F collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2401,7 +2401,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1642737567}
-          m_TargetAssemblyTypeName: ClickerWithoutCollider, Assembly-CSharp
+          m_TargetAssemblyTypeName: RedirectToScene, Assembly-CSharp
           m_MethodName: Redirect
           m_Mode: 1
           m_Arguments:
@@ -2501,7 +2501,7 @@ GameObject:
   - component: {fileID: 1811357759}
   - component: {fileID: 1811357758}
   m_Layer: 5
-  m_Name: Tableau (5)
+  m_Name: C collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2544,7 +2544,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1811357759}
-          m_TargetAssemblyTypeName: ClickerWithoutCollider, Assembly-CSharp
+          m_TargetAssemblyTypeName: RedirectToScene, Assembly-CSharp
           m_MethodName: Redirect
           m_Mode: 1
           m_Arguments:
@@ -2814,7 +2814,7 @@ GameObject:
   - component: {fileID: 2040055537}
   - component: {fileID: 2040055536}
   m_Layer: 5
-  m_Name: Tableau (3)
+  m_Name: R collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2857,7 +2857,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 2040055537}
-          m_TargetAssemblyTypeName: ClickerWithoutCollider, Assembly-CSharp
+          m_TargetAssemblyTypeName: RedirectToScene, Assembly-CSharp
           m_MethodName: Redirect
           m_Mode: 1
           m_Arguments:

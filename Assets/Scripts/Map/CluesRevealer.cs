@@ -25,7 +25,10 @@ public class CluesRevealer : MonoBehaviour
 
         for (int i = 0; i < lClues.Count; i++)
             if (PlayerPrefs.HasKey(lClues[i].name) && PlayerPrefs.GetInt(lClues[i].name) == 1)
+            {
                 lClues[i].SetActive(true);
+                GameObject.Find(lClues[i].name + " collider").SetActive(false); //disable the collider bound to that clue
+            }
             else
                 lClues[i].SetActive(false);
 
