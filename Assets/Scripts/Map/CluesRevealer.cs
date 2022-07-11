@@ -19,6 +19,15 @@ public class CluesRevealer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        /*PlayerPrefs.SetInt("A", 1);
+        PlayerPrefs.SetInt("N", 2);
+        PlayerPrefs.SetInt("C", 3);
+        PlayerPrefs.SetInt("R", 4);
+        PlayerPrefs.SetInt("M", 5);
+        PlayerPrefs.SetInt("F", 6);
+        PlayerPrefs.SetInt("O", 7);
+        PlayerPrefs.SetInt("Number of clues unlocked", 7);*/
+
         //If the game is launched for the first time
         if (PlayerPrefs.HasKey("Number of clues unlocked") == false)
         {
@@ -32,39 +41,16 @@ public class CluesRevealer : MonoBehaviour
             aCluesButton[i] = GameObject.Find("Clue Text (" + i + ")");
             aCluesButton[i].GetComponent<Image>().color = new Color(0, 0, 0, 0);
         }
-        
-        for (int i = 0; i < lClues.Count; i++)
-            if (PlayerPrefs.HasKey(lClues[i].name) && PlayerPrefs.GetInt(lClues[i].name) >= 1)
-                GameObject.Find(lClues[i].name + " collider").SetActive(false); //disable the collider bound to that clue
-        
 
         for (int i = 0; i < PlayerPrefs.GetInt("Number of clues unlocked"); i++)
         {
-            aCluesButton[i].GetComponent<Image>().color = new Color(255, 255, 255, 1f); //the button bound to the clue text again reappear
+            aCluesButton[i].GetComponent<Image>().color = new Color(255, 255, 255, 1f); //the clue button bound to the clue text again reappear
             for (int j = 0; j < aLetter.Length; j++)
                 if (PlayerPrefs.GetInt(aLetter[j]) == i + 1)
+                { 
                     aCluesButton[i].GetComponent<Image>().sprite = Resources.Load<Sprite>("Clues/" + aLetter[j]);
+                    GameObject.Find(aLetter[j] + " collider").SetActive(false); //disable the collider bound to that clue
+                }
         }
-            
-        /*
-        if (PlayerPrefs.GetInt(aLetter[i]) == 1)
-            {
-                
-                numberOfCluesRevealed++;
-            }*/
-
-        /*//If we unlocked a new clues since the last Map loading
-        if (PlayerPrefs.GetInt("Number of clues unlocked") < numberOfCluesRevealed)
-        {
-            GetComponent<ShowTextClue>().ShowClue(numberOfCluesRevealed - 1); //-1 because the first clue is the number 0 in the array
-            PlayerPrefs.SetInt("Number of clues unlocked", numberOfCluesRevealed);
-        }*/
-
-        if (PlayerPrefs.GetInt("Number of clues unlocked") >= NUMBER_OF_CLUES_TO_FIND)
-            PlayerPrefs.SetInt("-", 1);
-
-        for (int i = 0; i < lClues.Count; i++)
-            if (lClues[i].name.Equals("-") && PlayerPrefs.GetInt("-") == 1)
-                lClues[i].SetActive(true);
     }
 }

@@ -40,13 +40,16 @@ public class MoveClues : MonoBehaviour
             mousePos = Input.mousePosition;
 
             for (int i = 0; i < aDestinations.Length; i++)
-                if (Mathf.Abs(transform.position.x - aDestinations[i].transform.position.x) <= distanceMaxXToBeFinished &&
-                Mathf.Abs(transform.position.y - aDestinations[i].transform.position.y) <= distanceMaxYToBeFinished)
-                {
-                    ChangeImage(aDestinations[i]);
-                    ResetPosition();
-                }
+                if(aDestinations[i].transform.name != "-") //can't change the -
+                    if (Mathf.Abs(transform.position.x - aDestinations[i].transform.position.x) <= distanceMaxXToBeFinished &&
+                        Mathf.Abs(transform.position.y - aDestinations[i].transform.position.y) <= distanceMaxYToBeFinished)
+                    {
+                        ChangeImage(aDestinations[i]);
+                        GameObject.Find("Gameplay").GetComponent<VerifyResultMap>().ChangeMade();
+                    }
+                        
         }
+        ResetPosition();
     }
 
     private void ChangeImage(GameObject destination)
