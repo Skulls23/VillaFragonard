@@ -11,6 +11,11 @@ public class RedirectToScene : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName: redirection);
     }
+    
+    public void RedirectUrl()
+    {
+        Application.OpenURL(redirection);
+    }
 
     public void Quit()
     {
