@@ -58,11 +58,11 @@ DONE Les anecdotes vont etres donnés dans un ordre precis peu importe le mini j
 
 NEED Avoir une histoire, genre un fil d Ariane en mode enquêteur (scène qui ne pop qu'une fois ?)
 
-NEED Mini jeu via bouton qui apparaît après la fin du jeu, via accès au site lien base donnée
+DEMI DONE Mini jeu via bouton qui apparaît après la fin du jeu, via accès au site lien base donnée
 
 NEED Jeu avec les plaques pour gravures, on a une plaque et on doit trouver sur quelle gravure elle a été utilisé.
 
-NEED Placer les lettres dans l'ordre d'obtention (array) + donner une phrase à chaque fin avec la lettre. Voir ce texte en cliquant sur la lettre
+DONE Placer les lettres dans l'ordre d'obtention (array) + donner une phrase à chaque fin avec la lettre. Voir ce texte en cliquant sur la lettre
 NEED Donner les lettre en fonction du placement Dans le musée, premier lettre dernier tableau
 
 
@@ -82,7 +82,7 @@ NEED ESCALIER ET SERVEUR DE DONNÉES POSSIBLE EN STANDALONE
 MODIF NEED
 
 DONE Refaire marie therese, faire scale l image pour scale en meme temps les boxs
-NEED Paint set, faire en sorte que les items du bas ait une plus grande liberté d'erreur
+DONE Paint set, faire en sorte que les items du bas ait une plus grande liberté d'erreur
 
 DONE Jeu Choix puzzle
 	Le joueur se met devant le tableau, il a 6 choix de piece random dont une est bonne.
