@@ -451,7 +451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxDelayToDoubleTap: 0.5
+  MaxDelayToDoubleTap: 0.3
 --- !u!1 &144489320
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,7 +646,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxDelayToDoubleTap: 0.5
+  MaxDelayToDoubleTap: 0.3
 --- !u!1 &295740451
 GameObject:
   m_ObjectHideFlags: 0
@@ -938,7 +938,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxDelayToDoubleTap: 0.5
+  MaxDelayToDoubleTap: 0.3
 --- !u!1 &400342681
 GameObject:
   m_ObjectHideFlags: 0
@@ -1177,7 +1177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxDelayToDoubleTap: 0.5
+  MaxDelayToDoubleTap: 0.3
 --- !u!1 &609840622
 GameObject:
   m_ObjectHideFlags: 0
@@ -1392,7 +1392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxDelayToDoubleTap: 0.5
+  MaxDelayToDoubleTap: 0.3
 --- !u!1 &685477379
 GameObject:
   m_ObjectHideFlags: 0
@@ -1511,7 +1511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxDelayToDoubleTap: 0.5
+  MaxDelayToDoubleTap: 0.3
 --- !u!1 &698676738
 GameObject:
   m_ObjectHideFlags: 0
@@ -1630,7 +1630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxDelayToDoubleTap: 0.5
+  MaxDelayToDoubleTap: 0.3
 --- !u!1 &703683818
 GameObject:
   m_ObjectHideFlags: 0
@@ -1749,7 +1749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxDelayToDoubleTap: 0.5
+  MaxDelayToDoubleTap: 0.3
 --- !u!1 &765199583
 GameObject:
   m_ObjectHideFlags: 0
@@ -1868,7 +1868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxDelayToDoubleTap: 0.5
+  MaxDelayToDoubleTap: 0.3
 --- !u!1 &765412162
 GameObject:
   m_ObjectHideFlags: 0
@@ -1949,7 +1949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxDelayToDoubleTap: 0.5
+  MaxDelayToDoubleTap: 0.3
 --- !u!114 &765412167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2401,7 +2401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxDelayToDoubleTap: 0.5
+  MaxDelayToDoubleTap: 0.3
 --- !u!1 &954081505
 GameObject:
   m_ObjectHideFlags: 0
@@ -2599,7 +2599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxDelayToDoubleTap: 0.5
+  MaxDelayToDoubleTap: 0.3
 --- !u!1 &1092461185
 GameObject:
   m_ObjectHideFlags: 0
@@ -2994,7 +2994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxDelayToDoubleTap: 0.5
+  MaxDelayToDoubleTap: 0.3
 --- !u!114 &1717574547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3308,7 +3308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxDelayToDoubleTap: 0.5
+  MaxDelayToDoubleTap: 0.3
 --- !u!1 &1927424652
 GameObject:
   m_ObjectHideFlags: 0
@@ -3427,7 +3427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxDelayToDoubleTap: 0.5
+  MaxDelayToDoubleTap: 0.3
 --- !u!1 &1927520173
 GameObject:
   m_ObjectHideFlags: 0
@@ -3546,7 +3546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxDelayToDoubleTap: 0.5
+  MaxDelayToDoubleTap: 0.3
 --- !u!1 &1967476518
 GameObject:
   m_ObjectHideFlags: 0
@@ -3720,7 +3720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxDelayToDoubleTap: 0.5
+  MaxDelayToDoubleTap: 0.3
 --- !u!114 &1985424431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4027,7 +4027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxDelayToDoubleTap: 0.5
+  MaxDelayToDoubleTap: 0.3
 --- !u!1 &444199134070440572
 GameObject:
   m_ObjectHideFlags: 0
@@ -4108,7 +4108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxDelayToDoubleTap: 0.5
+  MaxDelayToDoubleTap: 0.3
 --- !u!114 &444199134070440577
 MonoBehaviour:
   m_ObjectHideFlags: 0

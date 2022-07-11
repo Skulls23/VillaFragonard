@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxDelayToDoubleTap: 0.5
+  MaxDelayToDoubleTap: 0.3
 --- !u!114 &-3689782354349206679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103,8 +103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4328eca4b890d754c8876b53b7e863ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceMaxToBeFinishedOnX: 80
-  distanceMaxToBeFinishedOnY: 50
+  distanceMaxXToBeFinished: 200
+  distanceMaxYToBeFinished: 80
   destination: {fileID: 0}
 --- !u!114 &563182269031382476
 MonoBehaviour:

@@ -4,14 +4,23 @@ using UnityEngine;
 
 public class UnlockSecrets : MonoBehaviour
 {
-    private GameObject secretButton;
+    private GameObject stairsButton;
+    private GameObject reserveButton;
     // Start is called before the first frame update
     void Start()
     {
-        secretButton = GameObject.Find("Secret");
+        stairsButton = GameObject.Find("Stairs");
+        reserveButton = GameObject.Find("Reserve");
+
         if (PlayerPrefs.HasKey("Unlock secret") && PlayerPrefs.GetInt("Unlock secret") == 1)
-            secretButton.SetActive(true);
+        {
+            stairsButton.SetActive(true);
+            reserveButton.SetActive(true);
+        }
         else
-            secretButton.SetActive(false);
+        {
+            stairsButton.SetActive(false);
+            reserveButton.SetActive(false);
+        }
     }
 }

@@ -19,14 +19,14 @@ public class CluesRevealer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        /*PlayerPrefs.SetInt("A", 1);
+        PlayerPrefs.SetInt("A", 1);
         PlayerPrefs.SetInt("N", 2);
         PlayerPrefs.SetInt("C", 3);
         PlayerPrefs.SetInt("R", 4);
         PlayerPrefs.SetInt("M", 5);
         PlayerPrefs.SetInt("F", 6);
         PlayerPrefs.SetInt("O", 7);
-        PlayerPrefs.SetInt("Number of clues unlocked", 7);*/
+        PlayerPrefs.SetInt("Number of clues unlocked", 7);
 
         //If the game is launched for the first time
         if (PlayerPrefs.HasKey("Number of clues unlocked") == false)
