@@ -43,7 +43,8 @@ public class Clicker : MonoBehaviour
         else
         {
             text.text = "Niveau fini";
-            PlayerPrefs.SetInt(clueName, 1);
+            PlayerPrefs.SetInt("Number of clues unlocked", PlayerPrefs.GetInt("Number of clues unlocked") + 1);
+            PlayerPrefs.SetInt(clueName, PlayerPrefs.GetInt("Number of clues unlocked"));
         }
             
     }

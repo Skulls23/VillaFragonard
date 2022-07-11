@@ -65,9 +65,9 @@ NEED Jeu avec les plaques pour gravures, on a une plaque et on doit trouver sur 
 NEED Placer les lettres dans l'ordre d'obtention (array) + donner une phrase à chaque fin avec la lettre. Voir ce texte en cliquant sur la lettre
 NEED Donner les lettre en fonction du placement Dans le musée, premier lettre dernier tableau
 
-NEED
 
-Obtenir C ET C cédille et quand t as tout tu as le tiret à la fin
+DONE Obtenir C ET C cédille et quand t as tout tu as le tiret à la fin
+
 8 jeux totaux
 
 À la fin, on doit remetre les lettres dans l ordres en les slidant entre elle en mode slider, la map est lock et on unlock les lettre pour les mettre sur les tiret. 

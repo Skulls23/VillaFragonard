@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PuzzleMoveSystem : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class PuzzleMoveSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        correctForm = GameObject.Find("c" + this.name);
+        correctForm = GameObject.Find(gameObject.GetComponent<Image>().sprite.name);
         resetPosition = this.transform.position;
     }
 
@@ -33,22 +34,19 @@ public class PuzzleMoveSystem : MonoBehaviour
         }
     }
 
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
-        if(Input.GetMouseButtonDown(0))
-        {
-            Vector3 mousePos;
-            mousePos = Input.mousePosition;
-            mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+        Vector3 mousePos;
+        mousePos = Input.mousePosition;
+        mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
-            startPosX = mousePos.x - this.transform.position.x;
-            startPosY = mousePos.y - this.transform.position.y;
+        startPosX = mousePos.x - this.transform.position.x;
+        startPosY = mousePos.y - this.transform.position.y;
 
-            moving = true;
-        }
+        moving = true;
     }
 
-    private void OnMouseUp()
+    public void OnMouseUp()
     {
         moving = false;
 

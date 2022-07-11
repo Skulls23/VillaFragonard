@@ -31,7 +31,8 @@ public class ButtonEvent : MonoBehaviour
         if(isTrue)
         {
             transform.GetComponent<Image>().color = Color.green;
-            PlayerPrefs.SetInt(clueName, 1);
+            PlayerPrefs.SetInt("Number of clues unlocked", PlayerPrefs.GetInt("Number of clues unlocked") + 1);
+            PlayerPrefs.SetInt(clueName, PlayerPrefs.GetInt("Number of clues unlocked"));
             PopUp();
         }
         else

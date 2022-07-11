@@ -10,7 +10,7 @@ using System.IO;
 /// </summary>
 public class DoubleTapZoom : MonoBehaviour
 {
-    [SerializeField] private float MaxDelayToDoubleTap = 0.5f;
+    [SerializeField] private float MaxDelayToDoubleTap = 0.3f;
 
     private string[] aTxt;
 
@@ -20,7 +20,7 @@ public class DoubleTapZoom : MonoBehaviour
 
     public void Clicked()
     {
-        if(GetComponent<Image>().color.a != 0)
+        if (GetComponent<Image>().color.a != 0)
         {
             tap++;
 
@@ -40,7 +40,30 @@ public class DoubleTapZoom : MonoBehaviour
             }
         }
     }
-    
+
+    public void ClickedMap()
+    {
+        if (GetComponent<Image>().color.a != 0)
+        {
+            tap++;
+
+            if (tap == 1)
+            {
+                //do stuff
+                readyForDoubleTap = true;
+                StartCoroutine(DoubleTapInterval());
+            }
+            else if (tap > 1 && readyForDoubleTap)
+            {
+                //do stuff
+                GameObject.Find("Gameplay").GetComponent<ShowTextClue>().ShowClue(transform.GetSiblingIndex());
+
+                tap = 0;
+                doubleDone = true;
+            }
+        }
+    }
+
     IEnumerator DoubleTapInterval()
     {
         yield return new WaitForSeconds(MaxDelayToDoubleTap);

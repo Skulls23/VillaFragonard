@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 6304655114932439858}
   - component: {fileID: 8916614009307907928}
   - component: {fileID: 2243578687991314852}
+  - component: {fileID: 4420714344425021531}
+  - component: {fileID: 1913765549191464719}
   - component: {fileID: 2512561043060857798}
   m_Layer: 5
   m_Name: Clue Text
@@ -69,7 +71,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 78cf48ca0afcfac4997da7d0b6cbf0f6, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -89,6 +91,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0832975da1cca6428d144b7814e1883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4420714344425021531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7989698132885328754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6589c6f9453eac498fa4321176acc36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxDelayToDoubleTap: 0.3
+--- !u!114 &1913765549191464719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7989698132885328754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb2d1e4cf4e73db4495e2bc3209c0370, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanceMaxXToBeFinished: 50
+  distanceMaxYToBeFinished: 120
 --- !u!114 &2512561043060857798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,9 +135,41 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2243578687991314852}
-          m_TargetAssemblyTypeName: ClueLogoClicked, Assembly-CSharp
-          m_MethodName: ShowClue
+        - m_Target: {fileID: 4420714344425021531}
+          m_TargetAssemblyTypeName: DoubleTapZoom, Assembly-CSharp
+          m_MethodName: ClickedMap
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1913765549191464719}
+          m_TargetAssemblyTypeName: MoveClues, Assembly-CSharp
+          m_MethodName: StopMove
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 5
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1913765549191464719}
+          m_TargetAssemblyTypeName: MoveClues, Assembly-CSharp
+          m_MethodName: Move
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
