@@ -26,7 +26,7 @@ public class VerifyResultMap : MonoBehaviour
         if(isFinished)
         {
             print("End");
-            PlayerPrefs.SetInt("Unlock secrets", 1);
+            PlayerPrefs.SetInt("Unlock secret", 1);
         }
     }
 }
