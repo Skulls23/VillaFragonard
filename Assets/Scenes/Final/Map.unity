@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 25416570}
   m_Layer: 5
   m_Name: C
-  m_TagString: Untagged
+  m_TagString: ChoicePiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 70233815}
   m_Layer: 5
   m_Name: A
-  m_TagString: Untagged
+  m_TagString: ChoicePiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -286,7 +286,7 @@ GameObject:
   - component: {fileID: 103156872}
   m_Layer: 5
   m_Name: F
-  m_TagString: Untagged
+  m_TagString: ChoicePiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -733,7 +733,7 @@ GameObject:
   - component: {fileID: 378876310}
   m_Layer: 5
   m_Name: M
-  m_TagString: Untagged
+  m_TagString: ChoicePiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -808,7 +808,7 @@ GameObject:
   - component: {fileID: 379626778}
   m_Layer: 5
   m_Name: O
-  m_TagString: Untagged
+  m_TagString: ChoicePiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1007,7 +1007,7 @@ GameObject:
   - component: {fileID: 565423325}
   m_Layer: 5
   m_Name: R
-  m_TagString: Untagged
+  m_TagString: ChoicePiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1316,7 +1316,7 @@ GameObject:
   - component: {fileID: 782529877}
   m_Layer: 5
   m_Name: N
-  m_TagString: Untagged
+  m_TagString: ChoicePiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1914,7 +1914,7 @@ GameObject:
   - component: {fileID: 994000347}
   m_Layer: 5
   m_Name: C
-  m_TagString: Untagged
+  m_TagString: ChoicePiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2804,7 +2804,7 @@ GameObject:
   - component: {fileID: 1522431755}
   m_Layer: 5
   m_Name: '-'
-  m_TagString: Untagged
+  m_TagString: ChoicePiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3192,7 +3192,7 @@ GameObject:
   - component: {fileID: 1901474332}
   m_Layer: 5
   m_Name: A
-  m_TagString: Untagged
+  m_TagString: ChoicePiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3681,7 +3681,7 @@ GameObject:
   - component: {fileID: 2055598040}
   m_Layer: 5
   m_Name: N
-  m_TagString: Untagged
+  m_TagString: ChoicePiece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -8,6 +8,8 @@ public class MoveClues : MonoBehaviour
     [SerializeField] private float distanceMaxXToBeFinished = 50f;
     [SerializeField] private float distanceMaxYToBeFinished = 120f;
 
+    private static int NUMBER_OF_CLUES_TO_FIND = 7;
+
     private GameObject[] aDestinations;
     private float startPosX;
     private float startPosY;
@@ -21,24 +23,30 @@ public class MoveClues : MonoBehaviour
 
     public void Move()
     {
-        Vector3 mousePos;
-        mousePos = Input.mousePosition;
+        if(PlayerPrefs.GetInt("Number of clues unlocked") >= NUMBER_OF_CLUES_TO_FIND)
+        {
+            Vector3 mousePos;
+            mousePos = Input.mousePosition;
 
-        gameObject.transform.position = new Vector3(mousePos.x, mousePos.y, gameObject.transform.position.z);
+            gameObject.transform.position = new Vector3(mousePos.x, mousePos.y, gameObject.transform.position.z);
+        }
     }
 
     public void StopMove()
     {
-        Vector3 mousePos;
-        mousePos = Input.mousePosition;
+        if (PlayerPrefs.GetInt("Number of clues unlocked") >= NUMBER_OF_CLUES_TO_FIND)
+        {
+            Vector3 mousePos;
+            mousePos = Input.mousePosition;
 
-        for (int i = 0; i < aDestinations.Length; i++)
-            if (Mathf.Abs(transform.position.x - aDestinations[i].transform.position.x) <= distanceMaxXToBeFinished &&
-            Mathf.Abs(transform.position.y - aDestinations[i].transform.position.y) <= distanceMaxYToBeFinished)
-            {
-                ChangeImage(aDestinations[i]);
-                ResetPosition();
-            }
+            for (int i = 0; i < aDestinations.Length; i++)
+                if (Mathf.Abs(transform.position.x - aDestinations[i].transform.position.x) <= distanceMaxXToBeFinished &&
+                Mathf.Abs(transform.position.y - aDestinations[i].transform.position.y) <= distanceMaxYToBeFinished)
+                {
+                    ChangeImage(aDestinations[i]);
+                    ResetPosition();
+                }
+        }
     }
 
     private void ChangeImage(GameObject destination)
