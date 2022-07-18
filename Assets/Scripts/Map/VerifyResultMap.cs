@@ -42,7 +42,6 @@ public class VerifyResultMap : MonoBehaviour
         {
             PlayerPrefs.SetInt("Unlock secret", 1);
             popup.SetActive(true);
-            print("end");
             popup.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = endText;
         }
     }
