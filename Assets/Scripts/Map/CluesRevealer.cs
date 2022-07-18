@@ -9,12 +9,8 @@ using UnityEngine.UI;
 /// </summary>
 public class CluesRevealer : MonoBehaviour
 {
-    private static int NUMBER_OF_CLUES_TO_FIND = 7;
-
-    [SerializeField] private List<GameObject> lClues = new List<GameObject>();
     private static string[] aLetter = { "F", "R", "A", "N", "C", "M", "O" };
     private GameObject[] aCluesButton;
-    private int numberOfCluesRevealed = 0;
 
     // Start is called before the first frame update
     void Start()
