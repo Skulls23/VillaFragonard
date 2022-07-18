@@ -16,8 +16,6 @@ public class WinCondition : MonoBehaviour
 
         popUpEnd = GameObject.FindGameObjectsWithTag("Popup")[0];
         popUpEnd.SetActive(false);
-        mapButton = GameObject.Find("MapButton");
-        mapButton.SetActive(false);
     }
 
     public void Verify()

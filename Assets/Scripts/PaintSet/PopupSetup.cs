@@ -14,10 +14,9 @@ public class PopupSetup : MonoBehaviour
 
     public void RevealPopup(string title, string description, Sprite sprite)
     {
-        Debug.Log(sprite.name);
         popup.transform.GetChild(0).GetChild(0).GetComponent<Image>().sprite = sprite;
-        popup.transform.GetChild(0).GetChild(1).GetChild(0).GetComponent<Text>().text = title;
-        popup.transform.GetChild(0).GetChild(1).GetChild(1).GetComponent<Text>().text = description;
+        popup.transform.GetChild(0).GetChild(1).GetComponent<Text>().text    = title;
+        popup.transform.GetChild(0).GetChild(2).GetComponent<Text>().text    = description;
         popup.SetActive(true);
     }
 }
