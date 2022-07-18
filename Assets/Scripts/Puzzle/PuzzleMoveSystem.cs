@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -51,7 +49,7 @@ public class PuzzleMoveSystem : MonoBehaviour
         moving = false;
 
         if (Mathf.Abs(this.transform.position.x - correctForm.transform.position.x) <= 0.5f &&
-           Mathf.Abs(this.transform.position.y - correctForm.transform.position.y) <= 0.5f)
+            Mathf.Abs(this.transform.position.y - correctForm.transform.position.y) <= 0.5f)
         {
             this.transform.position = new Vector3(correctForm.transform.position.x, correctForm.transform.position.y, this.transform.position.z);
             isFinished = true;

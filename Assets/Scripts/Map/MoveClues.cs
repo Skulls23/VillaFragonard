@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,21 +14,19 @@ public class MoveClues : MonoBehaviour
 
     private void Start()
     {
-        if(! (PlayerPrefs.HasKey("Unlock secret") && PlayerPrefs.GetInt("Unlock secret") == 1))
+        if (! (PlayerPrefs.HasKey("Unlock secret") && PlayerPrefs.GetInt("Unlock secret") == 1))
         {
             aDestinations = GameObject.FindGameObjectsWithTag("ChoicePiece");
             startPosX = transform.position.x;
             startPosY = transform.position.y;
         }
         else
-        {
             Destroy(gameObject);
-        }
     }
 
     public void Move()
     {
-        if(PlayerPrefs.GetInt("Number of clues unlocked") >= NUMBER_OF_CLUES_TO_FIND)
+        if (PlayerPrefs.GetInt("Number of clues unlocked") >= NUMBER_OF_CLUES_TO_FIND)
         {
             Vector3 mousePos;
             mousePos = Input.mousePosition;
@@ -47,7 +43,7 @@ public class MoveClues : MonoBehaviour
             mousePos = Input.mousePosition;
 
             for (int i = 0; i < aDestinations.Length; i++)
-                if(aDestinations[i].transform.name != "-") //can't change the -
+                if (aDestinations[i].transform.name != "-") //can't change the -
                     if (Mathf.Abs(transform.position.x - aDestinations[i].transform.position.x) <= distanceMaxXToBeFinished &&
                         Mathf.Abs(transform.position.y - aDestinations[i].transform.position.y) <= distanceMaxYToBeFinished)
                     {

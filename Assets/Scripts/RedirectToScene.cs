@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,7 +9,7 @@ public class RedirectToScene : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName: redirection);
     }
-    
+
     public void RedirectUrl()
     {
         Application.OpenURL(redirection);

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -22,7 +20,7 @@ public class CluesRevealer : MonoBehaviour
 
         //The button to see again the clue text must disappear
         aCluesButton = new GameObject[aLetter.Length];
-        for(int i=0; i < aLetter.Length; i++)
+        for (int i = 0; i < aLetter.Length; i++)
         {
             aCluesButton[i] = GameObject.Find("Clue Text (" + i + ")");
             aCluesButton[i].GetComponent<Image>().color = new Color(0, 0, 0, 0);
@@ -33,7 +31,7 @@ public class CluesRevealer : MonoBehaviour
             aCluesButton[i].GetComponent<Image>().color = new Color(255, 255, 255, 1f); //the clue button bound to the clue text again reappear
             for (int j = 0; j < aLetter.Length; j++)
                 if (PlayerPrefs.GetInt(aLetter[j]) == i + 1)
-                { 
+                {
                     aCluesButton[i].GetComponent<Image>().sprite = Resources.Load<Sprite>("Clues/" + aLetter[j]);
                     GameObject.Find(aLetter[j] + " collider").SetActive(false); //disable the collider bound to that clue
                 }

@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class WinCondition : MonoBehaviour
@@ -32,7 +29,7 @@ public class WinCondition : MonoBehaviour
                 isFinished = false;
         }
 
-        if(isFinished)
+        if (isFinished)
         {
             PlayerPrefs.SetInt(clueName, 1);
             popUpEnd.SetActive(true);

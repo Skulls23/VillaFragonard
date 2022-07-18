@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -29,7 +27,7 @@ public class ChangingChoices : MonoBehaviour
     /// <param name="answer">Does the player clicked on the good picture ?</param>
     public void ImageSelected(bool answer)
     {
-        if(answer == true)
+        if (answer == true)
         {
             GameObject.Find("CPiece (" + pieceActuallyresearched + ")").GetComponent<Image>().color = new Color(255, 255, 255, 1);
             GameObject.Find("CPiece (" + pieceActuallyresearched + ")").transform.GetChild(0).GetComponent<Image>().color  = new Color(0, 0, 0, 0f);
@@ -58,9 +56,9 @@ public class ChangingChoices : MonoBehaviour
 
         int positionInArray = 1;
         int placeOfCorrectAnswer = Random.Range(0, aChoicePieces.Length);
-        for(int i = 0; i < aChoicePieces.Length; i++)
+        for (int i = 0; i < aChoicePieces.Length; i++)
         {
-            if(placeOfCorrectAnswer == i)
+            if (placeOfCorrectAnswer == i)
             {
                 fileName = "AEvariste-juniusbrutus_" + pieceActuallyresearched;
                 aChoicePieces[i].GetComponent<ActionHandler>().SetIsCorrectAnswer(true);
@@ -73,7 +71,7 @@ public class ChangingChoices : MonoBehaviour
                 aChoicePieces[i].GetComponent<ActionHandler>().SetIsCorrectAnswer(false);
             }
 
-            for(int j = 0; j < aSprites.Length; j++)
+            for (int j = 0; j < aSprites.Length; j++)
             {
                 if (aSprites[j].name.Equals(fileName))
                     aChoicePieces[i].GetComponent<Image>().sprite = aSprites[j];
@@ -93,14 +91,13 @@ public class ChangingChoices : MonoBehaviour
         while (isAlreadyPlaced)
         {
             isAlreadyPlaced = false;
-                for (int j = 0; j < aNumberAlreadyPlaced.Length && !isAlreadyPlaced; j++)
-                    if (number == aNumberAlreadyPlaced[j])
-                    {
-                        isAlreadyPlaced = true;
-                        number = Random.Range(0, 30);
-                    }
+            for (int j = 0; j < aNumberAlreadyPlaced.Length && !isAlreadyPlaced; j++)
+                if (number == aNumberAlreadyPlaced[j])
+                {
+                    isAlreadyPlaced = true;
+                    number = Random.Range(0, 30);
+                }
         }
-
         aNumberAlreadyPlaced[positionInArray] = number;
         return number;
     }

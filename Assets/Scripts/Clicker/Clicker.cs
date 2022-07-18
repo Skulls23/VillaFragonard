@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -51,7 +50,7 @@ public class Clicker : MonoBehaviour
 
     private void PopUp()
     {
-        if(string.Compare(lTextPopUp[missionNumber], "") != 0)
+        if (string.Compare(lTextPopUp[missionNumber], "") != 0)
         {
             popUp.SetActive(true);
             popUp.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = lTextPopUp[missionNumber];

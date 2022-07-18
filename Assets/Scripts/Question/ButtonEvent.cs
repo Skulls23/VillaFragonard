@@ -1,8 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ButtonEvent : MonoBehaviour
@@ -18,7 +15,7 @@ public class ButtonEvent : MonoBehaviour
     private void Start()
     {
         //do it only once, because pop up will disappear for others buttons
-        if(isTrue)
+        if (isTrue)
         {
             popUp = GameObject.FindGameObjectWithTag("Popup");
             popUp.SetActive(false);
@@ -28,7 +25,7 @@ public class ButtonEvent : MonoBehaviour
 
     public void Answer()
     {
-        if(isTrue)
+        if (isTrue)
         {
             transform.GetComponent<Image>().color = Color.green;
             PlayerPrefs.SetInt("Number of clues unlocked", PlayerPrefs.GetInt("Number of clues unlocked") + 1);

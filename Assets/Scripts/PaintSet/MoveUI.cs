@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -108,11 +106,9 @@ public class MoveUI : MonoBehaviour
                                  Mathf.Abs(Mathf.Abs(mousePos.y) - Mathf.Abs(aSide[i].transform.position.y));
 
         int sideNumber = 9;
-        for(int i = 0; i < aAbsoluteValues.Length; i++)
+        for (int i = 0; i < aAbsoluteValues.Length; i++)
             if (aAbsoluteValues[i] == Mathf.Min(aAbsoluteValues))
                 sideNumber = i;
-
-        print(ct.GetActualDirection());
 
         switch (aSide[sideNumber].name)
         {

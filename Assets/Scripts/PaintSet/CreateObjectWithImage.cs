@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -26,7 +24,7 @@ public class CreateObjectWithImage : MonoBehaviour
 
     public void ObjectPlaced()
     {
-        if(++numberPlaced % 8 == 0)
+        if (++numberPlaced % 8 == 0)
             PlaceImages();
     }
 
@@ -41,7 +39,7 @@ public class CreateObjectWithImage : MonoBehaviour
         for (int i = 0; i<scrambleNumber; i++)
         {
             randomNumber = Random.Range(0, objectNumber);
-            if(tempSpriteA != null)
+            if (tempSpriteA != null)
             {
                 tempSpriteB = aSprites[randomNumber];
                 aSprites[randomNumber] = tempSpriteA;
@@ -60,7 +58,6 @@ public class CreateObjectWithImage : MonoBehaviour
     private void PlaceImages()
     {
         for (int i = 0; i < aObjectsInHierarchy.Length; i++)
-        {
             if (spriteSelector < aSprites.Length)
             {
                 aObjectsInHierarchy[i].GetComponent<Image>().sprite = aSprites[spriteSelector++];
@@ -68,7 +65,6 @@ public class CreateObjectWithImage : MonoBehaviour
             }
             else
                 Disappear(aObjectsInHierarchy[i]);
-        }
     }
 
     private void Disappear(GameObject o)

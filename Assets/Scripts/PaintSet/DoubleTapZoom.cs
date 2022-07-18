@@ -1,9 +1,7 @@
+using System.Collections;
+using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
-using UnityEngine.EventSystems;
-using TMPro;
-using System.IO;
 
 /// <summary>
 /// This script allow to activate the pop up to get info
@@ -26,13 +24,11 @@ public class DoubleTapZoom : MonoBehaviour
 
             if (tap == 1)
             {
-                //do stuff
                 readyForDoubleTap = true;
                 StartCoroutine(DoubleTapInterval());
             }
             else if (tap > 1 && readyForDoubleTap)
             {
-                //do stuff
                 RevealPopup();
 
                 tap = 0;
@@ -49,13 +45,11 @@ public class DoubleTapZoom : MonoBehaviour
 
             if (tap == 1)
             {
-                //do stuff
                 readyForDoubleTap = true;
                 StartCoroutine(DoubleTapInterval());
             }
             else if (tap > 1 && readyForDoubleTap)
             {
-                //do stuff
                 GameObject.Find("Gameplay").GetComponent<ShowTextClue>().ShowClue(transform.GetSiblingIndex());
 
                 tap = 0;
