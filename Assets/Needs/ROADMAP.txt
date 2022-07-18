@@ -89,3 +89,7 @@ DONE Jeu Choix puzzle
 	Le tableau se complete coup apres coup en commencant par le haut gauche vers bas droite
 	Si la reponse est bonne, la piece découverte prend un albedo de 1, si il se trompe, on lui redonne des pieces random avec la meme bonne reponse mais placé différemment
 	Ca peut etre cool de colorer l'endroit que le joueur doit trouver
+
+NEED
+	INFO sur une salle caché, bouton en plus at the end
+	On aura une suite d'info sur plusieurs tableau. Une fois une info lue on passe a la suivante
