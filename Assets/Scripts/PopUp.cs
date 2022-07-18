@@ -13,4 +13,9 @@ public class PopUp : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName: "Map");
     }
+
+    public void DestroyPopup()
+    {
+        Destroy(transform.parent.parent.gameObject);
+    }
 }

@@ -421,7 +421,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Que fait Marguerite Gerard
+  m_Text: Que fait Marguerite Gerard ?
 --- !u!222 &370014792
 CanvasRenderer:
   m_ObjectHideFlags: 0
