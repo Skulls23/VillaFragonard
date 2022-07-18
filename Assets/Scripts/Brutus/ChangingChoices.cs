@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class ChangingChoices : MonoBehaviour
 {
     private GameObject[] aChoicePieces;
@@ -29,7 +30,7 @@ public class ChangingChoices : MonoBehaviour
     {
         if (answer == true)
         {
-            GameObject.Find("CPiece (" + pieceActuallyresearched + ")").GetComponent<Image>().color = new Color(255, 255, 255, 1);
+            GameObject.Find("CPiece (" + pieceActuallyresearched + ")").GetComponent<Image>().color                        = new Color(255, 255, 255, 1);
             GameObject.Find("CPiece (" + pieceActuallyresearched + ")").transform.GetChild(0).GetComponent<Image>().color  = new Color(0, 0, 0, 0f);
             GameObject.Find("CPiece (" + pieceActuallyresearched++ + ")").transform.GetChild(1).GetComponent<Text>().color = new Color(0, 0, 0, 0f);
         }
@@ -39,7 +40,7 @@ public class ChangingChoices : MonoBehaviour
         else
         {
             GameObject.Find("CPiece (" + pieceActuallyresearched + ")").transform.GetChild(0).GetComponent<Image>().color = new Color(255, 255, 255, .35f);
-            GameObject.Find("CPiece (" + pieceActuallyresearched + ")").transform.GetChild(1).GetComponent<Text>().color = new Color(0, 0, 0, 1);
+            GameObject.Find("CPiece (" + pieceActuallyresearched + ")").transform.GetChild(1).GetComponent<Text>().color  = new Color(0, 0, 0, 1);
             Scramble();
         }
             
@@ -101,4 +102,5 @@ public class ChangingChoices : MonoBehaviour
         aNumberAlreadyPlaced[positionInArray] = number;
         return number;
     }
+    
 }
