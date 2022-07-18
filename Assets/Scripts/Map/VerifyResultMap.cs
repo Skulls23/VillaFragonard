@@ -18,15 +18,10 @@ public class VerifyResultMap : MonoBehaviour
     {
         isFinished = true;
         for(int i = 0; i < aCluesToGuess.Length; i++)
-        {
             if(! aCluesToGuess[i].transform.name.Equals(aCluesToGuess[i].GetComponent<Image>().sprite.name))
                 isFinished = false;
-        }
 
         if(isFinished)
-        {
-            print("End");
             PlayerPrefs.SetInt("Unlock secret", 1);
-        }
     }
 }
