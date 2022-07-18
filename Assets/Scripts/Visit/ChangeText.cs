@@ -23,14 +23,14 @@ public class ChangeText : MonoBehaviour
 
     private void NextText()
     {
-        if (numText < aText.Length)
-            GameObject.Find("Text").GetComponent<Text>().text = aText[numText];
+        if (aDirection[numText].Equals("END"))
+            GameObject.Find("Gameplay").GetComponent<End>().Win();
+        else if (numText < aText.Length)
+            GetComponent<Text>().text = aText[numText];
     }
 
     public string GetActualDirection()
     {
-        if (aDirection[numText].Equals("END"))
-            GameObject.Find("Gameplay").GetComponent<End>().Win();
         return aDirection[numText];
     }
 }

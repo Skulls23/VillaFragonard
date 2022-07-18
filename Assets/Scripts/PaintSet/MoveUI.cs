@@ -94,7 +94,7 @@ public class MoveUI : MonoBehaviour
     /// </summary>
     public void StopMoveVisit()
     {
-        ChangeText ct = GameObject.Find("Text").GetComponent<ChangeText>();
+        ChangeText ct = GameObject.Find("MoveableText").GetComponent<ChangeText>();
 
         Vector3 mousePos;
         mousePos = Input.mousePosition;
