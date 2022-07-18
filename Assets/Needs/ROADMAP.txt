@@ -11,44 +11,44 @@ ca me fait que 16 pots sur 18 que j'ai en photo, les numeros finissant par 514 e
 Dans la case 1-1 on a 5 couleurs qui forment un W (je vais les numéroter)
 1 3 5
  2 4
- Il me manque une photo du 2, elle doit etre de face comme les autres
+Il me manque une photo du 2, elle doit etre de face comme les autres
 
- +nom + histoire
++nom + histoire
 
- INDICE
- FRANC-MACON  || FREEMASON en englais
- 7 MINI JEUX on debloque un set de lettre, genre les 2 A, N, C.
+INDICE
+FRANC-MACON  || FREEMASON en englais
+7 MINI JEUX on debloque un set de lettre, genre les 2 A, N, C.
 
- F      Atelier
- R      Lavandieres
- A [2]  Paint Set
- N [2]  Dejeuner Du Chat
- C [2]  Brutus 
- M      Visit
- O      Marie-Thérèse
+F      Atelier
+R      Lavandieres
+A [2]  Paint Set
+N [2]  Dejeuner Du Chat
+C [2]  Brutus 
+M      Visit
+O      Marie-Thérèse
 
 
- PUZZLE (2x avec paint set)
- SLIDER
- VRAI FAUX
- DIFFERENCES
- TROUVER
+PUZZLE (2x avec paint set)
+SLIDER
+VRAI FAUX
+DIFFERENCES
+TROUVER
 
  
- REVIEW
+REVIEW
 
- ppaint set
+ppaint set
 
- DONE faire plusieurs pages de 6-8 fioles, une fois les 6-8 fait, on passe a la page suivante (plutot 8 mais a voir) la derniere page serais le pinceau, le crayon et l'estompe
+DONE faire plusieurs pages de 6-8 fioles, une fois les 6-8 fait, on passe a la page suivante (plutot 8 mais a voir) la derniere page serais le pinceau, le crayon et l'estompe
 
- DONE pop up apres l'aimantage
- DONE lock le move
- DONE possi de zoomer quand meme
+DONE pop up apres l'aimantage
+DONE lock le move
+DONE possi de zoomer quand meme
 
- NEED possibilité d'avoir un petit plus sur certains pop up, quand on clique dessus ca affiche la suite (infos liées), on peut aussi juste cliquer sur le bouton basique pour cacher le popup
+DONE possibilité d'avoir un petit plus sur certains pop up, quand on clique dessus ca affiche la suite (infos liées), on peut aussi juste cliquer sur le bouton basique pour cacher le popup
 
 
- NEED Visite, mettre photo et nom, sous format medaillon (oval)
+NEED Visite, mettre photo et nom, sous format medaillon (oval)
 		fils au millieu, JH a droite
 		A la fin on a un ou plusieurs pop up avec la bio des 3 peintres et leur photo
 
