@@ -1377,6 +1377,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85d511e8dfcf23a43a21a74cb62ee17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endText: "Vous avez trouv\xE9 le secret des Fragonard. Ils \xE9tait des revolutionnaires
+    membres des Francs-Ma\xE7ons. Vous avez debloqu\xE9 les boutons secrets sur le
+    menu principal."
 --- !u!224 &726308322 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1761461308338293181, guid: 56618e184d5fd3a43a77af75bf19c2ee, type: 3}

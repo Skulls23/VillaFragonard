@@ -8,10 +8,15 @@ public class ShowTextClue : MonoBehaviour
     [SerializeField] string[] clues;
 
     private GameObject popup;
+
     // Awake is called before all the Start
     void Awake()
     {
         popup = GameObject.FindGameObjectWithTag("Popup");
+    }
+
+    private void Start()
+    {
         popup.SetActive(false);
     }
 

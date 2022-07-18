@@ -16,9 +16,16 @@ public class MoveClues : MonoBehaviour
 
     private void Start()
     {
-        aDestinations = GameObject.FindGameObjectsWithTag("ChoicePiece");
-        startPosX = transform.position.x;
-        startPosY = transform.position.y;
+        if(! (PlayerPrefs.HasKey("Unlock secret") && PlayerPrefs.GetInt("Unlock secret") == 1))
+        {
+            aDestinations = GameObject.FindGameObjectsWithTag("ChoicePiece");
+            startPosX = transform.position.x;
+            startPosY = transform.position.y;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void Move()

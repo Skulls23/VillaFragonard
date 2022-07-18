@@ -93,3 +93,5 @@ DONE Jeu Choix puzzle
 NEED
 	INFO sur une salle caché, bouton en plus at the end
 	On aura une suite d'info sur plusieurs tableau. Une fois une info lue on passe a la suivante
+
+DONE Regle sur les jeux qui en ont besoin
