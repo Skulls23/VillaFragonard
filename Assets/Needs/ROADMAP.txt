@@ -52,7 +52,7 @@ Dans la case 1-1 on a 5 couleurs qui forment un W (je vais les numéroter)
 		fils au millieu, JH a droite
 		A la fin on a un ou plusieurs pop up avec la bio des 3 peintres et leur photo
 
-
+DONE bouton retour
 
 DONE Les anecdotes vont etres donnés dans un ordre precis peu importe le mini jeu (donc on le ferais dans le menu en comptant le nombre de mini jeu gagné, (de paquet de lettre gagné, possible))
 
@@ -63,7 +63,7 @@ DEMI DONE Mini jeu via bouton qui apparaît après la fin du jeu, via accès au 
 NEED Jeu avec les plaques pour gravures, on a une plaque et on doit trouver sur quelle gravure elle a été utilisé.
 
 DONE Placer les lettres dans l'ordre d'obtention (array) + donner une phrase à chaque fin avec la lettre. Voir ce texte en cliquant sur la lettre
-NEED Donner les lettre en fonction du placement Dans le musée, premier lettre dernier tableau
+DONE Donner les lettre en fonction du placement Dans le musée, premier lettre dernier tableau
 
 
 DONE Obtenir C ET C cédille et quand t as tout tu as le tiret à la fin
