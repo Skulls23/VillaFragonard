@@ -23,17 +23,14 @@ public class Swap : MonoBehaviour
     {
         float newPosY = Input.mousePosition.y;
         
-        if (newPosY >= startPosY)
+        if (newPosY > startPosY)
         {
             spriteNumber++;
-            if (spriteNumber >= aSprite.Length)
-                spriteNumber = 0;
             SwapSprite();
         }
-        else if (newPosY <= startPosY)
+        else if (newPosY < startPosY)
         {
             spriteNumber--;
-            
             SwapSprite();
         }
             
