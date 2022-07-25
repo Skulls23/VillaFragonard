@@ -48,7 +48,7 @@ DONE possi de zoomer quand meme
 DONE possibilité d'avoir un petit plus sur certains pop up, quand on clique dessus ca affiche la suite (infos liées), on peut aussi juste cliquer sur le bouton basique pour cacher le popup
 
 
-NEED Visite, mettre photo et nom, sous format medaillon (oval)
+DEMI Visite, mettre photo et nom, sous format medaillon (oval)
 		fils au millieu, JH a droite
 		A la fin on a un ou plusieurs pop up avec la bio des 3 peintres et leur photo
 
@@ -58,9 +58,9 @@ DONE Les anecdotes vont etres donnés dans un ordre precis peu importe le mini j
 
 NEED Avoir une histoire, genre un fil d Ariane en mode enquêteur (scène qui ne pop qu'une fois ?)
 
-DEMI DONE Mini jeu via bouton qui apparaît après la fin du jeu, via accès au site lien base donnée
+DONE DONE Mini jeu via bouton qui apparaît après la fin du jeu, via accès au site lien base donnée
 
-NEED Jeu avec les plaques pour gravures, on a une plaque et on doit trouver sur quelle gravure elle a été utilisé.
+DONE Jeu avec les plaques pour gravures, on a une plaque et on doit trouver sur quelle gravure elle a été utilisé.
 
 DONE Placer les lettres dans l'ordre d'obtention (array) + donner une phrase à chaque fin avec la lettre. Voir ce texte en cliquant sur la lettre
 DONE Donner les lettre en fonction du placement Dans le musée, premier lettre dernier tableau
@@ -97,7 +97,7 @@ DEMI
 DONE Regle sur les jeux qui en ont besoin
 
 NEED timer si les joueurs reussissent pas l'enigme
-IDEE GAUCHE MONTABLE PAREIL DE L'AUTRE COTÉ et bouton au centre ou on valide si les tableaux sont liés
+DONE GAUCHE MONTABLE PAREIL DE L'AUTRE COTÉ et bouton au centre ou on valide si les tableaux sont liés
 
 
 
