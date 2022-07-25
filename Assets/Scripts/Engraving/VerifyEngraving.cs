@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class VerifyEngraving : MonoBehaviour
 {
     [SerializeField] private int numberToWin = 3;
-    [SerializeField] private string clueName;
     private int numCorrect;
     private Color baseColor;
 
@@ -37,9 +36,7 @@ public class VerifyEngraving : MonoBehaviour
         
         if (numCorrect == numberToWin)
         {
-            print("win");
-            PlayerPrefs.SetInt("Number of clues unlocked", PlayerPrefs.GetInt("Number of clues unlocked") + 1);
-            PlayerPrefs.SetInt(clueName, PlayerPrefs.GetInt("Number of clues unlocked"));
+            GameObject.Find("Gameplay").GetComponent<End>().Win();
         }
     }
 
