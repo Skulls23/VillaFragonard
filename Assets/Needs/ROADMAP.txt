@@ -95,3 +95,10 @@ DEMI
 	On aura une suite d'info sur plusieurs tableau. Une fois une info lue on passe a la suivante
 
 DONE Regle sur les jeux qui en ont besoin
+
+
+
+RAPPORT
+Passage du pc vers telephone, pas de cable de telephone a cause d'un faux contact donc build plus compliqué (need addon)
+Le scaling
+La hierarchy d'une scene peut changer (GameObject.FindGameObjectsWithTag("Popup")[0]) peut avoir des resultat different entre telephone et pc

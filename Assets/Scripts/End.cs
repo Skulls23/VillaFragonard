@@ -9,7 +9,7 @@ public class End : MonoBehaviour
 
     private void Awake()
     {
-        popup = GameObject.FindGameObjectWithTag("Popup");
+        popup = GameObject.Find("PopUp");
     }
 
     // Start is called before the first frame update
