@@ -777,8 +777,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837ed4bb2e5e4514bbb29d34502cbd1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clueName: "\xC7"
   numberToWin: 3
+  clueName: "\xC7"
 --- !u!1 &1370448535
 GameObject:
   m_ObjectHideFlags: 0
@@ -991,8 +991,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837ed4bb2e5e4514bbb29d34502cbd1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numberToWin: 3
   clueName: 
-  numberToWin: 0
 --- !u!1 &1767640387
 GameObject:
   m_ObjectHideFlags: 0
