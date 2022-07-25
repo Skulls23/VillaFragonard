@@ -96,6 +96,9 @@ DEMI
 
 DONE Regle sur les jeux qui en ont besoin
 
+NEED timer si les joueurs reussissent pas l'enigme
+IDEE GAUCHE MONTABLE PAREIL DE L'AUTRE COTÉ et bouton au centre ou on valide si les tableaux sont liés
+
 
 
 RAPPORT

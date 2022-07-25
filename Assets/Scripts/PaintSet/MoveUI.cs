@@ -8,7 +8,6 @@ public class MoveUI : MonoBehaviour
 {
     [SerializeField] private float distanceMaxXToBeFinished = 200f;
     [SerializeField] private float distanceMaxYToBeFinished = 80f;
-    private bool isInPopUp = true;
     public GameObject destination;  //Not needed in Visit
 
     private float xStartingPos;
