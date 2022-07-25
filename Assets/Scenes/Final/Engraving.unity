@@ -337,8 +337,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aSprite:
-  - {fileID: 8597266508137189360, guid: a824a11ea07487840a400044ce949f77, type: 3}
   - {fileID: 5031429361565179429, guid: a824a11ea07487840a400044ce949f77, type: 3}
+  - {fileID: 8597266508137189360, guid: a824a11ea07487840a400044ce949f77, type: 3}
   - {fileID: -965810902057591150, guid: a824a11ea07487840a400044ce949f77, type: 3}
 --- !u!1 &775591058
 GameObject:
@@ -743,6 +743,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1185066296}
+  - component: {fileID: 1185066297}
   m_Layer: 0
   m_Name: Gameplay
   m_TagString: Untagged
@@ -764,6 +765,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1185066297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1185066295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 837ed4bb2e5e4514bbb29d34502cbd1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clueName: "\xC7"
+  numberToWin: 3
 --- !u!1 &1370448535
 GameObject:
   m_ObjectHideFlags: 0
@@ -914,13 +929,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1410572693}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1410572698}
+        m_TargetAssemblyTypeName: VerifyEngraving, Assembly-CSharp
+        m_MethodName: VerifySprites
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -976,6 +991,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 837ed4bb2e5e4514bbb29d34502cbd1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clueName: 
+  numberToWin: 0
 --- !u!1 &1767640387
 GameObject:
   m_ObjectHideFlags: 0
