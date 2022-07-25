@@ -13,7 +13,8 @@ public class CluesRevealer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        UnlockAll();
+        //UnlockAll();
+        
         //If the game is launched for the first time
         if (PlayerPrefs.HasKey("Number of clues unlocked") == false)
             PlayerPrefs.SetInt("Number of clues unlocked", 0);
@@ -25,9 +26,10 @@ public class CluesRevealer : MonoBehaviour
             aCluesButton[i] = GameObject.Find("Clue Text (" + i + ")");
             aCluesButton[i].GetComponent<Image>().color = new Color(0, 0, 0, 0);
         }
-
+        
         for (int i = 0; i < PlayerPrefs.GetInt("Number of clues unlocked"); i++)
         {
+            
             aCluesButton[i].GetComponent<Image>().color = new Color(255, 255, 255, 1f); //the clue button bound to the clue text again reappear
             for (int j = 0; j < aLetter.Length; j++)
                 if (PlayerPrefs.GetInt(aLetter[j]) == i + 1)

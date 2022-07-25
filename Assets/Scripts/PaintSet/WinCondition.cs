@@ -29,7 +29,8 @@ public class WinCondition : MonoBehaviour
 
         if (isFinished)
         {
-            PlayerPrefs.SetInt(clueName, 1);
+            PlayerPrefs.SetInt("Number of clues unlocked", PlayerPrefs.GetInt("Number of clues unlocked") + 1);
+            PlayerPrefs.SetInt(clueName, PlayerPrefs.GetInt("Number of clues unlocked"));
             popUpEnd.SetActive(true);
             mapButton.SetActive(true);
         }

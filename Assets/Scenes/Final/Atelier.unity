@@ -533,6 +533,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangeSceneToMap
       objectReference: {fileID: 0}
+    - target: {fileID: 8602932909584134970, guid: f643e8a4a48ac7147b9d30a801e61694, type: 3}
+      propertyPath: textToBeAdded
+      value: Des trucs en plus
+      objectReference: {fileID: 0}
     - target: {fileID: 8912514946484208025, guid: f643e8a4a48ac7147b9d30a801e61694, type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 22

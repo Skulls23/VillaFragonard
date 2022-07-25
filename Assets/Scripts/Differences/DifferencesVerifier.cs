@@ -25,7 +25,8 @@ public class DifferencesVerifier : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
             for (int i = 0; i < lImagesParent.Count && AreAllDiffFound(); i++)
             {
-                PlayerPrefs.SetInt(clueName, 1);
+                PlayerPrefs.SetInt("Number of clues unlocked", PlayerPrefs.GetInt("Number of clues unlocked") + 1);
+                PlayerPrefs.SetInt(clueName, PlayerPrefs.GetInt("Number of clues unlocked"));
                 popUp.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = popUpText;
                 popUp.SetActive(true);
             }
