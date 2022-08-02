@@ -21,7 +21,7 @@ public class CluesRevealer : MonoBehaviour
 
         //The button to see again the clue text must disappear
         aCluesButton = new GameObject[aLetter.Length];
-        for (int i = 0; i < PlayerPrefs.GetInt("Number of clues unlocked"); i++)
+        for (int i = 0; i < aLetter.Length; i++)
         {
             aCluesButton[i] = GameObject.Find("Clue Text (" + i + ")");
             aCluesButton[i].GetComponent<Image>().color = new Color(0, 0, 0, 0);
