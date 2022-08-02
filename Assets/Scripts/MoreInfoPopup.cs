@@ -10,6 +10,18 @@ public class MoreInfoPopup : MonoBehaviour
         plusButton = transform.GetChild(0).Find("MoreInfo").gameObject;
     }
 
+    private void Start()
+    {
+        if (textToBeAdded != "")
+        {
+            plusButton.SetActive(true);
+        }
+        else
+        {
+            plusButton.SetActive(false);
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
