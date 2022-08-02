@@ -15,7 +15,7 @@ public class PlacementVerifier : MonoBehaviour
     private void Start()
     {
         lPieces = GameObject.FindGameObjectsWithTag("Piece");
-        popUp = GameObject.Find("Popup");
+        popUp = GameObject.FindGameObjectsWithTag("Popup")[0];
         popUp.SetActive(false);
     }
 

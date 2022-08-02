@@ -19,9 +19,10 @@ public class CluesRevealer : MonoBehaviour
         if (PlayerPrefs.HasKey("Number of clues unlocked") == false)
             PlayerPrefs.SetInt("Number of clues unlocked", 0);
 
+        print(PlayerPrefs.GetInt("Number of clues unlocked"));
         //The button to see again the clue text must disappear
         aCluesButton = new GameObject[aLetter.Length];
-        for (int i = 0; i < aLetter.Length; i++)
+        for (int i = 0; i < PlayerPrefs.GetInt("Number of clues unlocked"); i++)
         {
             aCluesButton[i] = GameObject.Find("Clue Text (" + i + ")");
             aCluesButton[i].GetComponent<Image>().color = new Color(0, 0, 0, 0);
