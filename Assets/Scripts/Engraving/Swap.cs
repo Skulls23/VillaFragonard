@@ -50,8 +50,6 @@ public class Swap : MonoBehaviour
             GetComponent<Image>().sprite = aSprite[spriteNumber];
         }
     }
-    
-    
 
     public void DeleteActualSprite()
     {
