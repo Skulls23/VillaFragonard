@@ -15,6 +15,6 @@ public class ResetSave : MonoBehaviour
 
     public void Reset()
     {
-        PlayerPrefs.DeleteAll  ();
+        PlayerPrefs.DeleteAll();
     }
 }

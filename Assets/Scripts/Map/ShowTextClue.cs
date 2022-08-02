@@ -11,15 +11,12 @@ public class ShowTextClue : MonoBehaviour
     void Awake()
     {
         popup = GameObject.FindGameObjectWithTag("Popup");
-    }
-
-    private void Start()
-    {
         popup.SetActive(false);
     }
 
     public void ShowClue(int clueNumber)
     {
+        print("here");
         popup.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = clues[clueNumber];
         popup.SetActive(true);
     }

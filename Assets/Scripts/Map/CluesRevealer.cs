@@ -14,10 +14,20 @@ public class CluesRevealer : MonoBehaviour
     void Start()
     {
         //UnlockAll();
-        
+
         //If the game is launched for the first time
-        if (PlayerPrefs.HasKey("Number of clues unlocked") == false)
+        if (!PlayerPrefs.HasKey("Number of clues unlocked"))
             PlayerPrefs.SetInt("Number of clues unlocked", 0);
+        
+        if (!PlayerPrefs.HasKey("Previous Number"))
+            PlayerPrefs.SetInt("Previous Number", 0);
+        
+        //We will show the popup when we unlock a new clue letter
+        if (PlayerPrefs.GetInt("Number of clues unlocked") > PlayerPrefs.GetInt("Previous Number"))
+        {
+            PlayerPrefs.SetInt("Previous Number", PlayerPrefs.GetInt("Number of clues unlocked"));
+            GameObject.Find("Gameplay").GetComponent<ShowTextClue>().ShowClue(PlayerPrefs.GetInt("Number of clues unlocked") - 1);
+        }
 
         //The button to see again the clue text must disappear
         aCluesButton = new GameObject[aLetter.Length];
