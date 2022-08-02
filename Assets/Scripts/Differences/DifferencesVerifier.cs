@@ -18,19 +18,18 @@ public class DifferencesVerifier : MonoBehaviour
         popUp.SetActive(false);
         ChangeText();
     }
-
+    
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonUp(0))
-            for (int i = 0; i < lImagesParent.Count && AreAllDiffFound(); i++)
-            {
-                PlayerPrefs.SetInt("Number of clues unlocked", PlayerPrefs.GetInt("Number of clues unlocked") + 1);
-                PlayerPrefs.SetInt(clueName, PlayerPrefs.GetInt("Number of clues unlocked"));
-                popUp.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = popUpText;
-                popUp.SetActive(true);
-            }
+        if (Input.GetMouseButtonUp(0) && AreAllDiffFound() && popUp.activeSelf == false)
+        {
+            popUp.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = popUpText;
+            popUp.SetActive(true);
+            GiveClue();
+        }
     }
+    
     public void IncrementErrorFound()
     {
         errorFound++;
@@ -50,7 +49,14 @@ public class DifferencesVerifier : MonoBehaviour
         for (int i = 0; i < lImagesParent.Count && isCompletelyFinished; i++)
             if (lImagesParent[i].transform.GetChild(0).gameObject.activeSelf)
                 isCompletelyFinished = false;
-        
+
+
         return isCompletelyFinished;
+    }
+    
+    private void GiveClue()
+    {
+        PlayerPrefs.SetInt("Number of clues unlocked", PlayerPrefs.GetInt("Number of clues unlocked") + 1);
+        PlayerPrefs.SetInt(clueName, PlayerPrefs.GetInt("Number of clues unlocked"));
     }
 }
