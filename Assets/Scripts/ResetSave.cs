@@ -15,9 +15,6 @@ public class ResetSave : MonoBehaviour
 
     public void Reset()
     {
-        stairsButton.SetActive (false);
-        reserveButton.SetActive(false);
-        copiesButton.SetActive (false);
         PlayerPrefs.DeleteAll  ();
     }
 }

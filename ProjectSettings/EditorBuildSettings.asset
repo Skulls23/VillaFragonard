@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Final/TitleScreen.unity
     guid: 7fa5538e133a7e345a4e923f33bb60ee
   - enabled: 1
+    path: Assets/Scenes/Final/Reset.unity
+    guid: 691c15e5cf085ad4a9bc58c3e9f3cbf5
+  - enabled: 1
     path: Assets/Scenes/Final/Atelier.unity
     guid: eee35c8da89def646983e696d0de2a16
   - enabled: 1
