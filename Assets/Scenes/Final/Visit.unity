@@ -963,7 +963,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Jean Honor\xE9"
+  m_Text: 'Alexandre
+
+    Evariste'
 --- !u!222 &972789929
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1262,7 +1264,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Marguerite
+  m_Text: 'Marguerite
+
+    Gerard'
 --- !u!222 &1177856946
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1856,9 +1860,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Alexandre
-
-    Evariste'
+  m_Text: "Jean-Honor\xE9\nFragonard"
 --- !u!222 &1808427225
 CanvasRenderer:
   m_ObjectHideFlags: 0

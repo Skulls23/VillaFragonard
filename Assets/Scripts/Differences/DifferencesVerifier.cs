@@ -8,7 +8,7 @@ public class DifferencesVerifier : MonoBehaviour
     [SerializeField] private string clueName;
     [SerializeField] private string popUpText;
 
-    private static string[] lTexts = new string[4]{ "Trouve les 4 indices", "Trouve les 3 indices", "Trouve les 2 indices", "Trouve le dernier indice"};
+    private static string[] lTexts = new string[4]{ "Trouve les 4 indices restants", "Trouve les 3 indices restants", "Trouve les 2 indices restants", "Trouve l'indice restant" };
     private int             errorFound = 0;
     private GameObject      popUp;
 

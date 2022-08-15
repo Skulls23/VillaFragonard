@@ -16,7 +16,6 @@ public class ShowTextClue : MonoBehaviour
 
     public void ShowClue(int clueNumber)
     {
-        print("here");
         popup.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = clues[clueNumber];
         popup.SetActive(true);
     }

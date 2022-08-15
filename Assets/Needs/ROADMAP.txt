@@ -23,7 +23,8 @@ F      Atelier
 R      Lavandieres
 A [2]  Paint Set
 N [2]  Dejeuner Du Chat
-C [2]  Brutus 
+C      Brutus
+Ç      Engraving
 M      Visit
 O      Marie-Thérèse
 
