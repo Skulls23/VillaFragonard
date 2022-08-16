@@ -270,7 +270,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTrue: 1
-  textPopUp: Des choses
+  textPopUp: "Les deux demoiselles repr\xE9sent\xE9es sur cette peinture seraient
+    les \xE9l\xE8ves de Marguerite G\xE9rard. L\u2019artiste peint une sc\xE8ne quotidienne
+    : des jeunes femmes ordinaires \xE9tudiant le dessin et la peinture dans leur
+    atelier. Elles ne nous regardent pas, ce qui nous donne l\u2019impression de
+    les surprendre en pleine discussion. "
   clueName: F
 --- !u!1 &319062766
 GameObject:
@@ -331,7 +335,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 42
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -342,7 +346,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Elle s'entra\xEEne \xE0 peindre"
+  m_Text: "La jeune femme en blanc prend une le\xE7on de dessin."
 --- !u!222 &319062769
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -421,7 +425,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Que fait Marguerite Gerard ?
+  m_Text: Que font ces deux jeunes femmes ?
 --- !u!222 &370014792
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -535,7 +539,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8602932909584134970, guid: f643e8a4a48ac7147b9d30a801e61694, type: 3}
       propertyPath: textToBeAdded
-      value: Des trucs en plus
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8912514946484208025, guid: f643e8a4a48ac7147b9d30a801e61694, type: 3}
       propertyPath: m_FontData.m_FontSize
@@ -1260,7 +1264,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 42
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1271,7 +1275,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Elle prend note de ce que dit sa professeur
+  m_Text: Elles discutent
 --- !u!222 &1280259139
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1415,18 +1419,19 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 42
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 42
+    m_MaxSize: 300
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Elle recharge sa tablette graphique
+  m_Text: "La jeune femme en bleue, m\xE9contente, demande \xE0 sa copine de ne pas
+    froisser son ch\xE2le rouge."
 --- !u!222 &1630214645
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1494,7 +1499,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 42
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1505,7 +1510,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Elle discute avec sa soeur
+  m_Text: "La jeune femme en blanc r\xE9dige un acte de vente."
 --- !u!222 &1707832022
 CanvasRenderer:
   m_ObjectHideFlags: 0
