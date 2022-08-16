@@ -106,3 +106,9 @@ RAPPORT
 Passage du pc vers telephone, pas de cable de telephone a cause d'un faux contact donc build plus compliqué (need addon)
 Le scaling
 La hierarchy d'une scene peut changer (GameObject.FindGameObjectsWithTag("Popup")[0]) peut avoir des resultat different entre telephone et pc
+
+
+
+
+NEED
+phrase finale pour Atelier

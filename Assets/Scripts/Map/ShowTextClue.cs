@@ -11,7 +11,6 @@ public class ShowTextClue : MonoBehaviour
     void Awake()
     {
         popup = GameObject.FindGameObjectWithTag("Popup");
-        
     }
 
     private void Start()

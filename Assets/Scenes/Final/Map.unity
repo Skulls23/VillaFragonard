@@ -1052,8 +1052,8 @@ GameObject:
   m_Component:
   - component: {fileID: 644390667}
   - component: {fileID: 644390669}
-  - component: {fileID: 644390668}
   - component: {fileID: 644390670}
+  - component: {fileID: 644390668}
   - component: {fileID: 644390671}
   m_Layer: 0
   m_Name: Gameplay
@@ -1101,14 +1101,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clues:
-  - Indice 1
-  - Indice 2
-  - Indice 3
-  - Indice 4
-  - Indice 5
-  - Indice 6
-  - Indice 7
-  - Indice 8
+  - "Le b\xE2timent dans lequel vous vous trouvez est une bastide proven\xE7ale construite
+    \xE0 la fin du 17\xE8me si\xE8cle. "
+  - "Alexandre Maubert a achet\xE9 cette bastide en 1764. Il \xE9tait un riche n\xE9gociant
+    en parfumerie grassois, cultiv\xE9 et musicien, digne repr\xE9sentant du si\xE8cle
+    des Lumi\xE8res. "
+  - "Alexandre Maubert \xE9tait le cousin du peintre Jean-Honor\xE9 Fragonard, n\xE9
+    lui aussi \xE0 Grasse en 1732."
+  - "Jean-Honor\xE9 Fragonard s\xE9journe chez son cousin du 18 f\xE9vrier 1790 au
+    12 f\xE9vrier 1791 avec sa femme et sa belle-s\u0153ur, Marguerite G\xE9rard,
+    peintre elle aussi."
+  - "Jean-Honor\xE9 Fragonard paie un loyer \xE0 son cousin pour son s\xE9jour :
+    168 livres par mois pendant 1 an. "
+  - "On peut consid\xE9rer la peinture murale d\xE9corant la cage d\u2019escalier
+    comme un paiement de Jean-Honor\xE9 Fragonard \xE0 son cousin. Il r\xE9alise
+    la peinture de l\u2019escalier autour de deux th\xE9matiques. "
+  - "En r\xE9alisant la fresque murale de la cage d\u2019escalier, Alexandre Maubert
+    et Jean-Honor\xE9 Fragonard montrent leur attachement aux valeurs de la R\xE9volution
+    fran\xE7aise. "
+  - "Alexandre Maubert, le cousin de Jean-Honor\xE9 Fragonard, appartient \xE0 une
+    soci\xE9t\xE9 secr\xE8te de grande renomm\xE9e. Certains symboles pr\xE9sents
+    dans la cage d\u2019escalier vous donnent des indices."
 --- !u!114 &644390670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1121,9 +1134,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85d511e8dfcf23a43a21a74cb62ee17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endText: "Vous avez trouv\xE9 le secret des Fragonard. Ils \xE9tait des revolutionnaires
-    membres des Francs-Ma\xE7ons. Vous avez debloqu\xE9 les boutons secrets sur le
-    menu principal."
+  endText: "Bravo ! Alexandre-Maubert \xE9tait franc-ma\xE7on. Le d\xE9cor de cette
+    cage d\u2019escalier est con\xE7u par son cousin Jean-Honor\xE9 Fragonard, il
+    est orn\xE9 de symboles faisant r\xE9f\xE9rence \xE0 la R\xE9volution fran\xE7aise
+    et \xE0 la franc-ma\xE7onnerie."
 --- !u!114 &644390671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1136,12 +1150,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cbd24de424fb8147b2c2241f8b1cebd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstMessage: "Bonjour, Bienvenue dans la Villa-Mus\xE9e Jean-Honor\xE9 Fragonard.
-    Nous vous invitons \xE0 parcourir le mus\xE9e d\u2019\u0153uvre en \u0153uvre
-    \xE0 travers 8 mini-jeux. Vous d\xE9couvrirez ainsi les secrets du b\xE2timent
-    et des collections du mus\xE9e.  A chaque mini-jeu accompli, vous gagnerez une
-    LETTRE et un INDICE qui vous permettront de r\xE9soudre l\u2019\xE9nigme finale
-    pour acc\xE9der aux secrets cach\xE9s et cod\xE9s de la Villa. "
 --- !u!224 &726308322 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1761461308338293181, guid: 56618e184d5fd3a43a77af75bf19c2ee, type: 3}
