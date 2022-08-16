@@ -32,19 +32,6 @@ public class PlacementVerifier : MonoBehaviour
             PlayerPrefs.SetInt(clueName, 1);
             popUp.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = popUpText;
             popUp.SetActive(true);
-        }
-    }
-
-    public void AreAllPuzzlePiecesCorrect()
-    {
-        bool isCompletelyFinished = true;
-
-        for (int i = 0; i < lPieces.Length && isCompletelyFinished; i++)
-            if (!lPieces[i].GetComponent<PuzzleMoveSystem>().GetIsFinished())
-                isCompletelyFinished = false;
-
-        if (isCompletelyFinished)
-        {
             PlayerPrefs.SetInt("Number of clues unlocked", PlayerPrefs.GetInt("Number of clues unlocked") + 1);
             PlayerPrefs.SetInt(clueName, PlayerPrefs.GetInt("Number of clues unlocked"));
         }

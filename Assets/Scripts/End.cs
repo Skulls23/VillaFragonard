@@ -13,6 +13,8 @@ public class End : MonoBehaviour
     private void Awake()
     {
         popup = GameObject.Find("PopUpInfo");
+        if(popup == null)
+            popup = GameObject.Find("PopUp");
     }
 
     // Start is called before the first frame update

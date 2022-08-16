@@ -12,10 +12,10 @@ public class HelpHandler : MonoBehaviour
     {
         if (PlayerPrefs.HasKey("Number of clues unlocked") && PlayerPrefs.GetInt("Number of clues unlocked") == PlayerPrefs.GetInt("Number of clues to be unlocked"))
         {
-            gameObject.SetActive(false);
+            gameObject.SetActive(true);
         }
         else
-            gameObject.SetActive(true);
+            gameObject.SetActive(false);
     }
     private void Awake()
     {

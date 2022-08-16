@@ -87,6 +87,8 @@ public class MovePiece : MonoBehaviour
                 movedTile = transform.parent.GetChild(positionInHierarchy - 5);
                 movedTile.SetSiblingIndex(positionInHierarchy);
                 transform.SetSiblingIndex(positionInHierarchy - 5);
+                Moved(); //copying that because i don't want to move if the movement is considered OOB
+                movedTile.GetComponent<MovePiece>().Moved();
             }
         }
         else if (direction == "right")
@@ -96,6 +98,8 @@ public class MovePiece : MonoBehaviour
                 movedTile = transform.parent.GetChild(positionInHierarchy + 1);
                 movedTile.SetSiblingIndex(positionInHierarchy);
                 transform.SetSiblingIndex(positionInHierarchy + 1);
+                Moved();
+                movedTile.GetComponent<MovePiece>().Moved();
             }
         }
         else if (direction == "down")
@@ -105,6 +109,8 @@ public class MovePiece : MonoBehaviour
                 movedTile = transform.parent.GetChild(positionInHierarchy + 5);
                 movedTile.SetSiblingIndex(positionInHierarchy);
                 transform.SetSiblingIndex(positionInHierarchy + 5);
+                Moved();
+                movedTile.GetComponent<MovePiece>().Moved();
             }
         }
         else if (direction == "left")
@@ -114,11 +120,10 @@ public class MovePiece : MonoBehaviour
                 movedTile = transform.parent.GetChild(positionInHierarchy - 1);
                 movedTile.SetSiblingIndex(positionInHierarchy);
                 transform.SetSiblingIndex(positionInHierarchy - 1);
+                Moved();
+                movedTile.GetComponent<MovePiece>().Moved();
             }
         }
-
-        Moved();
-        movedTile.GetComponent<MovePiece>().Moved();
     }
 
     /// <summary>
