@@ -7,9 +7,16 @@ using UnityEngine.UI;
 /// </summary>
 public class PopUp : MonoBehaviour
 {
+    public GameObject popUp;
+
+    private void Awake()
+    {
+        popUp = GameObject.FindGameObjectsWithTag("Popup")[0];
+    }
+    
     public void ClosePopUp()
     {
-        GameObject.FindGameObjectsWithTag("Popup")[0].SetActive(false);
+        popUp.SetActive(false);
     }
     public void ChangeSceneToMap()
     {
@@ -18,8 +25,14 @@ public class PopUp : MonoBehaviour
     
     public void PrintMoreText()
     {
-        GameObject.FindGameObjectsWithTag("Popup")[0].transform.GetChild(0).Find("Text").GetComponent<Text>().text = GameObject.FindGameObjectsWithTag("Popup")[0].GetComponent<MoreInfoPopup>().TextToBeAdded;
-        GameObject.FindGameObjectsWithTag("Popup")[0].GetComponent<MoreInfoPopup>().TextToBeAdded = "";
+        popUp.transform.GetChild(0).Find("Text").GetComponent<Text>().text = popUp.GetComponent<MoreInfoPopup>().TextToBeAdded;
+    }
+
+    public void PrintMoreVisit()
+    {
+        popUp.transform.GetChild(0).GetChild(0).GetComponent<Text>().text    = popUp.GetComponent<MoreInfoVisit>().TextToBeAdded;
+        popUp.transform.GetChild(0).GetChild(1).GetComponent<Image>().sprite = popUp.GetComponent<MoreInfoVisit>().SpriteToBeAdded;
+        popUp.transform.GetChild(0).GetChild(2).GetComponent<Text>().text    = popUp.GetComponent<MoreInfoVisit>().TitleToBeAdded;
     }
 
     public void DestroyPopup()

@@ -34,10 +34,15 @@ public class MoreInfoPopup : MonoBehaviour
             plusButton.SetActive(false);
         }
     }
-
+    
     public string TextToBeAdded
     {
-        get { return textToBeAdded; }
+        get
+        {
+            string temp = textToBeAdded;
+            textToBeAdded = "";
+            return temp; 
+        }
         set { textToBeAdded = value; }
     }
 }

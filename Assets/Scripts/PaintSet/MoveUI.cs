@@ -109,6 +109,7 @@ public class MoveUI : MonoBehaviour
             if (aAbsoluteValues[i] == Mathf.Min(aAbsoluteValues))
                 sideNumber = i;
 
+        print(aSide[sideNumber].name);
         switch (aSide[sideNumber].name)
         {
             case "Left":
@@ -117,12 +118,12 @@ public class MoveUI : MonoBehaviour
                 ResetPosition();
                 break;
             case "Center":
-                if (ct.GetActualDirection().Equals("Center"))
+                if (ct.GetActualDirection().Equals("Center") || ct.GetActualDirection().Equals("Center or Right"))
                     ct.CorrectAnswer();
                 ResetPosition();
                 break;
             case "Right":
-                if (ct.GetActualDirection().Equals("Right"))
+                if (ct.GetActualDirection().Equals("Right") || ct.GetActualDirection().Equals("Center or Right"))
                     ct.CorrectAnswer();
                 ResetPosition();
                 break;
