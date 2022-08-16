@@ -6,8 +6,6 @@ public class MoveClues : MonoBehaviour
     [SerializeField] private float distanceMaxXToBeFinished = 50f;
     [SerializeField] private float distanceMaxYToBeFinished = 120f;
 
-    private static int NUMBER_OF_CLUES_TO_FIND = 7;
-
     private GameObject[] aDestinations;
     private float startPosX;
     private float startPosY;
@@ -26,7 +24,7 @@ public class MoveClues : MonoBehaviour
 
     public void Move()
     {
-        if (PlayerPrefs.GetInt("Number of clues unlocked") >= NUMBER_OF_CLUES_TO_FIND)
+        if (PlayerPrefs.GetInt("Number of clues unlocked") >= PlayerPrefs.GetInt("Number of clues to be unlocked"))
         {
             Vector3 mousePos;
             mousePos = Input.mousePosition;
@@ -37,7 +35,7 @@ public class MoveClues : MonoBehaviour
 
     public void StopMove()
     {
-        if (PlayerPrefs.GetInt("Number of clues unlocked") >= NUMBER_OF_CLUES_TO_FIND)
+        if (PlayerPrefs.GetInt("Number of clues unlocked") >= PlayerPrefs.GetInt("Number of clues to be unlocked"))
         {
             Vector3 mousePos;
             mousePos = Input.mousePosition;

@@ -11,7 +11,7 @@ public class FirstMessage : MonoBehaviour
                                   "Bienvenue dans la Villa-Musée Jean-Honoré Fragonard."                            + Environment.NewLine +
                                   "Nous vous invitons à parcourir le musée d’œuvre en œuvre à travers 8 mini-jeux." + Environment.NewLine +
                                   "Vous découvrirez ainsi les secrets du bâtiment et des collections du musée."     + Environment.NewLine +
-                                  "A chaque mini-jeu accompli, vous gagnerez une LETTRE et un INDICE qui vous permettront de résoudre l’énigme finale pour accéder aux secrets cachés et codés de la Villa.";
+                                  "A chaque mini-jeu accompli, vous gagnerez une LETTRE et un INDICE (accessible en double-cliquant sur la lettre) qui vous permettront de résoudre l’énigme finale pour accéder aux secrets cachés et codés de la Villa.";
 
 
     private void Awake()

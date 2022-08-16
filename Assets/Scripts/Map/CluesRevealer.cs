@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,11 +13,14 @@ public class CluesRevealer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //UnlockAll();
+        UnlockAll();
 
         //If the game is launched for the first time
         if (!PlayerPrefs.HasKey("Number of clues unlocked"))
+        {
             PlayerPrefs.SetInt("Number of clues unlocked", 0);
+            PlayerPrefs.SetInt("Number of clues to be unlocked", 8); //TO BE CHANGED IF A GAME IS ADDED
+        }
         
         if (!PlayerPrefs.HasKey("Previous Number"))
             PlayerPrefs.SetInt("Previous Number", 0);
