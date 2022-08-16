@@ -1054,6 +1054,7 @@ GameObject:
   - component: {fileID: 644390669}
   - component: {fileID: 644390668}
   - component: {fileID: 644390670}
+  - component: {fileID: 644390671}
   m_Layer: 0
   m_Name: Gameplay
   m_TagString: Untagged
@@ -1123,6 +1124,24 @@ MonoBehaviour:
   endText: "Vous avez trouv\xE9 le secret des Fragonard. Ils \xE9tait des revolutionnaires
     membres des Francs-Ma\xE7ons. Vous avez debloqu\xE9 les boutons secrets sur le
     menu principal."
+--- !u!114 &644390671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644390666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cbd24de424fb8147b2c2241f8b1cebd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstMessage: "Bonjour, Bienvenue dans la Villa-Mus\xE9e Jean-Honor\xE9 Fragonard.
+    Nous vous invitons \xE0 parcourir le mus\xE9e d\u2019\u0153uvre en \u0153uvre
+    \xE0 travers 8 mini-jeux. Vous d\xE9couvrirez ainsi les secrets du b\xE2timent
+    et des collections du mus\xE9e.  A chaque mini-jeu accompli, vous gagnerez une
+    LETTRE et un INDICE qui vous permettront de r\xE9soudre l\u2019\xE9nigme finale
+    pour acc\xE9der aux secrets cach\xE9s et cod\xE9s de la Villa. "
 --- !u!224 &726308322 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1761461308338293181, guid: 56618e184d5fd3a43a77af75bf19c2ee, type: 3}
