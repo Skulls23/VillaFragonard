@@ -4,6 +4,8 @@ using UnityEngine.UI;
 
 public class VerifyResultMap : MonoBehaviour
 {
+    [Header("This script contains the last text")]
+    public bool boolToShowMessage; //It's useless, it's just to show a message
     private string endText = "Bravo !"                                                                                       + Environment.NewLine +
                              "Alexandre-Maubert était franc-maçon."                                                          + Environment.NewLine +
                              "Le décor de cette cage d’escalier est conçu par son cousin Jean-Honoré Fragonard,"             +

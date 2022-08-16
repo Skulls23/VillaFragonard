@@ -7,9 +7,8 @@ using UnityEngine.UI;
 public class FirstMessage : MonoBehaviour
 {
     private GameObject popup;
-    
-    [Header("Modify through script, not here")]
-    public string firstMessage = "Bonjour,"                                                                        + Environment.NewLine +
+
+    private string firstMessage = "Bonjour,"                                                                        + Environment.NewLine +
                                   "Bienvenue dans la Villa-Musée Jean-Honoré Fragonard."                            + Environment.NewLine +
                                   "Nous vous invitons à parcourir le musée d’œuvre en œuvre à travers 8 mini-jeux." + Environment.NewLine +
                                   "Vous découvrirez ainsi les secrets du bâtiment et des collections du musée."     + Environment.NewLine +
