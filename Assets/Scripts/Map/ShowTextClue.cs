@@ -20,7 +20,8 @@ public class ShowTextClue : MonoBehaviour
 
     public void ShowClue(int clueNumber)
     {
-        popup.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = clues[clueNumber];
+        print(clueNumber);
+        popup.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = clues[clueNumber - 1];
         popup.SetActive(true);
     }
 }

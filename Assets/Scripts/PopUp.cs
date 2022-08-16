@@ -11,7 +11,7 @@ public class PopUp : MonoBehaviour
 
     private void Awake()
     {
-        popUp = GameObject.FindGameObjectsWithTag("Popup")[0];
+        popUp = this.transform.parent.parent.gameObject;
     }
     
     public void ClosePopUp()

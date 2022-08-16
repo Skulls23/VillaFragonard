@@ -218,7 +218,7 @@ RectTransform:
   - {fileID: 311175660}
   - {fileID: 347901233}
   - {fileID: 89897634}
-  - {fileID: 144489321}
+  - {fileID: 1054576690}
   - {fileID: 1578424159}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -453,11 +453,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxDelayToDoubleTap: 0.3
---- !u!224 &144489321 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6670502180846952115, guid: 171cc18fe42f15246aa9a090b32e5d94, type: 3}
-  m_PrefabInstance: {fileID: 6670502180971439578}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &175443774
 GameObject:
   m_ObjectHideFlags: 0
@@ -2091,6 +2086,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxDelayToDoubleTap: 0.3
+--- !u!224 &1054576690 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2831906746894029321, guid: 171cc18fe42f15246aa9a090b32e5d94, type: 3}
+  m_PrefabInstance: {fileID: 6670502180971439578}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1065576046
 GameObject:
   m_ObjectHideFlags: 0
@@ -3841,6 +3841,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 57391926}
     m_Modifications:
+    - target: {fileID: 2831906746894029321, guid: 171cc18fe42f15246aa9a090b32e5d94, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6670502180846952114, guid: 171cc18fe42f15246aa9a090b32e5d94, type: 3}
       propertyPath: m_Name
       value: PopUpInfo
@@ -4047,6 +4051,10 @@ PrefabInstance:
       propertyPath: distanceMaxXToBeFinished
       value: 200
       objectReference: {fileID: 0}
+    - target: {fileID: 563182269031382477, guid: b389031287aa6df41abb374334ee197f, type: 3}
+      propertyPath: t
+      value: 
+      objectReference: {fileID: 4900000, guid: 7d967f790eb7b00438c588216eebe665, type: 3}
     - target: {fileID: 563182269031382477, guid: b389031287aa6df41abb374334ee197f, type: 3}
       propertyPath: MaxDelayToDoubleTap
       value: 0.4

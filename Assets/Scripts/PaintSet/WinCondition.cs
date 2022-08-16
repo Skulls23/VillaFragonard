@@ -7,14 +7,16 @@ public class WinCondition : MonoBehaviour
 
     private GameObject[] aPieces;
     private GameObject   popUpEnd;
-    private GameObject   mapButton;
     private bool         isFinished;
+
+    private void Awake()
+    {
+        aPieces = GameObject.FindGameObjectsWithTag("Piece");
+        popUpEnd = GameObject.FindGameObjectsWithTag("Popup")[0];
+    }
 
     void Start()
     {
-        aPieces = GameObject.FindGameObjectsWithTag("Piece");
-
-        popUpEnd = GameObject.FindGameObjectsWithTag("Popup")[0];
         popUpEnd.SetActive(false);
     }
 
@@ -32,7 +34,6 @@ public class WinCondition : MonoBehaviour
             PlayerPrefs.SetInt("Number of clues unlocked", PlayerPrefs.GetInt("Number of clues unlocked") + 1);
             PlayerPrefs.SetInt(clueName, PlayerPrefs.GetInt("Number of clues unlocked"));
             popUpEnd.SetActive(true);
-            mapButton.SetActive(true);
         }
     }
 }
