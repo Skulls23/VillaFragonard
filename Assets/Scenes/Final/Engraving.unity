@@ -370,7 +370,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clueUnlocked: "\xC7"
-  popUpText: "On parle la verit\xE9"
+  popUpText: "Vous venez d\u2019associer des plaques de gravure en cuivre (orang\xE9es)
+    \xE0 leur tirage sur papier \u2013 nomm\xE9 \xAB estampe \xBB. Les auteurs de
+    ces gravures sont Marguerite G\xE9rard et Jean-Honor\xE9 Fragonard qui ont travaill\xE9
+    ensemble sur ces images. La technique de la gravure sur cuivre permet la reproduction
+    et la diffusion d\u2019images et de textes depuis l\u2019apparition de l\u2019imprimerie
+    au d\xE9but du 15\xE8me si\xE8cle. Un graveur reproduit le dessin d\u2019un peintre
+    sur une plaque de cuivre. Une morsure \xE0 l\u2019acide permet de creuser les
+    lignes et les ombres dans la plaque. Apr\xE8s encrage (enduire d\u2019encre),
+    l\u2019image est imprim\xE9e sur du papier \xE0 l\u2019aide d\u2019une presse. "
+  title: 
+  sprite: {fileID: 0}
 --- !u!4 &708439099
 Transform:
   m_ObjectHideFlags: 0
@@ -1208,7 +1218,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7043815911447309325, guid: f643e8a4a48ac7147b9d30a801e61694, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7231846824885332787, guid: f643e8a4a48ac7147b9d30a801e61694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
