@@ -8,7 +8,7 @@ public class PopupSetup : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        popup = GameObject.FindGameObjectsWithTag("Popup")[1];
+        popup = GameObject.Find("PopUpInfo");
         popup.SetActive(false);
     }
 

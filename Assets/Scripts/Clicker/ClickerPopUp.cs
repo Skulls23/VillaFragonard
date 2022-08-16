@@ -16,7 +16,7 @@ public class ClickerPopUp : MonoBehaviour
         if (clickerNumber == changeSceneNumber)
             SceneManager.LoadScene(sceneName: "Map");
         else
-            GameObject.FindGameObjectsWithTag("Popup")[0].SetActive(false);
+            GameObject.Find("PopUp").SetActive(false);
     }
 
     public void SetClickerNumber(int number)

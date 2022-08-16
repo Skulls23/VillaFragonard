@@ -12,7 +12,7 @@ public class WinCondition : MonoBehaviour
     private void Awake()
     {
         aPieces = GameObject.FindGameObjectsWithTag("Piece");
-        popUpEnd = GameObject.FindGameObjectsWithTag("Popup")[0];
+        popUpEnd = GameObject.Find("PopUp");
     }
 
     void Start()
