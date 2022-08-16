@@ -1,9 +1,17 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class VerifyResultMap : MonoBehaviour
 {
-    [SerializeField] private string endText;
+    private string endText = "Bravo !"                                                                                       + Environment.NewLine +
+                             "Alexandre-Maubert était franc-maçon."                                                          + Environment.NewLine +
+                             "Le décor de cette cage d’escalier est conçu par son cousin Jean-Honoré Fragonard,"             +
+                             "il est orné de symboles faisant référence à la Révolution française et à la franc-maçonnerie." + Environment.NewLine +
+                             "Vous avez déverrouillé 3 secrets de la Villa :"                                                + Environment.NewLine +
+                             "   •  Les symboles de la cage d’escalier"                                                      + Environment.NewLine +
+                             "   •  Une sélection d’œuvres sur papier conservées en réserve"                                 + Environment.NewLine +
+                             "   •  L’histoire et les visuels du Salon des Copies";
     private GameObject[] aCluesToGuess;
     private bool isFinished;
     private GameObject popup;
