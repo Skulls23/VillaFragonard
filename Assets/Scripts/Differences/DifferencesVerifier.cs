@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,9 +7,10 @@ public class DifferencesVerifier : MonoBehaviour
 {
     [SerializeField] private List<GameObject> lImagesParent = new List<GameObject>();
     [SerializeField] private string clueName;
-    [SerializeField] private string popUpText;
+    private string popUpText = "Au 18ème siècle, l’impératrice Marie-Thérèse a régné 40 ans sur l’empire d’Autriche-Hongrie.Elle présente ici son fils Joseph aux Hongrois." + Environment.NewLine +
+                               "Les attitudes, le réalisme des visages et les détails précis rappellent l’œuvre de Jacques-Louis David, le maître d’Alexandre-Evariste Fragonard. La pénombre dans laquelle est placée la foule rappelle également l’influence de son père Jean-Honoré Fragonard.";
 
-    private static string[] lTexts = new string[4]{ "Trouve les 4 indices restants", "Trouve les 3 indices restants", "Trouve les 2 indices restants", "Trouve l'indice restant" };
+    private static string[] lTexts = new string[4]{ "Trouve les 4 erreurs restantes", "Trouve les 3 erreurs restantes", "Trouve les 2 erreurs restantes", "Trouve l'erreur restante" };
     private int             errorFound = 0;
     private GameObject      popUp;
 

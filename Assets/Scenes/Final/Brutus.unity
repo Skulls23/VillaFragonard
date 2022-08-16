@@ -5152,7 +5152,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clueUnlocked: C
-  popUpText: Des choses
+  popUpText: "Alexandre-Evariste avait 17 ans quand il a peint ce tableau. Lucr\xE8ce,
+    abus\xE9e par le fils de Tarquin, se donne la mort. Brutus, situ\xE9 \xE0 droite,
+    fait le serment de combattre le roi Tarquin le Superbe et de ne plus accepter
+    de royaut\xE9 \xE0 Rome. Brutus est connu comme \xE9tant le fondateur mythique
+    de la R\xE9publique romaine au 6\xE8me si\xE8cle av. J.C. "
+  title: 
+  sprite: {fileID: 0}
 --- !u!4 &2092406521
 Transform:
   m_ObjectHideFlags: 0
