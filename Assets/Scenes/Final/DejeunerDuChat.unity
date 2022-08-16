@@ -904,7 +904,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clueName: N
-  popUpText: Des choses
+  popUpText: "Un chat tr\xF4ne confortablement sur un tr\xE8s beau si\xE8ge devant
+    une jeune femme accroupie, tenant une assiette de lait. Il s\u2019agit d\u2019une
+    sc\xE8ne d\u2019int\xE9rieur. A la fin du 18\xE8me si\xE8cle, Marguerite G\xE9rard
+    repr\xE9sente des sc\xE8nes intimistes simples, ce qui permet au spectateur qui
+    regarde de se reconna\xEEtre dans ces \xE9vocations du quotidien. "
 --- !u!4 &324164197
 Transform:
   m_ObjectHideFlags: 0
