@@ -1,5 +1,6 @@
 using System.Collections;
 using System.IO;
+using System.Text;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -73,8 +74,8 @@ public class DoubleTapZoom : MonoBehaviour
 
     private void RevealPopup()
     {
-        StreamReader reader = new StreamReader("Assets/Resources/PaintSet/Texts/" + GetComponent<Image>().sprite.name + ".txt");
-        aTxt = reader.ReadToEnd().Split('-');
+        StreamReader reader = new StreamReader("Assets/Resources/PaintSet/Texts/" + GetComponent<Image>().sprite.name + ".txt", Encoding.UTF8);
+        aTxt = reader.ReadToEnd().Split('-'); //0 is title, 1 is the body
         reader.Close();
         
         GameObject.Find("Gameplay").GetComponent<PopupSetup>().RevealPopupInfo(aTxt[0], aTxt[1], GetComponent<Image>().sprite);
