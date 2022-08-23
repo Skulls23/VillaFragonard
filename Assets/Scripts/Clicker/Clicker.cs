@@ -23,7 +23,7 @@ public class Clicker : MonoBehaviour
         text.text = lOrderStrings[missionNumber];
 
         lTextPopUp[4] = "Ce tableau a connu un grand succès au 18ème siècle. Acheté par Louis 18, c’est la seconde œuvre de Jean-Honoré Fragonard à intégrer les collections du Musée du Louvre." + Environment.NewLine +
-                        "Dans ce paysage, Fragonard ajoute des détails qui font référence aux paysages des peintres Hollandais du 17ème siècle. La présence des lavandières fait passer le tableau d’un genre de peinture*à un autre : de paysage à scène de genre.";
+                        "Dans ce paysage, Fragonard ajoute des détails qui font référence aux paysages des peintres Hollandais du 17ème siècle. La présence des lavandières fait passer le tableau d’un genre de peinture à un autre : de paysage à scène de genre.";
     }
 
     public void ButtonClicked(int numButton)
