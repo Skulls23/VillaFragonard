@@ -74,10 +74,34 @@ public class DoubleTapZoom : MonoBehaviour
 
     private void RevealPopup()
     {
-        StreamReader reader = new StreamReader("Assets/Resources/PaintSet/Texts/" + GetComponent<Image>().sprite.name + ".txt", Encoding.UTF8);
-        aTxt = reader.ReadToEnd().Split('-'); //0 is title, 1 is the body
-        reader.Close();
-        
-        GameObject.Find("Gameplay").GetComponent<PopupSetup>().RevealPopupInfo(aTxt[0], aTxt[1], GetComponent<Image>().sprite);
+        StreamReader reader = null;
+        try
+        {
+            reader = new StreamReader(Application.persistentDataPath + "/" + GetComponent<Image>().sprite.name + ".txt", Encoding.UTF8);
+            if (reader.Peek() != -1)
+            {
+                print("not wrote");
+                aTxt = reader.ReadToEnd().Split('\n');
+                reader.Close();
+
+                GameObject.Find("Gameplay").GetComponent<PopupSetup>().RevealPopupInfo(aTxt[0], aTxt[1], GetComponent<Image>().sprite);
+            }
+        }
+        catch (FileNotFoundException)
+        {
+            print("wrote");
+            TextAsset txtAsset = Resources.Load<TextAsset>("PaintSet/Texts/" + GetComponent<Image>().sprite.name);
+            if (txtAsset != null && txtAsset.text.Length > 0) //TODO REMOVE LA DEUXIEME CONDITION
+            {
+                string txtContent = txtAsset.text;
+                System.IO.File.WriteAllText(Application.persistentDataPath + "/" + GetComponent<Image>().sprite.name + ".txt", txtContent, Encoding.UTF8);
+                reader = new StreamReader(Application.persistentDataPath + "/" + GetComponent<Image>().sprite.name + ".txt", Encoding.UTF8);
+
+                aTxt = reader.ReadToEnd().Split('-'); //0 is title, 1 is the body
+                reader.Close();
+
+                GameObject.Find("Gameplay").GetComponent<PopupSetup>().RevealPopupInfo(aTxt[0], aTxt[1], GetComponent<Image>().sprite);
+            }
+        }
     }
 }
