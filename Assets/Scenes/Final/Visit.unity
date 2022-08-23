@@ -1161,9 +1161,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Marguerite
-
-    Gerard'
+  m_Text: "Marguerite\nG\xE9rard"
 --- !u!222 &1177856946
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1481,19 +1479,19 @@ MonoBehaviour:
   - "Les Fun\xE9railles de Masaniello"
   - "La lecon de g\xE9ographie"
   - "Paysage aux lavandi\xE8res"
-  - Portrait d'une petite fille
-  - "Les premiers pas; La m\xE8re nourrice"
+  - Portrait de petite fille
+  - Les premiers pas
   - "Marie-Th\xE9r\xE8se pr\xE9sentant son fils aux Hongrois"
-  - Buste du baron Taylor
+  - L'Atelier du peintre
   - "L'Atelier ou Le\xE7on de dessin"
-  - "La Mort d'Agn\xE8s Sorel a l'abbate de Jumi\xE8ges"
+  - "La Mort d'Agn\xE8s Sorel \xE0 l'abbate de Jumi\xE8ges"
   - L'enfant blond
-  - Quatre personnages dans un parc, dit Le Concert
+  - Le Chant
   - Le Serment d'amour
-  - "Un peintre reprenant la pause de son mod\xE8le"
-  - "Madame Henri G\xE9rard"
-  - "Le D\xE9jeuner du chat"
-  - Portrait de Monsieur Dominique Louis Luce
+  - "R\xE4phael reprenant la pause de son mod\xE8le"
+  - "Portait de Mme Henri G\xE9rard"
+  - "Le d\xE9jeuner du chat"
+  - La Lecture de la Bible
 --- !u!114 &1516100817
 MonoBehaviour:
   m_ObjectHideFlags: 0
