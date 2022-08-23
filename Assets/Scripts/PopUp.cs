@@ -7,7 +7,7 @@ using UnityEngine.UI;
 /// </summary>
 public class PopUp : MonoBehaviour
 {
-    public GameObject popUp;
+    private GameObject popUp;
 
     private void Awake()
     {

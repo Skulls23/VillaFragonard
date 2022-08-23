@@ -6,8 +6,8 @@ public class VerifyResultMap : MonoBehaviour
 {
     [Header("This script contains the last text")]
     public bool boolToShowMessage; //It's useless, it's just to show a message
-    private string ruleText  = "TODO";
-    private string rule2Text = "clique la";
+    private string ruleText  = "Déplace les lettres en bas de l'écran vers les cases en haut de l'écran pour trouver le mot secret.";
+    private string rule2Text = "Tu peux cliquer sur le logo ci-dessous et disponible sur la carte pour t'aider.";
     private string endText   = "Bravo !"                                                                                       + Environment.NewLine +
                                "Alexandre-Maubert était franc-maçon."                                                          + Environment.NewLine +
                                "Le décor de cette cage d’escalier est conçu par son cousin Jean-Honoré Fragonard, "            +

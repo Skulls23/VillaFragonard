@@ -1484,7 +1484,7 @@ MonoBehaviour:
   - "Marie-Th\xE9r\xE8se pr\xE9sentant son fils aux Hongrois"
   - L'Atelier du peintre
   - "L'Atelier ou Le\xE7on de dessin"
-  - "La Mort d'Agn\xE8s Sorel \xE0 l'abbate de Jumi\xE8ges"
+  - "La Mort d'Agn\xE8s Sorel \xE0 l'abbaye de Jumi\xE8ges"
   - L'enfant blond
   - Le Chant
   - Le Serment d'amour
@@ -2068,7 +2068,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22a8112706b2ac14fa280407ebd0a013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  popUp: {fileID: 0}
 --- !u!224 &5896651177518961623
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2424,7 +2423,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22a8112706b2ac14fa280407ebd0a013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  popUp: {fileID: 0}
 --- !u!224 &5896651178404937787
 RectTransform:
   m_ObjectHideFlags: 0

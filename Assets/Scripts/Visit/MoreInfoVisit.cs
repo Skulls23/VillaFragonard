@@ -13,22 +13,17 @@ public class MoreInfoVisit : MonoBehaviour
     [SerializeField] private Sprite spriteToBeAdded2;
     
     private GameObject plusButton;
+    private GameObject closeButton;
 
     private void Awake()
     {
         plusButton = transform.GetChild(0).Find("MoreInfo").gameObject;
+        closeButton = transform.GetChild(0).Find("HidePopUp").gameObject;
     }
 
     private void Start()
     {
-        if (textToBeAdded != "")
-        {
-            plusButton.SetActive(true);
-        }
-        else
-        {
-            plusButton.SetActive(false);
-        }
+        VerifyButtons();
     }
 
     // Update is called once per frame
@@ -43,16 +38,9 @@ public class MoreInfoVisit : MonoBehaviour
             spriteToBeAdded = spriteToBeAdded2;
             spriteToBeAdded2 = null;
         }
-            
 
-        if (textToBeAdded != "")
-        {
-            plusButton.SetActive(true);
-        }
-        else
-        {
-            plusButton.SetActive(false);
-        }
+
+        VerifyButtons();
     }
 
     public string TextToBeAdded
@@ -86,5 +74,19 @@ public class MoreInfoVisit : MonoBehaviour
             return temp;
         }
         set { spriteToBeAdded = value; }
+    }
+
+    private void VerifyButtons()
+    {
+        if (textToBeAdded != "")
+        {
+            plusButton.SetActive(true);
+            closeButton.SetActive(false);
+        }
+        else
+        {
+            plusButton.SetActive(false);
+            closeButton.SetActive(true);
+        }
     }
 }
