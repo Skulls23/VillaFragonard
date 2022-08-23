@@ -443,7 +443,6 @@ GameObject:
   - component: {fileID: 355001047}
   - component: {fileID: 355001046}
   - component: {fileID: 355001045}
-  - component: {fileID: 355001044}
   - component: {fileID: 355001043}
   m_Layer: 5
   m_Name: ButtonCredit (4)
@@ -485,18 +484,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   redirection: SettingsCredit
---- !u!114 &355001044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 355001041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97fea46a1f108b74dabb08852288f5a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &355001045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -541,18 +528,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 355001044}
-        m_TargetAssemblyTypeName: ResetSave, Assembly-CSharp
-        m_MethodName: Reset
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 355001043}
         m_TargetAssemblyTypeName: RedirectToScene, Assembly-CSharp
         m_MethodName: Redirect
@@ -615,7 +590,6 @@ GameObject:
   - component: {fileID: 519678542}
   - component: {fileID: 519678541}
   - component: {fileID: 519678540}
-  - component: {fileID: 519678539}
   - component: {fileID: 519678538}
   m_Layer: 5
   m_Name: ButtonCredit (2)
@@ -657,18 +631,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   redirection: SettingsCredit
---- !u!114 &519678539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519678536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97fea46a1f108b74dabb08852288f5a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &519678540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -713,19 +675,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 519678539}
-        m_TargetAssemblyTypeName: ResetSave, Assembly-CSharp
-        m_MethodName: Reset
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 519678538}
+      - m_Target: {fileID: 355001043}
         m_TargetAssemblyTypeName: RedirectToScene, Assembly-CSharp
         m_MethodName: Redirect
         m_Mode: 1
@@ -1103,7 +1053,6 @@ GameObject:
   - component: {fileID: 1053071358}
   - component: {fileID: 1053071357}
   - component: {fileID: 1053071356}
-  - component: {fileID: 1053071355}
   - component: {fileID: 1053071354}
   m_Layer: 5
   m_Name: ButtonCredit
@@ -1145,18 +1094,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   redirection: SettingsCredit
---- !u!114 &1053071355
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1053071352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97fea46a1f108b74dabb08852288f5a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1053071356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1201,19 +1138,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1053071355}
-        m_TargetAssemblyTypeName: ResetSave, Assembly-CSharp
-        m_MethodName: Reset
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1053071354}
+      - m_Target: {fileID: 355001043}
         m_TargetAssemblyTypeName: RedirectToScene, Assembly-CSharp
         m_MethodName: Redirect
         m_Mode: 1
@@ -1433,7 +1358,6 @@ GameObject:
   - component: {fileID: 1461721303}
   - component: {fileID: 1461721302}
   - component: {fileID: 1461721301}
-  - component: {fileID: 1461721300}
   - component: {fileID: 1461721299}
   m_Layer: 5
   m_Name: ButtonCredit (6)
@@ -1475,18 +1399,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   redirection: SettingsCredit
---- !u!114 &1461721300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1461721297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97fea46a1f108b74dabb08852288f5a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1461721301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1531,19 +1443,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1461721300}
-        m_TargetAssemblyTypeName: ResetSave, Assembly-CSharp
-        m_MethodName: Reset
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1461721299}
+      - m_Target: {fileID: 355001043}
         m_TargetAssemblyTypeName: RedirectToScene, Assembly-CSharp
         m_MethodName: Redirect
         m_Mode: 1
@@ -1792,7 +1692,6 @@ GameObject:
   - component: {fileID: 1808626702}
   - component: {fileID: 1808626701}
   - component: {fileID: 1808626700}
-  - component: {fileID: 1808626699}
   - component: {fileID: 1808626698}
   m_Layer: 5
   m_Name: ButtonCredit (1)
@@ -1834,18 +1733,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   redirection: SettingsCredit
---- !u!114 &1808626699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1808626696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97fea46a1f108b74dabb08852288f5a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1808626700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1890,19 +1777,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1808626699}
-        m_TargetAssemblyTypeName: ResetSave, Assembly-CSharp
-        m_MethodName: Reset
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1808626698}
+      - m_Target: {fileID: 355001043}
         m_TargetAssemblyTypeName: RedirectToScene, Assembly-CSharp
         m_MethodName: Redirect
         m_Mode: 1
@@ -1964,7 +1839,6 @@ GameObject:
   - component: {fileID: 1893783468}
   - component: {fileID: 1893783467}
   - component: {fileID: 1893783466}
-  - component: {fileID: 1893783465}
   - component: {fileID: 1893783464}
   m_Layer: 5
   m_Name: ButtonCredit (5)
@@ -2006,18 +1880,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   redirection: SettingsCredit
---- !u!114 &1893783465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1893783462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97fea46a1f108b74dabb08852288f5a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1893783466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2062,19 +1924,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1893783465}
-        m_TargetAssemblyTypeName: ResetSave, Assembly-CSharp
-        m_MethodName: Reset
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1893783464}
+      - m_Target: {fileID: 355001043}
         m_TargetAssemblyTypeName: RedirectToScene, Assembly-CSharp
         m_MethodName: Redirect
         m_Mode: 1
@@ -2229,7 +2079,6 @@ GameObject:
   - component: {fileID: 1964443968}
   - component: {fileID: 1964443967}
   - component: {fileID: 1964443966}
-  - component: {fileID: 1964443965}
   - component: {fileID: 1964443964}
   m_Layer: 5
   m_Name: ButtonCredit (3)
@@ -2271,18 +2120,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   redirection: SettingsCredit
---- !u!114 &1964443965
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1964443962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97fea46a1f108b74dabb08852288f5a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1964443966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2327,19 +2164,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1964443965}
-        m_TargetAssemblyTypeName: ResetSave, Assembly-CSharp
-        m_MethodName: Reset
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1964443964}
+      - m_Target: {fileID: 355001043}
         m_TargetAssemblyTypeName: RedirectToScene, Assembly-CSharp
         m_MethodName: Redirect
         m_Mode: 1
@@ -2401,7 +2226,6 @@ GameObject:
   - component: {fileID: 2133449798}
   - component: {fileID: 2133449797}
   - component: {fileID: 2133449796}
-  - component: {fileID: 2133449795}
   - component: {fileID: 2133449794}
   m_Layer: 5
   m_Name: ButtonCredit (7)
@@ -2443,18 +2267,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   redirection: SettingsCredit
---- !u!114 &2133449795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2133449792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97fea46a1f108b74dabb08852288f5a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2133449796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2499,19 +2311,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2133449795}
-        m_TargetAssemblyTypeName: ResetSave, Assembly-CSharp
-        m_MethodName: Reset
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2133449794}
+      - m_Target: {fileID: 355001043}
         m_TargetAssemblyTypeName: RedirectToScene, Assembly-CSharp
         m_MethodName: Redirect
         m_Mode: 1
