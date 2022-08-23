@@ -8,7 +8,7 @@ public class VerifyResultMap : MonoBehaviour
     public bool boolToShowMessage; //It's useless, it's just to show a message
     private string endText = "Bravo !"                                                                                       + Environment.NewLine +
                              "Alexandre-Maubert était franc-maçon."                                                          + Environment.NewLine +
-                             "Le décor de cette cage d’escalier est conçu par son cousin Jean-Honoré Fragonard,"             +
+                             "Le décor de cette cage d’escalier est conçu par son cousin Jean-Honoré Fragonard, "            +
                              "il est orné de symboles faisant référence à la Révolution française et à la franc-maçonnerie." + Environment.NewLine +
                              "Vous avez déverrouillé 3 secrets de la Villa :"                                                + Environment.NewLine +
                              "   •  Les symboles de la cage d’escalier"                                                      + Environment.NewLine +
