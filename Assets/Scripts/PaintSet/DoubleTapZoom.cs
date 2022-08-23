@@ -72,6 +72,11 @@ public class DoubleTapZoom : MonoBehaviour
         doubleDone = false;
     }
 
+    /// <summary>
+    /// I can't use a simple <c>StreamReader</c> on smartphone. I have to create a file in the persistent data path and read it.<br/>
+    /// I made a protection to avoid to write multiple times the same file.<br/>
+    /// The at the end of the game I delete it.
+    /// </summary>
     private void RevealPopup()
     {
         StreamReader reader = null;
@@ -80,7 +85,6 @@ public class DoubleTapZoom : MonoBehaviour
             reader = new StreamReader(Application.persistentDataPath + "/" + GetComponent<Image>().sprite.name + ".txt", Encoding.UTF8);
             if (reader.Peek() != -1)
             {
-                print("not wrote");
                 aTxt = reader.ReadToEnd().Split('\n');
                 reader.Close();
 
@@ -89,7 +93,6 @@ public class DoubleTapZoom : MonoBehaviour
         }
         catch (FileNotFoundException)
         {
-            print("wrote");
             TextAsset txtAsset = Resources.Load<TextAsset>("PaintSet/Texts/" + GetComponent<Image>().sprite.name);
             if (txtAsset != null && txtAsset.text.Length > 0) //TODO REMOVE LA DEUXIEME CONDITION
             {
