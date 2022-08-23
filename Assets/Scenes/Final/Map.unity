@@ -1069,12 +1069,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 644390666}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.6802061, y: -0.042415775, z: -15.596607}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.6800537, y: -0.04248047, z: -15.596608}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &644390668
 MonoBehaviour:
@@ -1101,26 +1101,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clues:
-  - "Le b\xE2timent dans lequel vous vous trouvez est une bastide proven\xE7ale construite
-    \xE0 la fin du 17\xE8me si\xE8cle. "
-  - "Alexandre Maubert a achet\xE9 cette bastide en 1764. Il \xE9tait un riche n\xE9gociant
-    en parfumerie grassois, cultiv\xE9 et musicien, digne repr\xE9sentant du si\xE8cle
-    des Lumi\xE8res. "
-  - "Alexandre Maubert \xE9tait le cousin du peintre Jean-Honor\xE9 Fragonard, n\xE9
-    lui aussi \xE0 Grasse en 1732."
-  - "Jean-Honor\xE9 Fragonard s\xE9journe chez son cousin du 18 f\xE9vrier 1790 au
-    12 f\xE9vrier 1791 avec sa femme et sa belle-s\u0153ur, Marguerite G\xE9rard,
+  - "Indice 1 : Le b\xE2timent dans lequel vous vous trouvez est une bastide proven\xE7ale
+    construite \xE0 la fin du 17\xE8me si\xE8cle. "
+  - "Indice 2 : Alexandre Maubert a achet\xE9 cette bastide en 1764. Il \xE9tait
+    un riche n\xE9gociant en parfumerie grassois, cultiv\xE9 et musicien, digne repr\xE9sentant
+    du si\xE8cle des Lumi\xE8res. "
+  - "Indice 3 : Alexandre Maubert \xE9tait le cousin du peintre Jean-Honor\xE9 Fragonard,
+    n\xE9 lui aussi \xE0 Grasse en 1732."
+  - "Indice 4 : Jean-Honor\xE9 Fragonard s\xE9journe chez son cousin du 18 f\xE9vrier
+    1790 au 12 f\xE9vrier 1791 avec sa femme et sa belle-s\u0153ur, Marguerite G\xE9rard,
     peintre elle aussi."
-  - "Jean-Honor\xE9 Fragonard paie un loyer \xE0 son cousin pour son s\xE9jour :
-    168 livres par mois pendant 1 an. "
-  - "On peut consid\xE9rer la peinture murale d\xE9corant la cage d\u2019escalier
+  - "Indice 5 : Jean-Honor\xE9 Fragonard paie un loyer \xE0 son cousin pour son s\xE9jour
+    : 168 livres par mois pendant 1 an. "
+  - "Indice 6 : On peut consid\xE9rer la peinture murale d\xE9corant la cage d\u2019escalier
     comme un paiement de Jean-Honor\xE9 Fragonard \xE0 son cousin. Il r\xE9alise
     la peinture de l\u2019escalier autour de deux th\xE9matiques. "
-  - "En r\xE9alisant la fresque murale de la cage d\u2019escalier, Alexandre Maubert
-    et Jean-Honor\xE9 Fragonard montrent leur attachement aux valeurs de la R\xE9volution
-    fran\xE7aise. "
-  - "Alexandre Maubert, le cousin de Jean-Honor\xE9 Fragonard, appartient \xE0 une
-    soci\xE9t\xE9 secr\xE8te de grande renomm\xE9e. Certains symboles pr\xE9sents
+  - "Indice 7 : En r\xE9alisant la fresque murale de la cage d\u2019escalier, Alexandre
+    Maubert et Jean-Honor\xE9 Fragonard montrent leur attachement aux valeurs de
+    la R\xE9volution fran\xE7aise. "
+  - "Indice 8 : Alexandre Maubert, le cousin de Jean-Honor\xE9 Fragonard, appartient
+    \xE0 une soci\xE9t\xE9 secr\xE8te de grande renomm\xE9e. Certains symboles pr\xE9sents
     dans la cage d\u2019escalier vous donnent des indices."
 --- !u!114 &644390670
 MonoBehaviour:
@@ -1134,10 +1134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85d511e8dfcf23a43a21a74cb62ee17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endText: "Bravo ! Alexandre-Maubert \xE9tait franc-ma\xE7on. Le d\xE9cor de cette
-    cage d\u2019escalier est con\xE7u par son cousin Jean-Honor\xE9 Fragonard, il
-    est orn\xE9 de symboles faisant r\xE9f\xE9rence \xE0 la R\xE9volution fran\xE7aise
-    et \xE0 la franc-ma\xE7onnerie."
+  boolToShowMessage: 0
 --- !u!114 &644390671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2539,7 +2536,7 @@ RectTransform:
   - {fileID: 2114378742}
   - {fileID: 8255611773959413843}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
