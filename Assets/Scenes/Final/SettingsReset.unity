@@ -348,7 +348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e9dcce6f51d6b64ea4add8be36254a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redirection: TitleScreen
+  redirection: Settings
 --- !u!1 &414172965
 GameObject:
   m_ObjectHideFlags: 0

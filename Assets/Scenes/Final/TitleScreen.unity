@@ -1092,7 +1092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e9dcce6f51d6b64ea4add8be36254a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redirection: Reset
+  redirection: Settings
 --- !u!114 &800726270
 MonoBehaviour:
   m_ObjectHideFlags: 0

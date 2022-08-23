@@ -109,7 +109,6 @@ public class MoveUI : MonoBehaviour
             if (aAbsoluteValues[i] == Mathf.Min(aAbsoluteValues))
                 sideNumber = i;
 
-        print(aSide[sideNumber].name);
         switch (aSide[sideNumber].name)
         {
             case "Left":

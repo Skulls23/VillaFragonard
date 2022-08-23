@@ -9,8 +9,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Final/TitleScreen.unity
     guid: 7fa5538e133a7e345a4e923f33bb60ee
   - enabled: 1
-    path: Assets/Scenes/Final/Reset.unity
+    path: Assets/Scenes/Final/Settings.unity
+    guid: 195bf41581ae37646a35c3235118cc4b
+  - enabled: 1
+    path: Assets/Scenes/Final/SettingsReset.unity
     guid: 691c15e5cf085ad4a9bc58c3e9f3cbf5
+  - enabled: 1
+    path: Assets/Scenes/Final/SettingsCheat.unity
+    guid: 4eebdf9e9589c164a8b5d5044534d223
+  - enabled: 1
+    path: Assets/Scenes/Final/SettingsCredit.unity
+    guid: 8b81a88f8749d9f4094b7711fa47a0c8
   - enabled: 1
     path: Assets/Scenes/Final/Atelier.unity
     guid: eee35c8da89def646983e696d0de2a16
