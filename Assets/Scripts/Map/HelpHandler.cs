@@ -10,7 +10,7 @@ public class HelpHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerPrefs.HasKey("Number of clues unlocked") && PlayerPrefs.GetInt("Number of clues unlocked") == PlayerPrefs.GetInt("Number of clues to be unlocked"))
+        if (PlayerPrefs.HasKey("Number of clues unlocked") || PlayerPrefs.GetInt("Number of clues unlocked") == PlayerPrefs.GetInt("Number of clues to be unlocked"))
         {
             gameObject.SetActive(true);
         }
@@ -19,7 +19,7 @@ public class HelpHandler : MonoBehaviour
     }
     private void Awake()
     {
-        popup = GameObject.FindGameObjectWithTag("Popup");
+        popup = GameObject.Find("PopUpClues");
     }
 
 
