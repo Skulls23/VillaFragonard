@@ -8,23 +8,23 @@ public class VerifyEngraving : MonoBehaviour
     [SerializeField] private int numberToWin = 3;
     private int numCorrect;
     private Color baseColor;
+    private GameObject tirage;
+    private GameObject plaque;
 
     private void Awake()
     {
         baseColor = GetComponent<Image>().color;
+        tirage = GameObject.Find("Tirage");
+        plaque = GameObject.Find("Plaque");
     }
 
     public void VerifySprites()
     {
-
-        GameObject[] go = GameObject.FindGameObjectsWithTag("Piece");
-
-
-        if (go[0].GetComponent<Image>().sprite.name == go[1].GetComponent<Image>().sprite.name)// + "Print")
+        if (tirage.GetComponent<Image>().sprite.name == "TIRAGE-"+ plaque.GetComponent<Image>().sprite.name)
         {
             numCorrect++;
-            go[0].GetComponent<Swap>().DeleteActualSprite();
-            go[1].GetComponent<Swap>().DeleteActualSprite();
+            tirage.GetComponent<Swap>().DeleteActualSprite();
+            plaque.GetComponent<Swap>().DeleteActualSprite();
             transform.GetComponent<Image>().color = Color.green;
             StartCoroutine(ReturnColorToNormal(0.6f));
         }

@@ -216,7 +216,7 @@ GameObject:
   - component: {fileID: 424613244}
   - component: {fileID: 424613246}
   m_Layer: 5
-  m_Name: Right
+  m_Name: Tirage
   m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -234,7 +234,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1767640391}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 1, y: 1}
@@ -337,9 +337,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aSprite:
-  - {fileID: 5031429361565179429, guid: a824a11ea07487840a400044ce949f77, type: 3}
-  - {fileID: 8597266508137189360, guid: a824a11ea07487840a400044ce949f77, type: 3}
-  - {fileID: -965810902057591150, guid: a824a11ea07487840a400044ce949f77, type: 3}
+  - {fileID: 21300000, guid: b2f670d400014b94e8fb24ba198d058a, type: 3}
+  - {fileID: 21300000, guid: f86dc0fb8c0a96b4f926156831135e58, type: 3}
+  - {fileID: 21300000, guid: 3cd593dc105352348ae1ea1f9544faf2, type: 3}
 --- !u!1 &708439097
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,8 +548,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Glisse vers le haut ou vers le bas les images pour retrouver les \xE9l\xE9ments
-    qui co\xEFncident puis valider.\nTu doit trouver 3 co\xEFncidences."
+  m_Text: "Glisse vers la gauche ou vers la droite les images pour retrouver les
+    \xE9l\xE9ments qui co\xEFncident puis valider.\nTu doit trouver 3 co\xEFncidences."
 --- !u!222 &775640254
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -767,7 +767,7 @@ GameObject:
   - component: {fileID: 1116607475}
   - component: {fileID: 1116607478}
   m_Layer: 5
-  m_Name: Left
+  m_Name: Plaque
   m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -785,7 +785,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1767640391}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -843,9 +843,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aSprite:
-  - {fileID: -965810902057591150, guid: a824a11ea07487840a400044ce949f77, type: 3}
-  - {fileID: 8597266508137189360, guid: a824a11ea07487840a400044ce949f77, type: 3}
-  - {fileID: 5031429361565179429, guid: a824a11ea07487840a400044ce949f77, type: 3}
+  - {fileID: 21300000, guid: 57e550b14d4433f40b4ce53d6020d2b0, type: 3}
+  - {fileID: 21300000, guid: ae4de48f2f276574488cd93d8b105e7c, type: 3}
+  - {fileID: 21300000, guid: e66e6949952408b45b433e93b4321bd9, type: 3}
 --- !u!114 &1116607478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1329,8 +1329,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1116607474}
   - {fileID: 424613243}
+  - {fileID: 1116607474}
   - {fileID: 1410572694}
   - {fileID: 775640252}
   - {fileID: 978678232}

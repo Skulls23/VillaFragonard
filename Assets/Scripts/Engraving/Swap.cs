@@ -61,6 +61,7 @@ public class Swap : MonoBehaviour
                     aSpriteReplacer[placement++] = aSprite[i];
             }
             aSprite = aSpriteReplacer;
+            spriteNumber = 0;
             SwapSprite();
         }
     }
