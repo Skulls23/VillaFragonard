@@ -458,7 +458,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 355001041}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -480,10 +480,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 355001041}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e9dcce6f51d6b64ea4add8be36254a3, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b0e3aec7622ae2439271d4ea0ae4fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redirection: SettingsCredit
+  letterToUnlock: N
 --- !u!114 &355001045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -529,8 +529,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 355001043}
-        m_TargetAssemblyTypeName: RedirectToScene, Assembly-CSharp
-        m_MethodName: Redirect
+        m_TargetAssemblyTypeName: Cheat, Assembly-CSharp
+        m_MethodName: UnlockLetter
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -605,7 +605,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519678536}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -627,10 +627,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 519678536}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e9dcce6f51d6b64ea4add8be36254a3, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b0e3aec7622ae2439271d4ea0ae4fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redirection: SettingsCredit
+  letterToUnlock: R
 --- !u!114 &519678540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -675,9 +675,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 355001043}
-        m_TargetAssemblyTypeName: RedirectToScene, Assembly-CSharp
-        m_MethodName: Redirect
+      - m_Target: {fileID: 519678538}
+        m_TargetAssemblyTypeName: Cheat, Assembly-CSharp
+        m_MethodName: UnlockLetter
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1041,6 +1041,72 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988018337}
   m_CullTransparentMesh: 1
+--- !u!1 &1017643475
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1017643478}
+  - component: {fileID: 1017643477}
+  - component: {fileID: 1017643476}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1017643476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017643475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1017643477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017643475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1017643478
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017643475}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1053071352
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,7 +1134,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053071352}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1078,7 +1144,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.05, y: 0.65}
   m_AnchorMax: {x: 0.3, y: 0.85}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.00012207031, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1053071354
@@ -1090,10 +1156,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1053071352}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e9dcce6f51d6b64ea4add8be36254a3, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b0e3aec7622ae2439271d4ea0ae4fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redirection: SettingsCredit
+  letterToUnlock: F
 --- !u!114 &1053071356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1138,9 +1204,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 355001043}
-        m_TargetAssemblyTypeName: RedirectToScene, Assembly-CSharp
-        m_MethodName: Redirect
+      - m_Target: {fileID: 1053071354}
+        m_TargetAssemblyTypeName: Cheat, Assembly-CSharp
+        m_MethodName: UnlockLetter
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1395,10 +1461,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1461721297}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e9dcce6f51d6b64ea4add8be36254a3, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b0e3aec7622ae2439271d4ea0ae4fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redirection: SettingsCredit
+  letterToUnlock: M
 --- !u!114 &1461721301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1443,9 +1509,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 355001043}
-        m_TargetAssemblyTypeName: RedirectToScene, Assembly-CSharp
-        m_MethodName: Redirect
+      - m_Target: {fileID: 1461721299}
+        m_TargetAssemblyTypeName: Cheat, Assembly-CSharp
+        m_MethodName: UnlockLetter
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1707,7 +1773,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1808626696}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1729,10 +1795,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1808626696}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e9dcce6f51d6b64ea4add8be36254a3, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b0e3aec7622ae2439271d4ea0ae4fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redirection: SettingsCredit
+  letterToUnlock: "\xC7"
 --- !u!114 &1808626700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1777,9 +1843,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 355001043}
-        m_TargetAssemblyTypeName: RedirectToScene, Assembly-CSharp
-        m_MethodName: Redirect
+      - m_Target: {fileID: 1808626698}
+        m_TargetAssemblyTypeName: Cheat, Assembly-CSharp
+        m_MethodName: UnlockLetter
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1854,7 +1920,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893783462}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1876,10 +1942,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1893783462}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e9dcce6f51d6b64ea4add8be36254a3, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b0e3aec7622ae2439271d4ea0ae4fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redirection: SettingsCredit
+  letterToUnlock: O
 --- !u!114 &1893783466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1924,9 +1990,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 355001043}
-        m_TargetAssemblyTypeName: RedirectToScene, Assembly-CSharp
-        m_MethodName: Redirect
+      - m_Target: {fileID: 1893783464}
+        m_TargetAssemblyTypeName: Cheat, Assembly-CSharp
+        m_MethodName: UnlockLetter
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2094,7 +2160,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1964443962}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2116,10 +2182,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1964443962}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e9dcce6f51d6b64ea4add8be36254a3, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b0e3aec7622ae2439271d4ea0ae4fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redirection: SettingsCredit
+  letterToUnlock: C
 --- !u!114 &1964443966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2164,9 +2230,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 355001043}
-        m_TargetAssemblyTypeName: RedirectToScene, Assembly-CSharp
-        m_MethodName: Redirect
+      - m_Target: {fileID: 1964443964}
+        m_TargetAssemblyTypeName: Cheat, Assembly-CSharp
+        m_MethodName: UnlockLetter
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2241,7 +2307,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2133449792}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2263,10 +2329,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2133449792}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e9dcce6f51d6b64ea4add8be36254a3, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b0e3aec7622ae2439271d4ea0ae4fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redirection: SettingsCredit
+  letterToUnlock: A
 --- !u!114 &2133449796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2311,9 +2377,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 355001043}
-        m_TargetAssemblyTypeName: RedirectToScene, Assembly-CSharp
-        m_MethodName: Redirect
+      - m_Target: {fileID: 2133449794}
+        m_TargetAssemblyTypeName: Cheat, Assembly-CSharp
+        m_MethodName: UnlockLetter
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
