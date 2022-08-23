@@ -60,7 +60,8 @@ public class Clicker : MonoBehaviour
             popUp.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = lTextPopUp[missionNumber];
             if (missionNumber == 4)
             {
-                popUp.GetComponent<MoreInfoPopup>().TextToBeAdded = "Dans la peinture académique, les peintures sont classées selon les sujets représentés, du plus noble au moins noble :" + Environment.NewLine +
+                popUp.GetComponent<MoreInfoPopup>().TextToBeAdded = "Les genres en peinture."     + Environment.NewLine +
+                                                                    "Dans la peinture académique, les peintures sont classées selon les sujets représentés, du plus noble au moins noble :" + Environment.NewLine +
                                                                     "   1.La peinture d’histoire" + Environment.NewLine +
                                                                     "   2.Le portrait"            + Environment.NewLine +
                                                                     "   3.La scène de genre"      + Environment.NewLine +

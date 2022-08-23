@@ -27,6 +27,7 @@ public class CluesRevealer : MonoBehaviour
     void Start()
     {
         //UnlockAll();
+
         
         //We will show the popup when we unlock a new clue letter
         if (PlayerPrefs.GetInt("Number of clues unlocked") > PlayerPrefs.GetInt("Previous Number"))
