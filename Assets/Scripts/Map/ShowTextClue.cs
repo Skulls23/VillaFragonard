@@ -10,7 +10,7 @@ public class ShowTextClue : MonoBehaviour
     // Awake is called before all the Start
     void Awake()
     {
-        popup = GameObject.FindGameObjectWithTag("Popup");
+        popup = GameObject.Find("PopUpClues");
     }
 
     private void Start()

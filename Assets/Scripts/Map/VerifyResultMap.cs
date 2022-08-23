@@ -6,26 +6,32 @@ public class VerifyResultMap : MonoBehaviour
 {
     [Header("This script contains the last text")]
     public bool boolToShowMessage; //It's useless, it's just to show a message
-    private string endText = "Bravo !"                                                                                       + Environment.NewLine +
-                             "Alexandre-Maubert était franc-maçon."                                                          + Environment.NewLine +
-                             "Le décor de cette cage d’escalier est conçu par son cousin Jean-Honoré Fragonard, "            +
-                             "il est orné de symboles faisant référence à la Révolution française et à la franc-maçonnerie." + Environment.NewLine +
-                             "Vous avez déverrouillé 3 secrets de la Villa :"                                                + Environment.NewLine +
-                             "   •  Les symboles de la cage d’escalier"                                                      + Environment.NewLine +
-                             "   •  Une sélection d’œuvres sur papier conservées en réserve"                                 + Environment.NewLine +
-                             "   •  L’histoire et les visuels du Salon des Copies";
+    private string ruleText = "TODO";
+    private string endText  = "Bravo !"                                                                                       + Environment.NewLine +
+                              "Alexandre-Maubert était franc-maçon."                                                          + Environment.NewLine +
+                              "Le décor de cette cage d’escalier est conçu par son cousin Jean-Honoré Fragonard, "            +
+                              "il est orné de symboles faisant référence à la Révolution française et à la franc-maçonnerie." + Environment.NewLine +
+                              "Vous avez déverrouillé 3 secrets de la Villa :"                                                + Environment.NewLine +
+                              "   •  Les symboles de la cage d’escalier"                                                      + Environment.NewLine +
+                              "   •  Une sélection d’œuvres sur papier conservées en réserve"                                 + Environment.NewLine +
+                              "   •  L’histoire et les visuels du Salon des Copies";
     private GameObject[] aCluesToGuess;
     private bool isFinished;
     private GameObject popup;
 
     private void Awake()
     {
-        popup = GameObject.FindGameObjectWithTag("Popup");
+        popup = GameObject.Find("PopUp");
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        if(PlayerPrefs.GetInt("Number of clues unlocked") >= PlayerPrefs.GetInt("Number of clues to be unlocked"))
+        {
+            popup.SetActive(true);
+            popup.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = ruleText;
+        }
         aCluesToGuess = GameObject.FindGameObjectsWithTag("ChoicePiece");
         VerifyIfGameAlreadyFinished();
     }
