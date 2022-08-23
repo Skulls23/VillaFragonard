@@ -101,6 +101,7 @@ public class DoubleTapZoom : MonoBehaviour
                 reader = new StreamReader(Application.persistentDataPath + "/" + GetComponent<Image>().sprite.name + ".txt", Encoding.UTF8);
 
                 aTxt = reader.ReadToEnd().Split('-'); //0 is title, 1 is the body
+                aTxt[0] = aTxt[0].Replace("-", "");
                 reader.Close();
 
                 GameObject.Find("Gameplay").GetComponent<PopupSetup>().RevealPopupInfo(aTxt[0], aTxt[1], GetComponent<Image>().sprite);

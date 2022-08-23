@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Cheat : MonoBehaviour
 {
     [SerializeField] private string letterToUnlock;
+
     // Start is called before the first frame update
     void Start()
     {
