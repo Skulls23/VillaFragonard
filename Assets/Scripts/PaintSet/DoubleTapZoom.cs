@@ -85,7 +85,8 @@ public class DoubleTapZoom : MonoBehaviour
             reader = new StreamReader(Application.persistentDataPath + "/" + GetComponent<Image>().sprite.name + ".txt", Encoding.UTF8);
             if (reader.Peek() != -1)
             {
-                aTxt = reader.ReadToEnd().Split('\n');
+                aTxt = reader.ReadToEnd().Split('|');
+                aTxt[0] = aTxt[0].Replace("|", "");
                 reader.Close();
 
                 GameObject.Find("Gameplay").GetComponent<PopupSetup>().RevealPopupInfo(aTxt[0], aTxt[1], GetComponent<Image>().sprite);
@@ -100,8 +101,8 @@ public class DoubleTapZoom : MonoBehaviour
                 System.IO.File.WriteAllText(Application.persistentDataPath + "/" + GetComponent<Image>().sprite.name + ".txt", txtContent, Encoding.UTF8);
                 reader = new StreamReader(Application.persistentDataPath + "/" + GetComponent<Image>().sprite.name + ".txt", Encoding.UTF8);
 
-                aTxt = reader.ReadToEnd().Split('-'); //0 is title, 1 is the body
-                aTxt[0] = aTxt[0].Replace("-", "");
+                aTxt = reader.ReadToEnd().Split('|'); //0 is title, 1 is the body
+                aTxt[0] = aTxt[0].Replace("|", "");
                 reader.Close();
 
                 GameObject.Find("Gameplay").GetComponent<PopupSetup>().RevealPopupInfo(aTxt[0], aTxt[1], GetComponent<Image>().sprite);
