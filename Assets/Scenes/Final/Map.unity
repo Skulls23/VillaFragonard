@@ -1849,7 +1849,7 @@ GameObject:
   - component: {fileID: 741299422}
   - component: {fileID: 741299421}
   m_Layer: 5
-  m_Name: ReturnMenu
+  m_Name: ReturnOptions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1886,7 +1886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e9dcce6f51d6b64ea4add8be36254a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redirection: TitleScreen
+  redirection: 
 --- !u!114 &741299422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1933,7 +1933,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 741299421}
         m_TargetAssemblyTypeName: RedirectToScene, Assembly-CSharp
-        m_MethodName: Redirect
+        m_MethodName: RedirectToSettings
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1963,7 +1963,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 752c60a12d0fd9948ba16595ce6f4dd4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9d5b326f71161ac4697826787dd0e317, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

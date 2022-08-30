@@ -21,6 +21,20 @@ public class RedirectToScene : MonoBehaviour
         SceneManager.LoadScene(sceneName: redirection);
     }
 
+    public void RedirectToSettings()
+    {
+        PlayerPrefs.SetString("PreviousScene", SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(sceneName: "Settings");
+    }
+
+    public void RedirectToPreviousScene()
+    {
+        if(PlayerPrefs.HasKey("PreviousScene"))
+            SceneManager.LoadScene(sceneName: PlayerPrefs.GetString("PreviousScene"));
+        else
+            SceneManager.LoadScene(sceneName: "Map");
+    }
+
     public void RedirectUrl()
     {
         Application.OpenURL(redirection);
