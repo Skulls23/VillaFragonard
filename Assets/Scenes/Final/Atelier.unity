@@ -1275,7 +1275,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Elles discutent
+  m_Text: "Toutes les deux parlent de l\u2019homme \xE0 la droite du tableau."
 --- !u!222 &1280259139
 CanvasRenderer:
   m_ObjectHideFlags: 0
