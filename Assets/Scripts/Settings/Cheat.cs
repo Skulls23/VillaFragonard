@@ -27,11 +27,13 @@ public class Cheat : MonoBehaviour
     {
         if(! PlayerPrefs.HasKey(letterToUnlock))
         {
-            GetComponent<Image>().color = Color.green;
+            GetComponent<Image>().color = Color.red;
         }
         else
         {
-            GetComponent<Image>().color = Color.red;
+            Color color;
+            ColorUtility.TryParseHtmlString("#4F932B", out color);
+            GetComponent<Image>().color = color;
         }
     }
 }
