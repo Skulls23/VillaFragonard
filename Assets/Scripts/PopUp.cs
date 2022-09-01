@@ -22,7 +22,13 @@ public class PopUp : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName: "Map");
     }
-    
+
+    public void ChangeSceneToTiteScreen()
+    {
+        SceneManager.LoadScene(sceneName: "TitleScreen");
+    }
+
+
     public void PrintMoreText()
     {
         popUp.transform.GetChild(0).Find("Text").GetComponent<Text>().text = popUp.GetComponent<MoreInfoPopup>().TextToBeAdded;

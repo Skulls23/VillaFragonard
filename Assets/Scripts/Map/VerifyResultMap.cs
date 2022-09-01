@@ -23,13 +23,15 @@ public class VerifyResultMap : MonoBehaviour
 
     private void Awake()
     {
-        popup = GameObject.Find("PopUp");
+        popup     = GameObject.Find("PopUpEnd");
         popupRule = GameObject.Find("PopUpRule");
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        popup.SetActive(false);
+        
         if (PlayerPrefs.GetInt("Number of clues unlocked") >= PlayerPrefs.GetInt("Number of clues to be unlocked"))
         {
             popupRule.SetActive(true);
@@ -63,8 +65,8 @@ public class VerifyResultMap : MonoBehaviour
         if (isFinished)
         {
             PlayerPrefs.SetInt("Unlock secret", 1);
-            popup.SetActive(true);
             popup.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = endText;
+            popup.SetActive(true);
         }
     }
 }
