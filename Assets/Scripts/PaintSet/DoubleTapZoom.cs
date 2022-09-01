@@ -105,6 +105,11 @@ public class DoubleTapZoom : MonoBehaviour
                 aTxt[0] = aTxt[0].Replace("|", "");
                 reader.Close();
 
+                if(aTxt == null)
+                {
+                    print("null");
+                }
+                
                 GameObject.Find("Gameplay").GetComponent<PopupSetup>().RevealPopupInfo(aTxt[0], aTxt[1], GetComponent<Image>().sprite);
             }
         }
