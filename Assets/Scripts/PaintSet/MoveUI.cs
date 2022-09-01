@@ -24,9 +24,12 @@ public class MoveUI : MonoBehaviour
     /// </summary>
     public void InitMove()
     {
-        Vector3 mousePos;
-        mousePos = Input.mousePosition;
-        destination = GameObject.Find(GetComponent<Image>().sprite.name);
+        if(GetComponent<Image>().sprite != null)
+        {
+            Vector3 mousePos;
+            mousePos = Input.mousePosition;
+            destination = GameObject.Find(GetComponent<Image>().sprite.name);
+        }
 
         //gameObject.transform.position = new Vector3(mousePos.x, mousePos.y, gameObject.transform.position.z);
     }
@@ -36,11 +39,14 @@ public class MoveUI : MonoBehaviour
     /// </summary>
     public void Move()
     {
-        Vector3 mousePos;
-        mousePos = Input.mousePosition;
+        if (GetComponent<Image>().sprite != null)
+        {
+            Vector3 mousePos;
+            mousePos = Input.mousePosition;
 
-        if (GetComponent<Image>() != null && GameObject.Find(GetComponent<Image>().sprite.name).GetComponent<Image>().color.a != 1)
-            gameObject.transform.position = new Vector3(mousePos.x, mousePos.y, gameObject.transform.position.z);
+            if (GetComponent<Image>() != null && GameObject.Find(GetComponent<Image>().sprite.name).GetComponent<Image>().color.a != 1)
+                gameObject.transform.position = new Vector3(mousePos.x, mousePos.y, gameObject.transform.position.z);
+        }
     }
 
     /// <summary>
@@ -52,19 +58,21 @@ public class MoveUI : MonoBehaviour
         //DEBUG
         //print("X " + Mathf.Abs(transform.position.x - destination.transform.position.x));
         //print("Y " + Mathf.Abs(transform.position.y - destination.transform.position.y));
-
-        if (Mathf.Abs(transform.position.x - destination.transform.position.x) <= distanceMaxXToBeFinished &&
-            Mathf.Abs(transform.position.y - destination.transform.position.y) <= distanceMaxYToBeFinished)
+        if (GetComponent<Image>().sprite != null)
         {
-            //transform.position = new Vector3(destination.transform.position.x, destination.transform.position.y, transform.position.z);
-            transform.position = new Vector3(xStartingPos, yStartingPos, 0);
+            if (Mathf.Abs(transform.position.x - destination.transform.position.x) <= distanceMaxXToBeFinished &&
+                Mathf.Abs(transform.position.y - destination.transform.position.y) <= distanceMaxYToBeFinished)
+            {
+                //transform.position = new Vector3(destination.transform.position.x, destination.transform.position.y, transform.position.z);
+                transform.position = new Vector3(xStartingPos, yStartingPos, 0);
 
-            transform.gameObject.GetComponent<Image>().sprite = null;
-            transform.gameObject.GetComponent<Image>().color = new Color(255, 255, 255, 0);
-            destination.GetComponent<Image>().color = new Color(255, 255, 255, 1);
+                transform.gameObject.GetComponent<Image>().sprite = null;
+                transform.gameObject.GetComponent<Image>().color = new Color(255, 255, 255, 0);
+                destination.GetComponent<Image>().color = new Color(255, 255, 255, 1);
 
-            GameObject.Find("StuffPositionPanel").GetComponent<CreateObjectWithImage>().ObjectPlaced();
-            GameObject.Find("Gameplay").GetComponent<WinCondition>().Verify();
+                GameObject.Find("StuffPositionPanel").GetComponent<CreateObjectWithImage>().ObjectPlaced();
+                GameObject.Find("Gameplay").GetComponent<WinCondition>().Verify();
+            }
         }
     }
 
