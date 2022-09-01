@@ -3849,6 +3849,30 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 2831906747712092567, guid: 171cc18fe42f15246aa9a090b32e5d94, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8509804
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831906747712092567, guid: 171cc18fe42f15246aa9a090b32e5d94, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8509804
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831906747712092567, guid: 171cc18fe42f15246aa9a090b32e5d94, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8509804
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831906747948349023, guid: 171cc18fe42f15246aa9a090b32e5d94, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8509804
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831906747948349023, guid: 171cc18fe42f15246aa9a090b32e5d94, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8509804
+      objectReference: {fileID: 0}
+    - target: {fileID: 2831906747948349023, guid: 171cc18fe42f15246aa9a090b32e5d94, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8509804
+      objectReference: {fileID: 0}
     - target: {fileID: 6670502180846952114, guid: 171cc18fe42f15246aa9a090b32e5d94, type: 3}
       propertyPath: m_Name
       value: PopUpInfo
