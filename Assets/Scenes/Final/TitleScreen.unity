@@ -1854,7 +1854,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SALLE DES COPIES
+  m_Text: SALON DES COPIES
 --- !u!222 &1735336260
 CanvasRenderer:
   m_ObjectHideFlags: 0
