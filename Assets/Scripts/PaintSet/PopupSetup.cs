@@ -5,6 +5,11 @@ public class PopupSetup : MonoBehaviour
 {
     private GameObject popup;
 
+    void OnGUI()
+    {
+        GUI.skin.label.wordWrap = true;
+    }
+
     private void Awake()
     {
         popup = GameObject.Find("PopUpInfo");

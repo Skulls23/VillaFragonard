@@ -1,2 +1,1 @@
-Bleu|
-Après analyse, ce bleu clair est sans doute un bleu de Prusse mélangé avec du kaolin (argile blanche).
+Bleu|Après analyse, ce bleu clair est sans doute un bleu de Prusse mélangé avec du kaolin (argile blanche).
