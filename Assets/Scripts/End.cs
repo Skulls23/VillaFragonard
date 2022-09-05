@@ -20,6 +20,7 @@ public class End : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        popUpText = popUpText.Replace("\\n", "\n");
         popup.SetActive(false);
     }
 

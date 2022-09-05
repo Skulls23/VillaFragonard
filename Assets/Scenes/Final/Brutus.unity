@@ -5152,11 +5152,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clueUnlocked: C
-  popUpText: "Alexandre-Evariste avait 17 ans quand il a peint ce tableau. Lucr\xE8ce,
-    abus\xE9e par le fils de Tarquin, se donne la mort. Brutus, situ\xE9 \xE0 droite,
-    fait le serment de combattre le roi Tarquin le Superbe et de ne plus accepter
-    de royaut\xE9 \xE0 Rome. Brutus est connu comme \xE9tant le fondateur mythique
-    de la R\xE9publique romaine au 6\xE8me si\xE8cle av. J.C. "
+  popUpText: "Mon fils Alexandre-Evariste avait 17 ans quand il a peint ce tableau.
+    \\nLucr\xE8ce, abus\xE9e par le fils de Tarquin, se donne la mort. Brutus, situ\xE9
+    \xE0 droite, fait le serment de combattre le roi Tarquin le Superbe et de ne
+    plus accepter de royaut\xE9 \xE0 Rome. Brutus est connu comme \xE9tant le fondateur
+    mythique de la R\xE9publique romaine au 6\xE8me si\xE8cle av. J.C. "
   title: 
   sprite: {fileID: 0}
 --- !u!4 &2092406521
@@ -5300,8 +5300,8 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2676022200322471635, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
       propertyPath: m_Text
-      value: "Clique sur la pi\xE8ce en bas de l'\xE9cran qui correspond au morceau
-        du tableau vis\xE9."
+      value: "Cliquer sur la pi\xE8ce du bas de l\u2019\xE9cran qui correspond au
+        morceau de tableau vis\xE9."
       objectReference: {fileID: 0}
     - target: {fileID: 4561038512975321927, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
       propertyPath: m_Name
