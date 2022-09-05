@@ -372,13 +372,13 @@ MonoBehaviour:
   clueUnlocked: "\xC7"
   popUpText: "Vous venez d\u2019associer des plaques de gravure en cuivre (orang\xE9es)
     \xE0 leur tirage sur papier \u2013 nomm\xE9 \xAB estampe \xBB. Les auteurs de
-    ces gravures sont Marguerite G\xE9rard et Jean-Honor\xE9 Fragonard qui ont travaill\xE9
-    ensemble sur ces images. La technique de la gravure sur cuivre permet la reproduction
+    ces gravures sont Marguerite G\xE9rard et moi-m\xEAme qui avons travaill\xE9
+    ensemble sur ces images.\\nLa technique de la gravure sur cuivre permet la reproduction
     et la diffusion d\u2019images et de textes depuis l\u2019apparition de l\u2019imprimerie
     au d\xE9but du 15\xE8me si\xE8cle. Un graveur reproduit le dessin d\u2019un peintre
     sur une plaque de cuivre. Une morsure \xE0 l\u2019acide permet de creuser les
     lignes et les ombres dans la plaque. Apr\xE8s encrage (enduire d\u2019encre),
-    l\u2019image est imprim\xE9e sur du papier \xE0 l\u2019aide d\u2019une presse. "
+    l\u2019image est imprim\xE9e sur du papier \xE0 l\u2019aide d\u2019une presse."
   title: 
   sprite: {fileID: 0}
 --- !u!4 &708439099
@@ -548,8 +548,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Glisse vers la gauche ou vers la droite les images pour retrouver les
-    \xE9l\xE9ments qui co\xEFncident puis valider.\nTu doit trouver 3 co\xEFncidences."
+  m_Text: "Faire d\xE9filer les images pour retrouver celles qui co\xEFncident puis
+    valider."
 --- !u!222 &775640254
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1335,7 +1335,6 @@ RectTransform:
   - {fileID: 775640252}
   - {fileID: 978678232}
   - {fileID: 1476346811}
-  - {fileID: 1774652595}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1344,122 +1343,3 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1001 &1774652594
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1767640391}
-    m_Modifications:
-    - target: {fileID: 2676022200322471635, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
-      propertyPath: m_Text
-      value: "Faire d\xE9filer les images pour retrouver celles qui co\xEFncident
-        puis valider."
-      objectReference: {fileID: 0}
-    - target: {fileID: 4561038512975321927, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
-      propertyPath: m_Name
-      value: PopUpRule
-      objectReference: {fileID: 0}
-    - target: {fileID: 6850270687661291516, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6850270687661291516, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6850270687661291516, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6850270687661291516, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6850270687661291516, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6850270687661291516, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6850270687661291516, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6850270687661291516, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6850270687661291516, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6850270687661291516, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6850270687661291516, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6850270687661291516, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6850270687661291516, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6850270687661291516, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6850270687661291516, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6850270687661291516, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6850270687661291516, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6850270687661291516, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6850270687661291516, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6850270687661291516, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6850270687661291516, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6850270687661291516, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6850270687661291516, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6850270687661291516, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
---- !u!224 &1774652595 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6850270687661291516, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
-  m_PrefabInstance: {fileID: 1774652594}
-  m_PrefabAsset: {fileID: 0}

@@ -2387,7 +2387,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2676022200322471635, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
       propertyPath: m_Text
-      value: "Glisser chaque \xE9l\xE9ment du bas de l\u2019\xE9cran \xE0 son emplacement
+      value: "Glisser chaque \xE9l\xE9ment du bas de l\u2019\xE9cran\n\xE0 son emplacement
         dans la bo\xEEte.\r\nDouble-cliquer sur un \xE9l\xE9ment pour en savoir plus.\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 4237912829352025209, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
