@@ -14,6 +14,13 @@ public class FirstMessage : MonoBehaviour
                                   "Vous découvrirez ainsi les secrets du bâtiment et des collections du musée." + Environment.NewLine +
                                   "A chaque mini-jeu accompli, vous gagnerez une LETTRE et un INDICE qui vous permettront de résoudre l’énigme finale pour accéder aux secrets cachés et codés de la Villa.";
 
+    private string firstRule = "Ce plan de l’étage représente les trois salles de la Villa-musée." + Environment.NewLine +
+                               "Les rectangles gris indiquent les œuvres de votre parcours."       + Environment.NewLine +
+                               "Cliquer sur le rectangle de l’œuvre pour jouer au mini-jeu correspondant.";
+    
+
+
+
 
     private void Awake()
     {
@@ -26,6 +33,7 @@ public class FirstMessage : MonoBehaviour
         if(!PlayerPrefs.HasKey("First launch"))
         {
             popup.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = firstMessage;
+            popup.GetComponent<MoreInfoPopup>().TextToBeAdded = firstRule;
             popup.SetActive(true);
             PlayerPrefs.SetInt("First launch", 0);
         }

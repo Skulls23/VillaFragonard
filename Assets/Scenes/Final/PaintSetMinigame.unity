@@ -2778,7 +2778,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1034959663637519868, guid: ad8dd71d47891f443b9ccd6bb994d29d, type: 3}
       propertyPath: m_Name
-      value: ReturnMapEnd
+      value: ReturnMapAtEnd
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad8dd71d47891f443b9ccd6bb994d29d, type: 3}
