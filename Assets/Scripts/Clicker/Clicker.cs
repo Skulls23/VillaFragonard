@@ -73,9 +73,9 @@ public class Clicker : MonoBehaviour
         {
             if (lSpritePopUp[missionNumber - 1] != null)
             {
-                popUpDetailWithImage.transform.GetChild(0).GetChild(1).GetComponent<Image>().sprite = lSpritePopUp[missionNumber - 1];
+                popUpDetailWithImage.transform.GetChild(0).GetChild(1).GetComponent<Image>().sprite         = lSpritePopUp[missionNumber - 1];
                 popUpDetailWithImage.transform.GetChild(0).GetChild(1).GetComponent<Image>().preserveAspect = true;
-                popUpDetailWithImage.transform.GetChild(0).GetChild(0).GetComponent<Text>().text    = lTextPopUp[missionNumber - 1];
+                popUpDetailWithImage.transform.GetChild(0).GetChild(0).GetComponent<Text>().text            = lTextPopUp[missionNumber - 1];
                 popUpDetailWithImage.SetActive(true);
             }
             else
@@ -89,12 +89,12 @@ public class Clicker : MonoBehaviour
                 popUpFinal.SetActive(true);
                 popUpFinal.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = txtFinal;
                 popUpFinal.GetComponent<MoreInfoPopup>().TextToBeAdded = "Les genres en peinture."     + Environment.NewLine + Environment.NewLine +
-                                                                    "Dans la peinture académique, les peintures sont classées selon les sujets représentés, du plus noble au moins noble :" + Environment.NewLine +
-                                                                    "   1.La peinture d’histoire" + Environment.NewLine +
-                                                                    "   2.Le portrait"            + Environment.NewLine +
-                                                                    "   3.La scène de genre"      + Environment.NewLine +
-                                                                    "   4.Le paysage"             + Environment.NewLine +
-                                                                    "   5.La nature morte";
+                                                                         "Dans la peinture académique, les peintures sont classées selon les sujets représentés, du plus noble au moins noble :" + Environment.NewLine +
+                                                                         "   1.La peinture d’histoire" + Environment.NewLine +
+                                                                         "   2.Le portrait"            + Environment.NewLine +
+                                                                         "   3.La scène de genre"      + Environment.NewLine +
+                                                                         "   4.Le paysage"             + Environment.NewLine +
+                                                                         "   5.La nature morte";
             }
         }
     }

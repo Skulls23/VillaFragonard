@@ -2387,9 +2387,8 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2676022200322471635, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
       propertyPath: m_Text
-      value: "Replace les \xE9l\xE9ments en bas de l'\xE9cran en les glissant \xE0
-        leurs emplacements respectifs dans la boite.\n\nTu peux aussi double cliquer
-        sur les \xE9l\xE9ments pour avoir une image plus de d\xE9tails."
+      value: "Glisser chaque \xE9l\xE9ment du bas de l\u2019\xE9cran \xE0 son emplacement
+        dans la bo\xEEte.\r\nDouble-cliquer sur un \xE9l\xE9ment pour en savoir plus.\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 4561038512975321927, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
       propertyPath: m_Name
