@@ -217,10 +217,10 @@ RectTransform:
   - {fileID: 609840623}
   - {fileID: 311175660}
   - {fileID: 347901233}
-  - {fileID: 89897634}
+  - {fileID: 1776934471}
   - {fileID: 1054576690}
   - {fileID: 1578424159}
-  - {fileID: 1776934471}
+  - {fileID: 89897634}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -246,7 +246,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 116449249328677046, guid: f643e8a4a48ac7147b9d30a801e61694, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 116449249328677046, guid: f643e8a4a48ac7147b9d30a801e61694, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2390,6 +2390,10 @@ PrefabInstance:
       value: "Glisser chaque \xE9l\xE9ment du bas de l\u2019\xE9cran \xE0 son emplacement
         dans la bo\xEEte.\r\nDouble-cliquer sur un \xE9l\xE9ment pour en savoir plus.\r\n"
       objectReference: {fileID: 0}
+    - target: {fileID: 4237912829352025209, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ClosePopUp
+      objectReference: {fileID: 0}
     - target: {fileID: 4561038512975321927, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
       propertyPath: m_Name
       value: PopUpRule
@@ -2701,7 +2705,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1034959663637519867, guid: ad8dd71d47891f443b9ccd6bb994d29d, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1034959663637519867, guid: ad8dd71d47891f443b9ccd6bb994d29d, type: 3}
       propertyPath: m_AnchorMax.x
