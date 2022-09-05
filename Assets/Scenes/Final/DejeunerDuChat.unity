@@ -2651,7 +2651,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2676022200322471635, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
       propertyPath: m_Text
-      value: "Glisse les pieces jusqu'\xE0 restituer le tableau complet."
+      value: "Glisser les pi\xE8ces pour recomposer le tableau."
       objectReference: {fileID: 0}
     - target: {fileID: 4561038512975321927, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
       propertyPath: m_Name
