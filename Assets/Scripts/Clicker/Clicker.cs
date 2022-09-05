@@ -74,6 +74,7 @@ public class Clicker : MonoBehaviour
             if (lSpritePopUp[missionNumber - 1] != null)
             {
                 popUpDetailWithImage.transform.GetChild(0).GetChild(1).GetComponent<Image>().sprite = lSpritePopUp[missionNumber - 1];
+                popUpDetailWithImage.transform.GetChild(0).GetChild(1).GetComponent<Image>().preserveAspect = true;
                 popUpDetailWithImage.transform.GetChild(0).GetChild(0).GetComponent<Text>().text    = lTextPopUp[missionNumber - 1];
                 popUpDetailWithImage.SetActive(true);
             }
