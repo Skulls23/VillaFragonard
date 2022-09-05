@@ -596,7 +596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e9dcce6f51d6b64ea4add8be36254a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redirection: https://www.gettyimages.fr/photos/bank
+  redirection: https://www.museesdegrasse.com/les-secrets-de-la-villa-oeuvres-en-reserve
 --- !u!114 &590127303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -946,7 +946,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e9dcce6f51d6b64ea4add8be36254a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redirection: https://fivethirtyeight.com/wp-content/uploads/2014/04/bob-ross.jpg?w=712
+  redirection: https://www.museesdegrasse.com/les-secret-de-la-villa-salon-des-copies
 --- !u!114 &778112754
 MonoBehaviour:
   m_ObjectHideFlags: 0
