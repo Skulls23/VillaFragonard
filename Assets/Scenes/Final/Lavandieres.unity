@@ -269,18 +269,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numButton: 2
---- !u!114 &269660017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5920907456442977969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8466ab4918102540b475a221b5f402e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &413867208
 GameObject:
   m_ObjectHideFlags: 0
@@ -994,35 +982,28 @@ PrefabInstance:
       objectReference: {fileID: 1336897725}
     - target: {fileID: 7231846824885332787, guid: f643e8a4a48ac7147b9d30a801e61694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: EffectDependsOnNumber
+      value: ClosePopUp
       objectReference: {fileID: 0}
     - target: {fileID: 7231846824885332787, guid: f643e8a4a48ac7147b9d30a801e61694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: ClickerPopUp, Assembly-CSharp
+      value: PopUp, Assembly-CSharp
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8639106243498478759, guid: f643e8a4a48ac7147b9d30a801e61694, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f643e8a4a48ac7147b9d30a801e61694, type: 3}
 --- !u!224 &1336897723 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 116449249328677046, guid: f643e8a4a48ac7147b9d30a801e61694, type: 3}
   m_PrefabInstance: {fileID: 1336897722}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1336897724 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5920907456407226300, guid: f643e8a4a48ac7147b9d30a801e61694, type: 3}
+--- !u!114 &1336897725 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8639106243498478759, guid: f643e8a4a48ac7147b9d30a801e61694, type: 3}
   m_PrefabInstance: {fileID: 1336897722}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1336897725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1336897724}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8466ab4918102540b475a221b5f402e, type: 3}
+  m_Script: {fileID: 11500000, guid: 22a8112706b2ac14fa280407ebd0a013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1366592869
@@ -1857,35 +1838,28 @@ PrefabInstance:
       objectReference: {fileID: 2025468772}
     - target: {fileID: 7231846824885332787, guid: f643e8a4a48ac7147b9d30a801e61694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: EffectDependsOnNumber
+      value: ChangeSceneToMap
       objectReference: {fileID: 0}
     - target: {fileID: 7231846824885332787, guid: f643e8a4a48ac7147b9d30a801e61694, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: ClickerPopUp, Assembly-CSharp
+      value: PopUp, Assembly-CSharp
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8639106243498478759, guid: f643e8a4a48ac7147b9d30a801e61694, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f643e8a4a48ac7147b9d30a801e61694, type: 3}
 --- !u!224 &2025468770 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 116449249328677046, guid: f643e8a4a48ac7147b9d30a801e61694, type: 3}
   m_PrefabInstance: {fileID: 2025468769}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2025468771 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5920907456407226300, guid: f643e8a4a48ac7147b9d30a801e61694, type: 3}
+--- !u!114 &2025468772 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8639106243498478759, guid: f643e8a4a48ac7147b9d30a801e61694, type: 3}
   m_PrefabInstance: {fileID: 2025468769}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2025468772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2025468771}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8466ab4918102540b475a221b5f402e, type: 3}
+  m_Script: {fileID: 11500000, guid: 22a8112706b2ac14fa280407ebd0a013, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!224 &116449249163168187
@@ -2238,7 +2212,7 @@ GameObject:
   - component: {fileID: 5941800743752925203}
   - component: {fileID: 643615237795655579}
   - component: {fileID: 7231846824786534974}
-  - component: {fileID: 269660017}
+  - component: {fileID: 5920907456442977970}
   m_Layer: 5
   m_Name: HidePopUp
   m_TagString: Untagged
@@ -2246,6 +2220,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5920907456442977970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5920907456442977969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22a8112706b2ac14fa280407ebd0a013, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!222 &5941800743752925203
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2317,9 +2303,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 269660017}
-        m_TargetAssemblyTypeName: ClickerPopUp, Assembly-CSharp
-        m_MethodName: EffectDependsOnNumber
+      - m_Target: {fileID: 5920907456442977970}
+        m_TargetAssemblyTypeName: PopUp, Assembly-CSharp
+        m_MethodName: ClosePopUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

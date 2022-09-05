@@ -14,7 +14,6 @@ public class ButtonClick : MonoBehaviour
 
     public void Clicked()
     {
-        clickerPopUp.SetClickerNumber(numButton);
         clicker.GetComponent<Clicker>().ButtonClicked(numButton);
     }
 }
