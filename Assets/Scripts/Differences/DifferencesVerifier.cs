@@ -9,7 +9,7 @@ public class DifferencesVerifier : MonoBehaviour
     [SerializeField] private string clueName;
     private string popUpText = "Au 18ème siècle, l’impératrice Marie-Thérèse a régné 40 ans sur l’empire d’Autriche-Hongrie. Elle présente ici son fils Joseph aux Hongrois." + Environment.NewLine + 
                                "Les attitudes, le réalisme des visages et les détails précis rappellent l’œuvre de Jacques-Louis David, le maître de mon fils, "              + 
-                               "Alexandre-Evariste Fragonard.La pénombre dans laquelle est placée la foule rappelle également mon influence.";
+                               "Alexandre-Evariste Fragonard. La pénombre dans laquelle est placée la foule rappelle également mon influence.";
 
     private static string[] lTexts = new string[4]{ "Trouver les 4 différences", "Trouver les 3 différences restantes", "Trouver les 2 différences restantes", "Trouver la différence restante" };
     private int             errorFound = 0;

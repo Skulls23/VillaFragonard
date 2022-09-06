@@ -21,9 +21,9 @@ public class Clicker : MonoBehaviour
 
     [SerializeField] private string clueName;
 
-    private string txtFinal = "Ce tableau a connu un grand succès au 18ème siècle. Acheté par Louis 18, c’est ma seconde œuvre à intégrer les collections du Musée du Louvre."  + Environment.NewLine +
-                              "Dans ce paysage, j’ajoute des détails qui font référence aux paysages des peintres Hollandais du 17ème siècle. La présence des lavandières fait" +
-                              "passer le tableau d’un genre de peinture à un autre: de paysage à scène de genre.";
+    private string txtFinal = "Ce tableau a connu un grand succès au 18ème siècle. Acheté par Louis 18, c’est ma seconde œuvre à intégrer les collections du Musée du Louvre. "  + Environment.NewLine +
+                              "Dans ce paysage, j’ajoute des détails qui font référence aux paysages des peintres Hollandais du 17ème siècle. La présence des lavandières fait " +
+                              "passer le tableau d’un genre de peinture à un autre : de paysage à scène de genre.";
 
     private GameObject popUpWithoutImage;
     private GameObject popUpDetailWithImage;
