@@ -9,6 +9,7 @@ public class PlacementVerifier : MonoBehaviour
 {
     [SerializeField] private string clueName;
     [SerializeField] private string popUpText;
+    [SerializeField] private float secondsToWait = 2f;
 
     private GameObject[] lPieces;
     private GameObject   popUp;
@@ -33,7 +34,7 @@ public class PlacementVerifier : MonoBehaviour
             PlayerPrefs.SetInt(clueName, 1);
             for(int i=0; i < lPieces.Length; i++)
                 lPieces[i].GetComponent<MovePiece>().IsFinished = true;
-            StartCoroutine(WaitToLeave(2f));
+            StartCoroutine(WaitToLeave(secondsToWait));
         }
     }
 
