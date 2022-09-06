@@ -1457,42 +1457,26 @@ MonoBehaviour:
   aDirection:
   - Center
   - Left
-  - Left
-  - Right
   - Center
-  - Right
-  - Right
-  - Left
   - Left
   - Right
   - Left
-  - Right
   - Center or Right
   - Center
   - Left
-  - Right
-  - Right
   - Right
   - END
   aText:
   - "Les Trois Gr\xE2ces"
   - Le serment de Junius Brutus
-  - "Les Fun\xE9railles de Masaniello"
-  - "La lecon de g\xE9ographie"
   - "Paysage aux lavandi\xE8res"
-  - Portrait de petite fille
-  - Les premiers pas
   - "Marie-Th\xE9r\xE8se pr\xE9sentant son fils aux Hongrois"
-  - L'Atelier du peintre
   - "L'Atelier ou Le\xE7on de dessin"
   - "La Mort d'Agn\xE8s Sorel \xE0 l'abbaye de Jumi\xE8ges"
-  - L'enfant blond
   - Le Chant
   - Le Serment d'amour
   - "R\xE4phael reprenant la pause de son mod\xE8le"
-  - "Portait de Mme Henri G\xE9rard"
   - "Le d\xE9jeuner du chat"
-  - La Lecture de la Bible
 --- !u!114 &1516100817
 MonoBehaviour:
   m_ObjectHideFlags: 0
