@@ -383,6 +383,10 @@ PrefabInstance:
       propertyPath: distanceMaxXToBeFinished
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 1913765549191464719, guid: 56618e184d5fd3a43a77af75bf19c2ee, type: 3}
+      propertyPath: distanceMaxYToBeFinished
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 7989698132885328754, guid: 56618e184d5fd3a43a77af75bf19c2ee, type: 3}
       propertyPath: m_Name
       value: Clue Text (2)
