@@ -7,9 +7,9 @@ using UnityEngine.UI;
 /// </summary>
 public class PlacementVerifier : MonoBehaviour
 {
+    [SerializeField] private float secondsToWait = 2f;
     [SerializeField] private string clueName;
     [SerializeField] private string popUpText;
-    [SerializeField] private float secondsToWait = 2f;
 
     private GameObject[] lPieces;
     private GameObject   popUp;
