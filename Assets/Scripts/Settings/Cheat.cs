@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Cheat : MonoBehaviour
@@ -19,8 +20,8 @@ public class Cheat : MonoBehaviour
         {
             PlayerPrefs.SetInt("Number of clues unlocked", PlayerPrefs.GetInt("Number of clues unlocked") + 1);
             PlayerPrefs.SetInt(letterToUnlock, PlayerPrefs.GetInt("Number of clues unlocked"));
+            SceneManager.LoadScene(sceneName: "Map");
         }
-        VerifyColor();
     }
     
     private void VerifyColor()
