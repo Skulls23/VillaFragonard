@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -30,10 +31,20 @@ public class PlacementVerifier : MonoBehaviour
         if (isCompletelyFinished)
         {
             PlayerPrefs.SetInt(clueName, 1);
-            popUp.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = popUpText;
-            popUp.SetActive(true);
-            PlayerPrefs.SetInt("Number of clues unlocked", PlayerPrefs.GetInt("Number of clues unlocked") + 1);
-            PlayerPrefs.SetInt(clueName, PlayerPrefs.GetInt("Number of clues unlocked"));
+            for(int i=0; i < lPieces.Length; i++)
+                lPieces[i].GetComponent<MovePiece>().IsFinished = true;
+            StartCoroutine(WaitToLeave(2f));
         }
     }
+
+
+    IEnumerator WaitToLeave(float time)
+    {
+        yield return new WaitForSeconds(time);
+        popUp.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = popUpText;
+        popUp.SetActive(true);
+        PlayerPrefs.SetInt("Number of clues unlocked", PlayerPrefs.GetInt("Number of clues unlocked") + 1);
+        PlayerPrefs.SetInt(clueName, PlayerPrefs.GetInt("Number of clues unlocked"));
+    }
+
 }

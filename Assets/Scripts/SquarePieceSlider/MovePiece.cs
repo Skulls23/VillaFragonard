@@ -13,6 +13,8 @@ public class MovePiece : MonoBehaviour
     private float  startPosX;
     private float  startPosY;
 
+    private bool isFinished = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,11 +24,14 @@ public class MovePiece : MonoBehaviour
 
     public void InitMove()
     {
-        Vector3 mousePos;
-        mousePos = Input.mousePosition;
+        if(!isFinished)
+        {
+            Vector3 mousePos;
+            mousePos = Input.mousePosition;
 
-        startPosX = mousePos.x;
-        startPosY = mousePos.y;
+            startPosX = mousePos.x;
+            startPosY = mousePos.y;
+        }
     }
 
     /// <summary>
@@ -34,31 +39,33 @@ public class MovePiece : MonoBehaviour
     /// </summary>
     public void EndMove()
     {
-        Vector3 mousePos;
-        mousePos = Input.mousePosition;
+        if(!isFinished)
+        {
+            Vector3 mousePos;
+            mousePos = Input.mousePosition;
 
-        float startXMinusNewX = Mathf.Abs(startPosX) - Mathf.Abs(mousePos.x);
-        float startYMinusNewY = Mathf.Abs(startPosY) - Mathf.Abs(mousePos.y);
+            float startXMinusNewX = Mathf.Abs(startPosX) - Mathf.Abs(mousePos.x);
+            float startYMinusNewY = Mathf.Abs(startPosY) - Mathf.Abs(mousePos.y);
 
-        if      (startXMinusNewX <= 0 && startYMinusNewY <= 0 && Mathf.Abs(startXMinusNewX) < Mathf.Abs(startYMinusNewY)) //Cursor moved to right-up but more up than right
-            MoveInHierarchy("up");
-        else if (startXMinusNewX <= 0 && startYMinusNewY <= 0 && Mathf.Abs(startXMinusNewX) > Mathf.Abs(startYMinusNewY)) //Cursor moved to right-up but more right than up
-            MoveInHierarchy("right");
-        else if (startXMinusNewX <= 0 && startYMinusNewY >= 0 && Mathf.Abs(startXMinusNewX) < Mathf.Abs(startYMinusNewY)) //Cursor moved to right-down but more down than right
-            MoveInHierarchy("down");
-        else if (startXMinusNewX <= 0 && startYMinusNewY >= 0 && Mathf.Abs(startXMinusNewX) > Mathf.Abs(startYMinusNewY)) //Cursor moved to right-down but more right than down
-            MoveInHierarchy("right");
-        else if (startXMinusNewX >= 0 && startYMinusNewY <= 0 && Mathf.Abs(startXMinusNewX) < Mathf.Abs(startYMinusNewY)) //Cursor moved to left-up but more up than left
-            MoveInHierarchy("up");
-        else if (startXMinusNewX >= 0 && startYMinusNewY <= 0 && Mathf.Abs(startXMinusNewX) > Mathf.Abs(startYMinusNewY)) //Cursor moved to left-up but more left than up
-            MoveInHierarchy("left");
-        else if (startXMinusNewX >= 0 && startYMinusNewY >= 0 && Mathf.Abs(startXMinusNewX) < Mathf.Abs(startYMinusNewY)) //Cursor moved to left-down but more down than left
-            MoveInHierarchy("down");
-        else if (startXMinusNewX >= 0 && startYMinusNewY >= 0 && Mathf.Abs(startXMinusNewX) > Mathf.Abs(startYMinusNewY)) //Cursor moved to left-down but more left than down
-            MoveInHierarchy("left");
-        else
-            print("static");
-
+            if (startXMinusNewX <= 0 && startYMinusNewY <= 0 && Mathf.Abs(startXMinusNewX) < Mathf.Abs(startYMinusNewY)) //Cursor moved to right-up but more up than right
+                MoveInHierarchy("up");
+            else if (startXMinusNewX <= 0 && startYMinusNewY <= 0 && Mathf.Abs(startXMinusNewX) > Mathf.Abs(startYMinusNewY)) //Cursor moved to right-up but more right than up
+                MoveInHierarchy("right");
+            else if (startXMinusNewX <= 0 && startYMinusNewY >= 0 && Mathf.Abs(startXMinusNewX) < Mathf.Abs(startYMinusNewY)) //Cursor moved to right-down but more down than right
+                MoveInHierarchy("down");
+            else if (startXMinusNewX <= 0 && startYMinusNewY >= 0 && Mathf.Abs(startXMinusNewX) > Mathf.Abs(startYMinusNewY)) //Cursor moved to right-down but more right than down
+                MoveInHierarchy("right");
+            else if (startXMinusNewX >= 0 && startYMinusNewY <= 0 && Mathf.Abs(startXMinusNewX) < Mathf.Abs(startYMinusNewY)) //Cursor moved to left-up but more up than left
+                MoveInHierarchy("up");
+            else if (startXMinusNewX >= 0 && startYMinusNewY <= 0 && Mathf.Abs(startXMinusNewX) > Mathf.Abs(startYMinusNewY)) //Cursor moved to left-up but more left than up
+                MoveInHierarchy("left");
+            else if (startXMinusNewX >= 0 && startYMinusNewY >= 0 && Mathf.Abs(startXMinusNewX) < Mathf.Abs(startYMinusNewY)) //Cursor moved to left-down but more down than left
+                MoveInHierarchy("down");
+            else if (startXMinusNewX >= 0 && startYMinusNewY >= 0 && Mathf.Abs(startXMinusNewX) > Mathf.Abs(startYMinusNewY)) //Cursor moved to left-down but more left than down
+                MoveInHierarchy("left");
+            else
+                print("static");
+        }
         //TODO Possible bug when a axis is = 0
     }
 
@@ -141,5 +148,11 @@ public class MovePiece : MonoBehaviour
         }
         else
             isCorrectlyPlaced = false;
+    }
+
+    public bool IsFinished
+    {
+        get { return isFinished;  }
+        set { isFinished = value; }
     }
 }
