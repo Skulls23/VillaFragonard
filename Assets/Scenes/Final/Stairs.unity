@@ -1544,8 +1544,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2676022200322471635, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
       propertyPath: m_Text
-      value: "Vous voici dans la cage d'escalier. C'est une image en 360\xB0 donc
-        faite pivoter la cam\xE9ra avec vos doigts autant que vous le souhaitez."
+      value: "Ceci est une vue \xE0 360\xB0 de la cage d\u2019escalier de la Villa-Mus\xE9e
+        Jean-Honor\xE9 Fragonard.\r\nFaire pivoter la cam\xE9ra et cliquer sur les
+        points d\u2019interrogation pour avoir l\u2019explication des symboles.\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 4561038512975321927, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
       propertyPath: m_Name

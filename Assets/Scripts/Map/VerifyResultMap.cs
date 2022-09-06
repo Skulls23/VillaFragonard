@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class VerifyResultMap : MonoBehaviour
 {
-    [Header("This script contains the last text")]
+    [Header("This script contains the last text")] 
     public bool boolToShowMessage; //It's useless, it's just to show a message
     private string ruleText  = "Déplacer les lettres gagnées pour former le mot mystère." + Environment.NewLine +
                                "Pour consulter à nouveau les indices, double-cliquer sur les lettres.";

@@ -29,7 +29,7 @@ public class WinCondition : MonoBehaviour
         isFinished = true;
         for (int i = 0; i < aPieces.Length; i++)
         {
-            if(aPieces[i].GetComponent<Image>().color.a != 1)
+            if(aPieces[i].GetComponent<Image>().color.a != 1) 
                 isFinished = false;
         }
 
@@ -37,12 +37,12 @@ public class WinCondition : MonoBehaviour
         {
             PlayerPrefs.SetInt("Number of clues unlocked", PlayerPrefs.GetInt("Number of clues unlocked") + 1);
             PlayerPrefs.SetInt(clueName, PlayerPrefs.GetInt("Number of clues unlocked"));
-            popUpEnd.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = "Cette boîte à couleurs m’a appartenu. Les flacons contiennent des pigments en poudre de différentes couleurs." + Environment.NewLine +
-                                                                                   "Pour faire de la peinture, on mélange un pigment avec un liant. Selon le type de peinture souhaité, le liant n’est pas le même : " +
-                                                                                   "un jaune d’œuf pour faire de la peinture a tempera, de l’huile de lin pour faire de la peinture à l’huile…";
+            popUpEnd.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = "Cette boÃ®te Ã  couleurs mâ€™a appartenu. Les flacons contiennent des pigments en poudre de diffÃ©rentes couleurs." + Environment.NewLine +
+                                                                                   "Pour faire de la peinture, on mÃ©lange un pigment avec un liant. Selon le type de peinture souhaitÃ©, le liant nâ€™est pas le mÃªme : " +
+                                                                                   "un jaune dâ€™Å“uf pour faire de la peinture a tempera, de lâ€™huile de lin pour faire de la peinture Ã  lâ€™huileâ€¦";
             popUpEnd.SetActive(true);
-            popUpRule.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = "La boîte à couleurs est complétée.\n Double-cliquer sur un élément pour en savoir plus." + Environment.NewLine +
-                                                                                    "Cliquer sur la flèche du bas pour revenir sur le plan et poursuivre votre parcours.";
+            popUpRule.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = "La boÃ®te Ã  couleurs est complÃ©tÃ©e.\nDouble-cliquer sur un Ã©lÃ©ment pour en savoir plus." + Environment.NewLine +
+                                                                                    "Cliquer sur la flÃ¨che du bas pour revenir sur le plan\net poursuivre votre parcours.";
             popUpRule.SetActive(true);
         }
     }
