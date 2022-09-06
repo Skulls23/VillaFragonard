@@ -10,14 +10,13 @@ public class VerifyResultMap : MonoBehaviour
                                "Pour consulter à nouveau les indices, double-cliquer sur les lettres.";
     private string rule2Text = "Si besoin d’aide, cliquer sur";
     
-    private string endText   = "Bravo !"                                                                                       + Environment.NewLine +
-                               "Alexandre-Maubert était franc-maçon."                                                          + Environment.NewLine +
-                               "Le décor de cette cage d’escalier est conçu par son cousin Jean-Honoré Fragonard, "            +
-                               "il est orné de symboles faisant référence à la Révolution française et à la franc-maçonnerie." + Environment.NewLine +
-                               "Vous avez déverrouillé 3 secrets de la Villa :"                                                + Environment.NewLine +
-                               "   •  Les symboles de la cage d’escalier"                                                      + Environment.NewLine +
-                               "   •  Une sélection d’œuvres sur papier conservées en réserve"                                 + Environment.NewLine +
-                               "   •  L’histoire et les visuels du Salon des Copies";
+        private string endText   = "Bravo !"                                                                                          + Environment.NewLine +
+                                   "Mon cousin Alexandre-Maubert était franc-maçon. J’ai peint de nombreux symboles dans cette cage " + 
+                                   "d’escalier faisant référence à la Révolution française et à la franc-maçonnerie."                 + Environment.NewLine +
+                                   "Vous avez déverrouillé 3 secrets de la Villa :"                                                   + Environment.NewLine +
+                                   "   •  Les symboles de la cage d’escalier"                                                         + Environment.NewLine +
+                                   "   •  Une sélection d’œuvres sur papier conservées en réserve"                                    + Environment.NewLine +
+                                   "   •  L’histoire et les visuels du Salon des Copies";
     private GameObject[] aCluesToGuess;
     private bool isFinished;
     private GameObject popup;
