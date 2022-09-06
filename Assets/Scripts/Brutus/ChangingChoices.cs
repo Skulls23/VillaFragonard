@@ -1,20 +1,22 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
 
 public class ChangingChoices : MonoBehaviour
 {
+    [SerializeField] private float secondsToWait = 2f;
     private GameObject[] aChoicePieces;
     private GameObject[] aPieces;
-    private Sprite[]     aSprites;
+    private Sprite[] aSprites;
     private int pieceActuallyresearched = 0;
     private int[] aNumberAlreadyPlaced;
 
     private void Start()
     {
         aChoicePieces = GameObject.FindGameObjectsWithTag("ChoicePiece");
-        aPieces       = GameObject.FindGameObjectsWithTag("Piece");
-        aSprites      = Resources.LoadAll<Sprite>("Brutus/AEvariste-juniusbrutus");
+        aPieces = GameObject.FindGameObjectsWithTag("Piece");
+        aSprites = Resources.LoadAll<Sprite>("Brutus/AEvariste-juniusbrutus");
 
         aPieces[pieceActuallyresearched].transform.GetChild(0).GetComponent<Image>().color = new Color(255, 255, 255, .35f);
         aPieces[pieceActuallyresearched].transform.GetChild(1).GetComponent<Text>().color = new Color(0, 0, 0, 1);
@@ -30,20 +32,20 @@ public class ChangingChoices : MonoBehaviour
     {
         if (answer == true)
         {
-            GameObject.Find("CPiece (" + pieceActuallyresearched + ")").GetComponent<Image>().color                        = new Color(255, 255, 255, 1);
-            GameObject.Find("CPiece (" + pieceActuallyresearched + ")").transform.GetChild(0).GetComponent<Image>().color  = new Color(0, 0, 0, 0f);
+            GameObject.Find("CPiece (" + pieceActuallyresearched + ")").GetComponent<Image>().color = new Color(255, 255, 255, 1);
+            GameObject.Find("CPiece (" + pieceActuallyresearched + ")").transform.GetChild(0).GetComponent<Image>().color = new Color(0, 0, 0, 0f);
             GameObject.Find("CPiece (" + pieceActuallyresearched++ + ")").transform.GetChild(1).GetComponent<Text>().color = new Color(0, 0, 0, 0f);
         }
 
         if (pieceActuallyresearched >= aPieces.Length)
-            GameObject.Find("Gameplay").GetComponent<End>().Win();
+            StartCoroutine(WaitToLeave(secondsToWait));
         else
         {
             GameObject.Find("CPiece (" + pieceActuallyresearched + ")").transform.GetChild(0).GetComponent<Image>().color = new Color(255, 255, 255, .35f);
-            GameObject.Find("CPiece (" + pieceActuallyresearched + ")").transform.GetChild(1).GetComponent<Text>().color  = new Color(0, 0, 0, 1);
+            GameObject.Find("CPiece (" + pieceActuallyresearched + ")").transform.GetChild(1).GetComponent<Text>().color = new Color(0, 0, 0, 1);
             Scramble();
         }
-            
+
     }
 
     /// <summary>
@@ -52,7 +54,7 @@ public class ChangingChoices : MonoBehaviour
     private void Scramble()
     {
         string fileName;
-        aNumberAlreadyPlaced    = new int[aChoicePieces.Length];
+        aNumberAlreadyPlaced = new int[aChoicePieces.Length];
         aNumberAlreadyPlaced[0] = pieceActuallyresearched;
 
         int positionInArray = 1;
@@ -63,7 +65,7 @@ public class ChangingChoices : MonoBehaviour
             {
                 fileName = "AEvariste-juniusbrutus_" + pieceActuallyresearched;
                 aChoicePieces[i].GetComponent<ActionHandler>().SetIsCorrectAnswer(true);
-                
+
             }
             else
             {
@@ -102,5 +104,10 @@ public class ChangingChoices : MonoBehaviour
         aNumberAlreadyPlaced[positionInArray] = number;
         return number;
     }
-    
+
+    IEnumerator WaitToLeave(float time)
+    {
+        yield return new WaitForSeconds(time);
+        GameObject.Find("Gameplay").GetComponent<End>().Win();
+    }
 }
