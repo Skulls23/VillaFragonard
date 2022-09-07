@@ -391,6 +391,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Clue Text (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7989698132885328754, guid: 56618e184d5fd3a43a77af75bf19c2ee, type: 3}
+      propertyPath: m_TagString
+      value: Clue
+      objectReference: {fileID: 0}
     - target: {fileID: 8916614009307907928, guid: 56618e184d5fd3a43a77af75bf19c2ee, type: 3}
       propertyPath: m_PreserveAspect
       value: 1
@@ -721,6 +725,10 @@ PrefabInstance:
     - target: {fileID: 7989698132885328754, guid: 56618e184d5fd3a43a77af75bf19c2ee, type: 3}
       propertyPath: m_Name
       value: Clue Text (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7989698132885328754, guid: 56618e184d5fd3a43a77af75bf19c2ee, type: 3}
+      propertyPath: m_TagString
+      value: Clue
       objectReference: {fileID: 0}
     - target: {fileID: 8916614009307907928, guid: 56618e184d5fd3a43a77af75bf19c2ee, type: 3}
       propertyPath: m_PreserveAspect
@@ -1190,6 +1198,10 @@ PrefabInstance:
     - target: {fileID: 7989698132885328754, guid: 56618e184d5fd3a43a77af75bf19c2ee, type: 3}
       propertyPath: m_Name
       value: Clue Text (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7989698132885328754, guid: 56618e184d5fd3a43a77af75bf19c2ee, type: 3}
+      propertyPath: m_TagString
+      value: Clue
       objectReference: {fileID: 0}
     - target: {fileID: 8916614009307907928, guid: 56618e184d5fd3a43a77af75bf19c2ee, type: 3}
       propertyPath: m_PreserveAspect
@@ -2529,6 +2541,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Clue Text (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7989698132885328754, guid: 56618e184d5fd3a43a77af75bf19c2ee, type: 3}
+      propertyPath: m_TagString
+      value: Clue
+      objectReference: {fileID: 0}
     - target: {fileID: 8916614009307907928, guid: 56618e184d5fd3a43a77af75bf19c2ee, type: 3}
       propertyPath: m_PreserveAspect
       value: 1
@@ -2633,6 +2649,10 @@ PrefabInstance:
     - target: {fileID: 7989698132885328754, guid: 56618e184d5fd3a43a77af75bf19c2ee, type: 3}
       propertyPath: m_Name
       value: Clue Text (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7989698132885328754, guid: 56618e184d5fd3a43a77af75bf19c2ee, type: 3}
+      propertyPath: m_TagString
+      value: Clue
       objectReference: {fileID: 0}
     - target: {fileID: 8916614009307907928, guid: 56618e184d5fd3a43a77af75bf19c2ee, type: 3}
       propertyPath: m_PreserveAspect
@@ -3095,6 +3115,10 @@ PrefabInstance:
     - target: {fileID: 7989698132885328754, guid: 56618e184d5fd3a43a77af75bf19c2ee, type: 3}
       propertyPath: m_Name
       value: Clue Text (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7989698132885328754, guid: 56618e184d5fd3a43a77af75bf19c2ee, type: 3}
+      propertyPath: m_TagString
+      value: Clue
       objectReference: {fileID: 0}
     - target: {fileID: 8916614009307907928, guid: 56618e184d5fd3a43a77af75bf19c2ee, type: 3}
       propertyPath: m_PreserveAspect
@@ -4513,6 +4537,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Clue Text (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7989698132885328754, guid: 56618e184d5fd3a43a77af75bf19c2ee, type: 3}
+      propertyPath: m_TagString
+      value: Clue
+      objectReference: {fileID: 0}
     - target: {fileID: 8916614009307907928, guid: 56618e184d5fd3a43a77af75bf19c2ee, type: 3}
       propertyPath: m_PreserveAspect
       value: 1
@@ -5462,6 +5490,10 @@ PrefabInstance:
     - target: {fileID: 7989698132885328754, guid: 56618e184d5fd3a43a77af75bf19c2ee, type: 3}
       propertyPath: m_Name
       value: Clue Text (0)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7989698132885328754, guid: 56618e184d5fd3a43a77af75bf19c2ee, type: 3}
+      propertyPath: m_TagString
+      value: Clue
       objectReference: {fileID: 0}
     - target: {fileID: 8916614009307907928, guid: 56618e184d5fd3a43a77af75bf19c2ee, type: 3}
       propertyPath: m_Sprite

@@ -63,11 +63,40 @@ public class VerifyResultMap : MonoBehaviour
             if (!aCluesToGuess[i].transform.name.Equals(aCluesToGuess[i].GetComponent<Image>().sprite.name))
                 isFinished = false;
 
+        RemoveAlreadySetLetter();
+
         if (isFinished)
         {
             PlayerPrefs.SetInt("Unlock secret", 1);
             popup.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = endText;
             popup.SetActive(true);
         }
+    }
+
+    private void RemoveAlreadySetLetter()
+    {
+        int numberOfA = 0;
+        int numberOfN = 0;
+        GameObject[] aCluesLetter = GameObject.FindGameObjectsWithTag("Clue");
+
+        if (aCluesLetter != null)
+            for (int i = 0; i < aCluesToGuess.Length; i++)
+                if (aCluesToGuess[i].GetComponent<Image>().sprite.name == aCluesToGuess[i].name && aCluesToGuess[i].name != "-")
+                {
+                    if (aCluesToGuess[i].name == "A")
+                        numberOfA++;
+                    else if (aCluesToGuess[i].name == "N")
+                        numberOfN++;
+                    
+                    for (int j = 0; j < aCluesLetter.Length; j++)
+                        if (aCluesLetter[j].GetComponent<Image>().sprite.name == aCluesToGuess[i].name)
+                            if (aCluesLetter[j].GetComponent<Image>().sprite.name == "A" && numberOfA == 2)
+                                aCluesLetter[j].SetActive(false);
+                            else if (aCluesLetter[j].GetComponent<Image>().sprite.name == "N" && numberOfN == 2)
+                                aCluesLetter[j].SetActive(false);
+                            else if (aCluesLetter[j].GetComponent<Image>().sprite.name != "A" && aCluesLetter[j].GetComponent<Image>().sprite.name != "N")
+                                aCluesLetter[j].SetActive(false);
+                    
+                }
     }
 }

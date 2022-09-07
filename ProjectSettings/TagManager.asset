@@ -8,6 +8,7 @@ TagManager:
   - PuzzlePiece
   - Piece
   - ChoicePiece
+  - Clue
   layers:
   - Default
   - TransparentFX
