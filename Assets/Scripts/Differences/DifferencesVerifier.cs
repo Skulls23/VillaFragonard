@@ -35,7 +35,6 @@ public class DifferencesVerifier : MonoBehaviour
     public void IncrementErrorFound()
     {
         errorFound++;
-        print("la");
         ChangeText();
     }
 
