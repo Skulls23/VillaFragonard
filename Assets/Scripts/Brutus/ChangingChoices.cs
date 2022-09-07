@@ -38,7 +38,13 @@ public class ChangingChoices : MonoBehaviour
         }
 
         if (pieceActuallyresearched >= aPieces.Length)
+        {
             StartCoroutine(WaitToLeave(secondsToWait));
+            for (int i = 0; i < aChoicePieces.Length; i++)
+            {
+                aChoicePieces[i].SetActive(false);
+            }
+        }
         else
         {
             GameObject.Find("CPiece (" + pieceActuallyresearched + ")").transform.GetChild(0).GetComponent<Image>().color = new Color(255, 255, 255, .35f);
