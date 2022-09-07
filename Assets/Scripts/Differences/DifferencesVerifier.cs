@@ -1,17 +1,20 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class DifferencesVerifier : MonoBehaviour
 {
+    [SerializeField] private float secondsToWait = 2f;
     [SerializeField] private List<GameObject> lImagesParent = new List<GameObject>();
     [SerializeField] private string clueName;
     private string popUpText = "Au 18ème siècle, l’impératrice Marie-Thérèse a régné 40 ans sur l’empire d’Autriche-Hongrie. Elle présente ici son fils Joseph aux Hongrois." + Environment.NewLine + 
                                "Les attitudes, le réalisme des visages et les détails précis rappellent l’œuvre de Jacques-Louis David, le maître de mon fils, "              + 
                                "Alexandre-Evariste Fragonard. La pénombre dans laquelle est placée la foule rappelle également mon influence.";
 
-    private static string[] lTexts = new string[4]{ "Trouver les 4 différences", "Trouver les 3 différences restantes", "Trouver les 2 différences restantes", "Trouver la différence restante" };
+    private static string[] lTexts = new string[8]{ "Trouver les 7 différences", "Trouver les 6 différences", "Trouver les 5 différences", "Trouver les 4 différences",
+                                                    "Trouver les 3 différences restantes", "Trouver les 2 différences restantes", "Trouver la différence restante", "Bravo! Vous avez trouvé toutes les différences" };
     private int             errorFound = 0;
     private GameObject      popUp;
 
@@ -26,22 +29,20 @@ public class DifferencesVerifier : MonoBehaviour
     void Update()
     {
         if (Input.GetMouseButtonUp(0) && AreAllDiffFound() && popUp.activeSelf == false)
-        {
-            popUp.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = popUpText;
-            popUp.SetActive(true);
-            GiveClue();
-        }
+            StartCoroutine(WaitToLeave(secondsToWait));
+        print(errorFound);
     }
     
     public void IncrementErrorFound()
     {
         errorFound++;
+        print("la");
         ChangeText();
     }
 
     private void ChangeText()
     {
-        if(errorFound < lImagesParent.Count)
+        if(errorFound <= lImagesParent.Count)
             GameObject.Find("Rules").GetComponent<Text>().text = lTexts[errorFound];
     }
     
@@ -61,5 +62,12 @@ public class DifferencesVerifier : MonoBehaviour
     {
         PlayerPrefs.SetInt("Number of clues unlocked", PlayerPrefs.GetInt("Number of clues unlocked") + 1);
         PlayerPrefs.SetInt(clueName, PlayerPrefs.GetInt("Number of clues unlocked"));
+    }
+    IEnumerator WaitToLeave(float time)
+    {
+        yield return new WaitForSeconds(time);
+        popUp.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = popUpText;
+        popUp.SetActive(true);
+        GiveClue();
     }
 }

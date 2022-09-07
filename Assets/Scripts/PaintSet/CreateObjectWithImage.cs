@@ -1,18 +1,22 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class CreateObjectWithImage : MonoBehaviour
 {
-    private int          spriteSelector = 0;
-    private int          numberPlaced   = 0;
-    private Sprite[]     aSprites;
-    private GameObject[] aObjectsInHierarchy;
+    [SerializeField] private int placedAtStart = 8;
+    private int                  spriteSelector = 0;
+    private int                  numberPlaced   = 0;
+    private List<Sprite>         lSprites;
+    private GameObject[]         aObjectsInHierarchy;
 
     // Start is called before the first frame update
     void Start()
     {
-        aSprites = Resources.LoadAll<Sprite>("PaintSet/Objects");
+        lSprites = new List<Sprite>(Resources.LoadAll<Sprite>("PaintSet/Objects"));
 
+        PlaceRandomOnSet();
+        //RemoveAlreadyPlaceImage();
         Shambles(500);
         
         aObjectsInHierarchy = new GameObject[transform.childCount];
@@ -27,29 +31,56 @@ public class CreateObjectWithImage : MonoBehaviour
         if (++numberPlaced % 8 == 0)
             PlaceImages();
     }
+    
+    private void PlaceRandomOnSet()
+    {
+        int randomNumber;
+        for (int i = 0; i < placedAtStart; i++)
+        {
+            randomNumber = Random.Range(0, lSprites.Count);
+            if(GameObject.Find(lSprites[i].name) != null && GameObject.Find(lSprites[i].name).GetComponent<Image>().color.a == 0)
+            {
+                GameObject.Find(lSprites[i].name).GetComponent<Image>().color = new Color(255, 255, 255, 1f); //set albedo to 1
+                lSprites.RemoveAt(i);
+            }
+            else
+            {
+                i--;
+            }
+        }
+    }
+
+    private void RemoveAlreadyPlaceImage()
+    {
+        for(int i = 0; i < lSprites.Count; i++)
+            if (GameObject.Find(lSprites[i].name).GetComponent<Image>().color.a != 0)
+            {
+                
+                i--;
+            }
+    }
 
     private void Shambles(int scrambleNumber)
     {
         int    randomNumber;
         int    previousNumber = 0;
-        int    objectNumber = aSprites.Length;
         Sprite tempSpriteA  = null;
         Sprite tempSpriteB  = null;
 
         for (int i = 0; i<scrambleNumber; i++)
         {
-            randomNumber = Random.Range(0, objectNumber);
+            randomNumber = Random.Range(0, lSprites.Count);
             if (tempSpriteA != null)
             {
-                tempSpriteB = aSprites[randomNumber];
-                aSprites[randomNumber] = tempSpriteA;
-                aSprites[previousNumber] = tempSpriteB;
+                tempSpriteB = lSprites[randomNumber];
+                lSprites[randomNumber] = tempSpriteA;
+                lSprites[previousNumber] = tempSpriteB;
 
                 tempSpriteA = tempSpriteB = null;
             }
             else
             {
-                tempSpriteA = aSprites[randomNumber];
+                tempSpriteA = lSprites[randomNumber];
                 previousNumber = randomNumber;
             }
         }
@@ -58,9 +89,9 @@ public class CreateObjectWithImage : MonoBehaviour
     private void PlaceImages()
     {
         for (int i = 0; i < aObjectsInHierarchy.Length; i++)
-            if (spriteSelector < aSprites.Length)
+            if (spriteSelector < lSprites.Count)
             {
-                aObjectsInHierarchy[i].GetComponent<Image>().sprite = aSprites[spriteSelector++];
+                aObjectsInHierarchy[i].GetComponent<Image>().sprite = lSprites[spriteSelector++];
                 aObjectsInHierarchy[i].GetComponent<Image>().color = new Color(255, 255, 255, 1);
             }
             else

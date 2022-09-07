@@ -61,6 +61,7 @@ public class MoveUI : MonoBehaviour
         if (GetComponent<Image>().sprite != null)
         {
             if (Mathf.Abs(transform.position.x - destination.transform.position.x) <= distanceMaxXToBeFinished &&
+                Mathf.Abs(transform.position.y - destination.transform.position.y) <= distanceMaxYToBeFinished || GetComponent<Image>().sprite.name == "3f0525" &&
                 Mathf.Abs(transform.position.y - destination.transform.position.y) <= distanceMaxYToBeFinished)
             {
                 //transform.position = new Vector3(destination.transform.position.x, destination.transform.position.y, transform.position.z);

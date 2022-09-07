@@ -53,7 +53,8 @@ public class CluesRevealer : MonoBehaviour
                 {
                     aCluesButton[i].GetComponent<Image>().sprite = Resources.Load<Sprite>("Clues/" + aLetter[j]);
                     aCluesButton[i].GetComponent<Image>().color = new Color(255, 255, 255, 1);
-                    GameObject.Find(aLetter[j] + " collider").SetActive(false); //disable the collider bound to that clue
+                    if(GameObject.Find(aLetter[j] + " collider") != null)
+                        GameObject.Find(aLetter[j] + " collider").SetActive(false); //disable the collider bound to that clue
                 }
         }
     }
