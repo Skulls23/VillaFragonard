@@ -41,7 +41,7 @@ public class MoveClues : MonoBehaviour
             mousePos = Input.mousePosition;
 
             for (int i = 0; i < aDestinations.Length; i++)
-                if (aDestinations[i].transform.name != "-") //can't change the -
+                if (aDestinations[i].transform.name != "-" && aDestinations[i].transform.name != aDestinations[i].GetComponent<Image>().sprite.name) //can't change the -
                     if (Mathf.Abs(transform.position.x - aDestinations[i].transform.position.x) <= distanceMaxXToBeFinished &&
                         Mathf.Abs(transform.position.y - aDestinations[i].transform.position.y) <= distanceMaxYToBeFinished)
                     {
