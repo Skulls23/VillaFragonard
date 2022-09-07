@@ -38,26 +38,16 @@ public class CreateObjectWithImage : MonoBehaviour
         for (int i = 0; i < placedAtStart; i++)
         {
             randomNumber = Random.Range(0, lSprites.Count);
-            if(GameObject.Find(lSprites[i].name) != null && GameObject.Find(lSprites[i].name).GetComponent<Image>().color.a == 0)
+            if(GameObject.Find(lSprites[randomNumber].name) != null && GameObject.Find(lSprites[randomNumber].name).GetComponent<Image>().color.a == 0)
             {
-                GameObject.Find(lSprites[i].name).GetComponent<Image>().color = new Color(255, 255, 255, 1f); //set albedo to 1
-                lSprites.RemoveAt(i);
+                GameObject.Find(lSprites[randomNumber].name).GetComponent<Image>().color = new Color(255, 255, 255, 1f); //set albedo to 1
+                lSprites.RemoveAt(randomNumber);
             }
             else
             {
                 i--;
             }
         }
-    }
-
-    private void RemoveAlreadyPlaceImage()
-    {
-        for(int i = 0; i < lSprites.Count; i++)
-            if (GameObject.Find(lSprites[i].name).GetComponent<Image>().color.a != 0)
-            {
-                
-                i--;
-            }
     }
 
     private void Shambles(int scrambleNumber)
