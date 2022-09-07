@@ -968,6 +968,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0.51
       objectReference: {fileID: 0}
+    - target: {fileID: 3260442372542375291, guid: f643e8a4a48ac7147b9d30a801e61694, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4948680797148442162, guid: f643e8a4a48ac7147b9d30a801e61694, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0.5
@@ -2073,8 +2077,8 @@ RectTransform:
   m_Father: {fileID: 2592712142861876670}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.02, y: 0.15}
-  m_AnchorMax: {x: 0.98, y: 0.95}
+  m_AnchorMin: {x: 0.05, y: 0.15}
+  m_AnchorMax: {x: 0.95, y: 0.95}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
