@@ -319,6 +319,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
+      propertyPath: message
+      value: "La d\xE9esse Ath\xE9na/Minerve coiff\xE9e d\u2019un casque surmont\xE9
+        d\u2019une chouette est un personnage repr\xE9sentant les francs-ma\xE7ons."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: popupSetup
       value: 
       objectReference: {fileID: 1358151744}
@@ -427,6 +432,13 @@ PrefabInstance:
     - target: {fileID: 2965269638883787414, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
+      propertyPath: message
+      value: "Le profil de Richelieu symbolise l\u2019unit\xE9 g\xE9ographique du
+        pays, Richelieu \xE9tant \xE0 l\u2019origine d\u2019un territoire fran\xE7ais
+        repouss\xE9 jusqu\u2019aux fronti\xE8res naturelles (Alpes, Pyr\xE9n\xE9es,
+        Rhin, etc.)."
       objectReference: {fileID: 0}
     - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: popupSetup
@@ -650,6 +662,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
+      propertyPath: message
+      value: "La guirlande de feuilles de ch\xEAne repr\xE9sente la long\xE9vit\xE9
+        et la p\xE9rennit\xE9."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: popupSetup
       value: 
       objectReference: {fileID: 1358151744}
@@ -865,6 +882,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
+      propertyPath: message
+      value: "Les 9 lignes horizontales repr\xE9sentent les diff\xE9rents grades
+        de la franc-ma\xE7onnerie."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: popupSetup
       value: 
       objectReference: {fileID: 1358151744}
@@ -971,6 +993,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
+      propertyPath: message
+      value: "Les portraits de Socrate et Platon symbolisent la d\xE9mocratie puisqu\u2019ils
+        sont \xE0 l\u2019initiative de celle d\u2019Ath\xE8nes."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: popupSetup
       value: 
       objectReference: {fileID: 1358151744}
@@ -1070,6 +1097,10 @@ PrefabInstance:
     - target: {fileID: 2965269638883787414, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
+      propertyPath: message
+      value: "Le feuillage d\u2019olivier symbolise la libert\xE9."
       objectReference: {fileID: 0}
     - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: popupSetup
@@ -1569,6 +1600,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
+      propertyPath: message
+      value: "Le profil de Necker symbolise l\u2019unit\xE9 du pays sur le partage
+        des richesses. Ministre des finances juste avant la R\xE9volution, Necker
+        proposa de faire payer des imp\xF4ts \xE0 la Noblesse."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: popupSetup
       value: 
       objectReference: {fileID: 1358151744}
@@ -1672,6 +1709,12 @@ PrefabInstance:
     - target: {fileID: 2965269638883787414, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
+      propertyPath: message
+      value: "Les armes francisque et glaive symbolisent force et justice avec un
+        enracinement dans l\u2019Histoire : le glaive des Gallo-Romains et la francisque
+        des Francs."
       objectReference: {fileID: 0}
     - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: popupSetup
@@ -1778,6 +1821,10 @@ PrefabInstance:
     - target: {fileID: 2965269638883787414, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
+      propertyPath: message
+      value: Le lion symbolise la force du peuple.
       objectReference: {fileID: 0}
     - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: popupSetup
@@ -1888,6 +1935,10 @@ PrefabInstance:
     - target: {fileID: 2965269638883787414, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
+      propertyPath: message
+      value: "La t\xEAte de coq repr\xE9sente le peuple fran\xE7ais."
       objectReference: {fileID: 0}
     - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: popupSetup
@@ -2039,6 +2090,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
+      propertyPath: message
+      value: "Le triangle qui rayonne avec un scribe assis \xE0 l\u2019int\xE9rieur
+        symbolise le rayonnement du savoir et de la connaissance."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: popupSetup
       value: 
       objectReference: {fileID: 1358151744}
@@ -2143,6 +2199,10 @@ PrefabInstance:
     - target: {fileID: 2965269638883787414, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
+      propertyPath: message
+      value: "Le bonnet phrygien symbolise la libert\xE9."
       objectReference: {fileID: 0}
     - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: popupSetup
@@ -2258,6 +2318,13 @@ PrefabInstance:
     - target: {fileID: 2965269638883787414, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
+      propertyPath: message
+      value: "Le profil (probable) de l\u2019abb\xE9 Gr\xE9goire. Membre du clerg\xE9,
+        l\u2019abb\xE9 Gr\xE9goire \xE9tait tout de m\xEAme pour les id\xE9es de
+        la R\xE9volution, contre la peine de mort, pour l\u2019abolition de l\u2019esclavage
+        et pour la libert\xE9 de culte."
       objectReference: {fileID: 0}
     - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: popupSetup
@@ -2378,6 +2445,11 @@ PrefabInstance:
     - target: {fileID: 2965269638883787414, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
+      propertyPath: message
+      value: "La pique est l\u2019arme des sans-culottes, le peuple, ici en faisceau
+        pour dire que l\u2019union fait la force."
       objectReference: {fileID: 0}
     - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: popupSetup
@@ -2591,6 +2663,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
+      propertyPath: message
+      value: "Le profil de Henri IV symbolise l\u2019unit\xE9 du pays malgr\xE9 les
+        diff\xE9rentes religions. Par l\u2019\xE9dit de Nantes, Henri IV a apais\xE9
+        le pays."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: popupSetup
       value: 
       objectReference: {fileID: 1358151744}
@@ -2793,6 +2871,10 @@ PrefabInstance:
     - target: {fileID: 2965269638883787414, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
+      propertyPath: message
+      value: "Les feuillages de laurier garnis de baies repr\xE9sentent la victoire."
       objectReference: {fileID: 0}
     - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: popupSetup
@@ -3010,6 +3092,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
+      propertyPath: message
+      value: "Le feuillage d\u2019olivier et de laurier r\xE9unis repr\xE9sentent
+        un rang dans la franc-ma\xE7onnerie."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: popupSetup
       value: 
       objectReference: {fileID: 1358151744}
@@ -3218,6 +3305,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
+      propertyPath: message
+      value: "La d\xE9esse D\xE9m\xE9ter/C\xE9r\xE8s est un symbole r\xE9volutionnaire.
+        Cette d\xE9esse des moissons repr\xE9sente bien le peuple de 1789 compos\xE9
+        \xE0 plus de 90% de paysans."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: popupSetup
       value: 
       objectReference: {fileID: 1358151744}
@@ -3323,6 +3416,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
+      propertyPath: message
+      value: "Le Roi Salomon est un symbole franc-ma\xE7on. Le ma\xEEtre de c\xE9r\xE9monie
+        d\u2019une s\xE9ance de francs-ma\xE7ons est costum\xE9 en roi Salomon, personnage
+        choisi pour sa sagesse lors du jugement qu\u2019il pronon\xE7a. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: popupSetup
       value: 
       objectReference: {fileID: 1358151744}
@@ -3422,6 +3521,11 @@ PrefabInstance:
     - target: {fileID: 2965269638883787414, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
+      propertyPath: message
+      value: "Le profil (probable) de Honor\xE9-Maximin Isnard : ce grassois \xE9lu
+        au Parlement est franc-ma\xE7on."
       objectReference: {fileID: 0}
     - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: popupSetup
@@ -3527,6 +3631,12 @@ PrefabInstance:
     - target: {fileID: 2965269638883787414, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
+      propertyPath: message
+      value: "Cette poign\xE9e de mains particuli\xE8re repr\xE9sente la fraternit\xE9
+        pour les r\xE9volutionnaires et la reconnaissance et la fraternit\xE9 pour
+        les francs-ma\xE7ons."
       objectReference: {fileID: 0}
     - target: {fileID: 2965269638883787415, guid: 355d0dfb03f791e4ab299f69a6352641, type: 3}
       propertyPath: popupSetup
