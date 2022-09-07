@@ -11,7 +11,8 @@ public class DifferencesVerifier : MonoBehaviour
                                "Les attitudes, le réalisme des visages et les détails précis rappellent l’œuvre de Jacques-Louis David, le maître de mon fils, "              + 
                                "Alexandre-Evariste Fragonard. La pénombre dans laquelle est placée la foule rappelle également mon influence.";
 
-    private static string[] lTexts = new string[4]{ "Trouver les 4 différences", "Trouver les 3 différences restantes", "Trouver les 2 différences restantes", "Trouver la différence restante" };
+    private static string[] lTexts = new string[7]{ "Trouver les 7 différences", "Trouver les 6 différences", "Trouver les 5 différences", "Trouver les 4 différences",
+                                                    "Trouver les 3 différences restantes", "Trouver les 2 différences restantes", "Trouver la différence restante" };
     private int             errorFound = 0;
     private GameObject      popUp;
 
