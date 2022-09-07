@@ -30,7 +30,6 @@ public class DifferencesVerifier : MonoBehaviour
     {
         if (Input.GetMouseButtonUp(0) && AreAllDiffFound() && popUp.activeSelf == false)
             StartCoroutine(WaitToLeave(secondsToWait));
-        print(errorFound);
     }
     
     public void IncrementErrorFound()
