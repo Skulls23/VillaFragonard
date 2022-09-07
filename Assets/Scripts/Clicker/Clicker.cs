@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,6 +13,8 @@ public class Clicker : MonoBehaviour
 {
     [SerializeField] private Text text;
 
+    [SerializeField] private float timeReturnWhite = 0.2f;
+    
     [Header("Lists")]
     [SerializeField] private List<string> lOrderStrings;
 
@@ -57,7 +60,10 @@ public class Clicker : MonoBehaviour
         missionNumber++;
         PopUp();
         if (lOrderStrings.Count > missionNumber)
-            text.text = lOrderStrings[missionNumber];
+        {
+            text.color = Color.green;
+            StartCoroutine(ResetColor());
+        }
         else
         {
             text.text = "Niveau fini";
@@ -97,5 +103,12 @@ public class Clicker : MonoBehaviour
                                                                          "   5.La nature morte";
             }
         }
+    }
+
+    IEnumerator ResetColor()
+    {
+        yield return new WaitForSeconds(timeReturnWhite);
+        text.color = Color.white;
+        text.text = lOrderStrings[missionNumber];
     }
 }
