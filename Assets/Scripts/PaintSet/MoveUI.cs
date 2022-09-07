@@ -60,10 +60,6 @@ public class MoveUI : MonoBehaviour
         //print("Y " + Mathf.Abs(transform.position.y - destination.transform.position.y));
         if (GetComponent<Image>().sprite != null)
         {
-            print(GetComponent<Image>().name);
-            print(transform.position.y - destination.transform.position.y);
-
-
             if (Mathf.Abs(transform.position.x - destination.transform.position.x) <= distanceMaxXToBeFinished &&
                 Mathf.Abs(transform.position.y - destination.transform.position.y) <= distanceMaxYToBeFinished || GetComponent<Image>().sprite.name == "3f0525" &&
                 Mathf.Abs(transform.position.y - destination.transform.position.y) <= distanceMaxYToBeFinished)
