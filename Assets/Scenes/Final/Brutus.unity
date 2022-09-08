@@ -5302,7 +5302,7 @@ PrefabInstance:
     - target: {fileID: 2676022200322471635, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
       propertyPath: m_Text
       value: "Cliquer sur la pi\xE8ce du bas de l\u2019\xE9cran qui correspond au
-        morceau de tableau vis\xE9."
+        morceau de tableau avec le ?."
       objectReference: {fileID: 0}
     - target: {fileID: 4561038512975321927, guid: fad1a8fa1bdfb7f4aafcff2581d37d44, type: 3}
       propertyPath: m_Name
