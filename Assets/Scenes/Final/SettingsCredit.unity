@@ -349,8 +349,8 @@ RectTransform:
   m_Father: {fileID: 670561272}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.05, y: 0}
+  m_AnchorMax: {x: 0.95, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -376,10 +376,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 3
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -387,8 +387,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "CIRCULEZ Y A RIEN A VOIR POUR L'INSTANT.\nLa sortie c'est la haut \xE0
-    gauche."
+  m_Text: "Jeu r\xE9alis\xE9 par Florian Pimenta, \xE9tudiant en Master Management
+    de Jeux Vid\xE9o, Image, Cr\xE9ativit\xE9 (MAJIC) \u2013 Ecole Universitaire
+    de Recherche CREATES - Universit\xE9 C\xF4te d'Azur.\r\nhttps://creates.univ-cotedazur.fr/\r\n\nAvec
+    le soutien de la Conservation des Mus\xE9es de Grasse.\r\n\nTous droits r\xE9serv\xE9s
+    Mus\xE9es de Grasse.\r\n\nD\xE9p\xF4ts du mus\xE9e du Louvre, Paris : FRAGONARD
+    J-H., Paysage aux lavandi\xE8res et FRAGONARD A-E., Marie-Th\xE9r\xE8se pr\xE9sentant
+    son fils aux Hongrois.\r\nCopyright photos :  \xA9Carlo Barbiero et \xA9Jacques
+    Penon, photographes, coll. Villa-Mus\xE9e Jean-Honor\xE9 Fragonard, Grasse \u2013
+    France.\r\n"
 --- !u!222 &779612467
 CanvasRenderer:
   m_ObjectHideFlags: 0
