@@ -15,6 +15,7 @@ public class DifferencesVerifier : MonoBehaviour
 
     private static string[] lTexts = new string[8]{ "Trouver les 7 différences", "Trouver les 6 différences", "Trouver les 5 différences", "Trouver les 4 différences",
                                                     "Trouver les 3 différences restantes", "Trouver les 2 différences restantes", "Trouver la différence restante", "Bravo! Vous avez trouvé toutes les différences" };
+    private bool            isFinished = false;
     private int             errorFound = 0;
     private GameObject      popUp;
 
@@ -28,8 +29,11 @@ public class DifferencesVerifier : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonUp(0) && AreAllDiffFound() && popUp.activeSelf == false)
+        if (Input.GetMouseButtonUp(0) && AreAllDiffFound() && !isFinished && popUp.activeSelf == false)
+        {
+            isFinished = true;
             StartCoroutine(WaitToLeave(secondsToWait));
+        }
     }
     
     public void IncrementErrorFound()
