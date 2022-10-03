@@ -387,15 +387,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Jeu r\xE9alis\xE9 par Florian Pimenta, \xE9tudiant en Master Management
-    de Jeux Vid\xE9o, Image, Cr\xE9ativit\xE9 (MAJIC) \u2013 Ecole Universitaire
-    de Recherche CREATES - Universit\xE9 C\xF4te d'Azur.\r\nhttps://creates.univ-cotedazur.fr/\r\n\nAvec
-    le soutien de la Conservation des Mus\xE9es de Grasse.\r\n\nTous droits r\xE9serv\xE9s
-    Mus\xE9es de Grasse.\r\n\nD\xE9p\xF4ts du mus\xE9e du Louvre, Paris : FRAGONARD
-    J-H., Paysage aux lavandi\xE8res et FRAGONARD A-E., Marie-Th\xE9r\xE8se pr\xE9sentant
-    son fils aux Hongrois.\r\nCopyright photos :  \xA9Carlo Barbiero et \xA9Jacques
-    Penon, photographes, coll. Villa-Mus\xE9e Jean-Honor\xE9 Fragonard, Grasse \u2013
-    France.\r\n"
+  m_Text: "Jeu r\xE9alis\xE9 par Florian Boireau-Pimenta.\nContact : florian.pimenta.pro@hotmail.com\n\xC9tudiant
+    en Master Management de Jeux Vid\xE9o, Image, Cr\xE9ativit\xE9 (MAJIC) \u2013
+    Ecole Universitaire de Recherche Arts et Humanit\xE9 - Universit\xE9 C\xF4te
+    d'Azur.\r\nhttps://creates.univ-cotedazur.fr/\r\n\nAvec le soutien de la Conservation
+    des Mus\xE9es de Grasse.\r\n\nTous droits r\xE9serv\xE9s Mus\xE9es de Grasse.\r\n\nD\xE9p\xF4ts
+    du mus\xE9e du Louvre, Paris : FRAGONARD J-H., Paysage aux lavandi\xE8res et
+    FRAGONARD A-E., Marie-Th\xE9r\xE8se pr\xE9sentant son fils aux Hongrois.\r\nCopyright
+    photos :  \xA9Carlo Barbiero et \xA9Jacques Penon, photographes, coll. Villa-Mus\xE9e
+    Jean-Honor\xE9 Fragonard, Grasse \u2013 France.\r\n"
 --- !u!222 &779612467
 CanvasRenderer:
   m_ObjectHideFlags: 0
